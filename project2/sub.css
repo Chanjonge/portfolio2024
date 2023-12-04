@@ -35,6 +35,7 @@ img {
 /* font-family: 'Koh Santepheap', serif; */
 
 header {
+  overflow: hidden;
   height: 150px;
   width: 100%;
   border-bottom: 2px solid #000;
@@ -102,6 +103,7 @@ header nav li:hover a {
 /* 박스1 설정 */
 
 .box1 {
+  overflow: hidden;
   display: flex;
   box-sizing: border-box;
   width: 70%;
@@ -330,6 +332,7 @@ overflow: hidden;
 /* 박스2 설정 */
 
 .box2 {
+  overflow: hidden;
   height: 700px;
   width: 90%;
   margin-top: 30px;
@@ -348,6 +351,7 @@ overflow: hidden;
 
 
 .box3 {
+  overflow: hidden;
   height: 400vh;
   width: 80%;
   margin: 0 auto;
@@ -579,7 +583,7 @@ opacity: 1;}
 .box4 {
   height: 500px;
   background-color: #000;
-   
+  overflow: hidden;
     width: 100%;
     
   
@@ -597,6 +601,7 @@ width: 100%;}
 position: relative;
 overflow: hidden;
 padding-top: 50px;
+overflow: hidden;
 }
 
 .box5 ul {display: flex;
@@ -628,7 +633,8 @@ position: absolute;
 
 
 footer {height: 400px;
-  width: 100%;}
+  width: 100%;
+  overflow: hidden;}
 footer .top {height: 300px;
   width: 100%;
   
