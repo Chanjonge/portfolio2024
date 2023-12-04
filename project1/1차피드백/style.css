@@ -1,0 +1,596 @@
+/* 언어설정 */
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+/* reset */
+* {margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+
+
+
+/* 박스1 설정 */
+
+.box1 {position: relative;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;}
+.box1 .logo {width: 20%;
+            padding-top: 40px;}
+.box1 .logo h2 {}
+
+.box1 .menu {width: 80%;
+            padding-top: 40px;}
+.box1 .menu ul {display: flex;
+                justify-content: center;
+                }
+.box1 .menu li {padding: 30px;}
+.box1 .menu a {display: block;
+                font-size: 20px;
+                    font-weight: 600;
+                    padding: 5px;}
+
+.box1 .menu li:hover a {background-color: #FE7E03;
+                        color: #fff;}
+
+.box1 .util {position: absolute;
+            right: 0;
+            top: 30px;
+            
+            }
+
+.box1 .util form  {
+     }
+.box1 .util input {border: 2px solid #7ab551;
+    border-radius: 5px;
+    padding: 10px;
+    color: #7ab551;}
+
+.box1 .util button {border: none;
+                    background-color: #7ab551;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                
+.box1 .util button i {padding: 8px;
+                        font-size: 20px;}            
+
+/* 박스2 설정 */
+
+.box2 {padding-top: 30px;
+    height: 700px; 
+    width: 70%;
+    margin: 0 auto;
+    }
+.box2 .slide {
+margin: 20px 160px;
+width: 100%;
+padding: 4px;
+height: 100%;
+overflow: hidden;}
+
+
+.slideA {
+    display: none; /* 기본적으로 모든 슬라이드 숨김 */
+    width: 100%;
+}
+
+.box2 .slide ul {width: 1500px;
+    
+padding: 0;
+margin: 0;
+height: 100%;
+overflow: hidden;
+position: relative;}
+
+.box2 .slide li {font-size: 30px;
+    width: 100%;
+list-style: none;
+position: absolute;
+display: inline-block;
+padding: 4px 20px;
+height: 100%;
+}
+
+
+.box2 .slide img { width: 100%;
+    display: block}
+
+
+
+    
+
+/* 박스3 설정 */
+
+.box3 {padding-top: 140px;
+        height: 400px;
+    }
+.box3 .trailer {overflow: hidden;
+                height: 100%;
+                width: 80%;
+                margin: 0 auto;
+                position: relative;
+                
+                }
+
+.trailer ul {display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 20px;}
+.trailer ul li {margin-right: 30px;
+    width: 360px;
+height: 368px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px #FE7E03;}
+.trailer img {width: 360px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+    background: url(<path-to-image>), lightgray 0px -5.5px / 100% 109.756% no-repeat;
+    }
+
+.trailer li:nth-child(2)  {
+
+    border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 4px 10px 0px #7CA65F;
+}
+
+.trailer li:nth-child(4)  {
+
+    border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 4px 10px 0px #7CA65F;
+}
+
+.trailer p {text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+            padding-top: 30px;
+            font-family: 'Gowun Dodum', sans-serif;}
+
+.trailer .left {position: absolute;
+                left: 0;
+                top: 40%;
+                cursor: pointer;
+                padding-top: 0;}
+.trailer .right {position: absolute;
+    right: 0;
+    top: 40%;
+    cursor: pointer;
+    padding-top: 0;}
+
+
+
+
+
+
+
+/* 박스4 설정 */
+
+.box4 {height: 600px;
+        padding-top: 50px;
+    }
+.box4-1 {width: 80%;
+        margin: 0 auto;}
+
+.box4-1 .titleBox {}
+.box4-1 .titleBox ul {display: flex;}
+.box4-1 .titleBox li {
+    width: 200px;
+height: 84px;
+border-radius: 10px 10px 0px 0px;
+background: #fff;
+box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+color: #7CA65F;
+text-align: center;
+font-size: 25px;
+font-weight: 600;
+margin-right: 10px;
+}
+
+.box4-1 .titleBox .to {
+
+    background-color: #7CA65F;
+    color: #fff
+}
+
+
+
+.box4-1 .titleBox li span {display: inline-block;
+                            padding-top: 25px;}
+
+
+.box4-1 .titleBox li:hover {background-color: #7CA65F;
+    color: #FFF;
+    cursor: pointer;}
+
+
+
+.box4-1 .listBox {position: relative;
+    
+    }
+.box4-1 .listBox ul {position: absolute;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    border-top: 2px solid #BBBABA;
+                    border-bottom: 2px solid #BBBABA;
+                    background: #FFF;
+                    }
+
+.box4-1 .listBox ul:nth-child(2) {display: none;} 
+.box4-1 .listBox ul:nth-child(3) {display: none;} 
+
+
+.box4-1 .listBox li {padding: 20px;}
+
+.box4-1 .listBox h3 {font-size: 25px;
+                    margin-bottom: 10px;}
+.box4-1 .listBox i {padding: 0 10px 0 10px;}
+.box4-1 .listBox p {font-size: 20px;}
+
+
+
+
+
+
+/* 박스5 설정 */
+
+
+.box5 {padding-top: 50px;
+        height: 700px;}
+.box5-1 {width: 80%;
+    margin: 0 auto;
+    height: 100%;}
+
+.box5-1 .titleBox {}
+.box5-1 .titleBox ul {display: flex;}
+.box5-1 .titleBox li {width: 200px;
+    height: 84px;
+    border-radius: 10px 10px 0px 0px;
+    background: #fff;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FE7E03;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 20px;}
+/* 수정 */
+
+.box5-1 .titleBox li.on { background-color: #FE7E03;
+        color: #FFF;}
+
+        .box5-1 .titleBox li:nth-child(2).on {background-color: #7ab551;}
+
+.box5-1 .titleBox li span {display: inline-block;
+    padding-top: 25px;}
+
+.box5-1 .titleBox li:hover {background-color: #FE7E03;
+        color: #FFF;
+        cursor: pointer;}
+
+
+
+.box5-1 .listBox {display: flex;
+   
+    height: 500px;}
+.box5-1 .list {width: 20%;
+                height: 100%;
+                position: relative;
+                height: 100%;
+                
+
+
+box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.25);
+            }
+.box5-1 .list_inner>div {position: absolute;
+    left: 0;
+    top: 0;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 0px 10px;
+    }
+.box5-1 .list_inner>div { text-align: center;
+                    color: #FFF;
+                }
+
+.box5-1 .list_inner strong {padding-bottom: 5px;
+                        display: block;
+                        font-size: 25px;}
+
+
+
+.box5-1 .list_inner h2 {font-size: 30px;
+                        padding-top: 100px;}
+.box5-1 .list_inner p {font-size: 20px;
+                        padding-top: 200px;}               
+
+
+
+
+
+.box5-1 .list_inner div:nth-child(1) {background-color: #FE7E03;
+}
+.box5-1 .list_inner>div:nth-child(2) {display: none;
+                                background-color: #7ab551;}
+.box5-1 .list_inner>div:nth-child(3) {display: none;
+                        background-color: #7CA65F;}
+.box5-1 .list_inner>div:nth-child(4) {display: none;
+                background-color: #FE7E03;}
+
+
+
+.box5-1 .form {width: 90%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 0px 0px 10px 0px;
+        position: relative;
+        }
+.box5-1 .form .cal {width: 80%;
+                    text-align: center;
+                    
+                    }
+.box5-1 .cal {border-right: 1px solid rgba(151, 150, 150, 0.50);
+    border-radius: 0px 10px 10px 0px;
+   
+ }
+
+
+.box5-1 .cal table {margin: 0 auto;
+    padding-bottom: 10px;}
+.cal th , td {
+    font-size: 25px;
+    padding: 8px 20px;
+text-align: center;}
+
+
+.cal td:hover {background-color: #FE7E03;
+                    color: #FFF;
+                    border-radius: 20px;
+                    cursor: pointer;}
+.cal td.on{background-color: #FE7E03;
+    color: #FFF;
+    border-radius: 20px;
+    cursor: pointer;}
+
+.box5-1 .cal h2 {padding-top: 20px;
+                    margin-bottom: 30px;
+                    padding-right: 30px;
+                    font-size: 30px;
+                    color: #FE7E03;}
+
+
+
+.box5-1 .form .imgBox {width: 80% ;
+    background-image: url(img/감귤7.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+    }
+
+
+
+
+
+.box5 .book {box-sizing: border-box;
+    border-radius: 10px;
+    background: #FFF;
+    width: 70%;
+height: 495px;
+    box-shadow: 1px 1px 5px 1px #FE7E03;}
+
+
+.box5 .bookIn { width: 90%;
+                margin: 20px auto;}
+
+.bookIn  i {font-size: 40px;
+            margin-right: 10px;}
+
+.bookIn  h3 {color: #FE7E03;
+            font-weight: 600;
+            font-size: 30px;} 
+            
+            .bookIn h3 span {display:none}
+           
+            .bookIn  em {font-style: normal;} 
+
+
+
+
+.bookIn .user {display: flex;
+                margin-bottom: 80px;}
+.bookIn .user h3 {margin-right: 270px;}
+.bookIn .user .bar {display: flex;
+                    }
+.bookIn .user .bar p:nth-child(1) {background-color: #FE7E03;
+                                border-radius: 10px 0 0 10px;
+                                padding: 3px;
+                                cursor: pointer;
+                                }
+.bookIn .user .bar p:nth-child(1) i {margin-left: 5px;
+                        transition: all 0.5s;}
+
+
+.bookIn .user .bar p:nth-child(1):hover i {transform: scale(0.5);}
+
+
+.bookIn .user .bar p:nth-child(2) {width: 120px;
+                                    border-top: 1px solid #ddd;
+                                    border-bottom: 1px solid #ddd;}
+
+.bookIn .user .bar p:nth-child(2) input {border: none;
+                                    text-align: center;
+                                    width: 100%;
+                                    height: 100%;
+                                font-size: 30px;}
+.bookIn .user .bar p:nth-child(2) input:focus {outline: none;}
+
+.bookIn .user .bar p:nth-child(3) {background-color: #FE7E03;
+                                    border-radius: 0 10px 10px 0;
+                                        padding: 3px;
+                                        cursor: pointer;
+                                    }
+.bookIn .user .bar p:nth-child(3) i {margin-left: 5px;
+    transition: all 0.5s;}
+.bookIn .user .bar p:nth-child(3):hover i {transform: scale(0.5);}
+
+
+.bookIn .time {margin-bottom: 30px;}                
+.bookIn .timeIn {display: flex;
+    margin-bottom: 30px;}
+
+.bookIn .timebar {}
+.bookIn .timebar ul {display: flex;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;}
+.bookIn .timebar ul li {width: 20%;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    background: #FFF;
+    color: #FE7E03;
+font-weight: 600;
+box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25)
+}
+.bookIn .timebar ul li:hover {background-color: #FE7E03;
+                            color: #FFF;
+                                cursor: pointer;}
+
+.bookIn .cash {display: flex;
+    margin-bottom: 30px;}
+.bookIn .cash h3 {margin-right: 350px;}
+
+
+.bookIn .cashbar {font-size: 35px;
+                font-weight: 600;}
+
+.bookIn .btn {border: none;
+            text-align: center;
+            margin-bottom: 10px;}
+.bookIn .btn a {display: inline-block;
+                color: #fff;
+                background-color: #FE7E03;
+                padding: 10px 40px;
+                border-radius: 10px;
+                font-size: 20px;
+                }
+
+.bookIn .btn:hover a {opacity: 0.8;}
+
+    
+/* 박스6 설정 */
+
+.box6 {height: 600px;
+    width: 80%;
+    margin: 0 auto;}
+.box6 h1 {width: 200px;
+    height: 70px;
+    border-radius: 10px 10px 0px 0px;
+    background: #7CA65F;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 10px;
+    }
+
+.box6 h1 span {display: inline-block;
+    padding-top: 15px;}
+
+
+.box6 .map {width: 100%;
+            height: 90%;}
+.box6 iframe {width: 100%;
+                height: 100%;}
+
+
+
+
+
+
+/* 박스7 설정 */
+
+.box7 {height: 700px;
+        padding-top: 30px;
+        padding-top: 30px;
+        margin-bottom: 100px;}
+.box7-1 {width: 50%;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 30px;}
+
+.box7-1 ul {}
+.box7-1 li {}
+
+.box7-1 ul>li {padding: 50px 20px 0 100px;
+                display: flex;}
+
+.box7-1 .ico {width: 20%;
+            text-align: center;}
+.box7-1 .ico p {text-align: center;}
+
+.box7-1 .txt {width: 80%;}
+.box7-1 .txt p {font-size: 20px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            color: #C46C18;;}
+
+.box7-1 .txt strong {display: inline-block;
+                        color: #FE7E03;
+                        font-size: 25px;}
+
+.box7-1 .btn {text-align: center;
+                padding: 30px 0;
+                }
+
+.box7-1 .btn p {}
+.box7-1 .btn a {display: inline-block;
+    border: none;
+    background-color: #FE7E03;
+        color: #FFF;
+        padding: 10px 40px;
+        border-radius: 10px;
+        font-size: 20px;}
+
+.box7-1 .btn a:hover {opacity: 0.8;}
+
+
+/* 박스8 설정 */
+
+
+.box8 {background-color: #D9D9D9;
+        height: 300px;
+        text-align: center;}
+
+.box8 h2 {padding-top: 40px;
+            font-size: 30px;}
+
+.box8 .menu {padding: 40px 0;}
+.box8 .menu ul {display: flex;
+            justify-content: center;
+            align-items: center;}
+.box8 .menu li {margin-right: 50px;}
+.box8 .menu li a {display: block;
+    font-size: 20px;
+                }
+
+.box8 .menu li:hover {background-color: #FE7E03;
+                        }
+
+.box8 .menu li:hover a {color: #FFF;
+                    }
+
+.box8 .logoBot {}
+.box8 .logoBot h3 {}
+.box8 .logoBot a {}
+.box8 .logoBot img {}

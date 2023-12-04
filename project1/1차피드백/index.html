@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로젝트1_감귤박물관</title>
+
+    <!-- 외부스타일시트연결 -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- 외부스크립트연결 -->
+    <script src="js/js.js"></script>
+    <!-- 폰트어썸 CDN -->
+
+    <script
+      src="https://kit.fontawesome.com/044d9b951e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--  CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script>
+      $(function () {
+        // 박스5 titleBox의 li 순번 찾기
+        $(".box5-1 .titleBox li").click(function () {
+          // 클릭한 나 자신의 순번을 변수로 지정하기
+          var i = $(this).index();
+          // 콘솔에 확인하기
+          console.log(i);
+          // 찾아낸 순번을 list_inner안의 div의 순서에 맞게 보이기
+          $(".box5-1 .list_inner>div").css({ display: "none" });
+          $(".box5-1 .list_inner>div").eq(i).css({ display: "block" });
+
+          $(".titleBox li").removeClass("on");
+          // 클릭한 나 자신에게 클래스주기
+
+          $(this).addClass("on");
+        });
+
+        // 박스6 titleBox의 li 순번 찾기
+        $(".box4-1 .titleBox li").click(function () {
+          // 클릭한 나 자신의 순번을 변수로 지정하기
+          var j = $(this).index();
+          // 콘솔에 확인하기
+          console.log(j);
+          // 찾아낸 순번을 listBox안의 div의 순서에 맞게 보이기
+          $(".box4-1 .listBox>ul").css({ display: "none" });
+          $(".box4-1 .listBox>ul").eq(j).css({ display: "block" });
+
+          $(".titleBox li").removeClass("to");
+          // 클릭한 나 자신에게 클래스주기
+
+          $(this).addClass("to");
+        });
+
+
+
+        $(document).ready(function(){
+    let slides = $('#insAfter .slideA');
+    let currentIndex = 0;
+
+    // 첫 번째 슬라이드 표시
+    $(slides[currentIndex]).fadeIn();
+
+    // 슬라이드를 순환하는 함수
+    function cycleSlides(){
+        $(slides[currentIndex]).fadeOut(function(){
+            currentIndex = (currentIndex + 1) % slides.length;
+            $(slides[currentIndex]).fadeIn(3000);
+        });
+    }
+
+    // 3초마다 슬라이드 변경
+    setInterval(cycleSlides, 3000);
+});
+
+
+
+
+$('.cal td').click(function(){
+  $('.cal td').removeClass('on')
+  $(this).addClass('on')
+  var ti= $(this).text()
+
+  $('.bookIn h3 span').css({'display':'inline-block'});
+
+ $('.bookIn em').text(ti)
+})
+
+var aa= 0;
+
+$('.minus').click(function(){
+
+ if(aa>0) aa--;
+ $('.board').text(aa)
+
+
+})
+$('.plus').click(function(){
+
+if(aa<10) aa++;
+$('.board').text(aa)
+if(aa==10){
+  alert('10장까지 예매가능하십니다.')
+}
+
+
+$('.cashbar b').text(8*aa)
+
+
+})
+
+
+
+
+
+
+
+      });
+
+
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="logo">
+        <h2>
+          <a href="#"><img src="img/logo.png" alt="" /></a>
+        </h2>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">박물관 안내</a></li>
+          <li><a href="#">감귤체험 안내</a></li>
+          <li><a href="#">감귤마켓</a></li>
+          <li><a href="#">감귤이야기</a></li>
+          <li><a href="#">참여공간</a></li>
+        </ul>
+      </div>
+      <div class="util">
+        <div>
+          <form action="search">
+            <input type="text" placeholder="검색하기" />
+            <button>
+              <i class="fa-solid fa-magnifying-glass" style="color: #fff"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="box2">
+      <div class="slide" >
+        <ul id="insAfter">
+          <li class="slideA">
+            <img src="img/slide1.jpg" alt="" />
+          </li>
+          <li class="slideA">
+            <img src="img/slide2.jpg" alt="" />
+          </li>
+          <li class="slideA">
+            <img src="img/slide3.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="box3">
+      <div class="trailer">
+        <ul>
+          <li>
+            <img src="img/tr1.jpg" alt="" />
+            <p>
+              감귤의 상큼함을 직접 느낄 수 있는 <br />
+              감귤따기체험도 준비되어 있습니다
+            </p>
+          </li>
+          <li>
+            <img src="img/tr2.jpg" alt="" />
+            <p>
+              박물관에서 전세계의 모든 감귤을 <br />
+              체험해볼 수 있습니다.
+            </p>
+          </li>
+          <li>
+            <img src="img/tr3.jpg" alt="" />
+            <p>
+              감귤 테마 카페도 방문해보세요 <br />
+              감귤을 색다르게 느끼실 수 있습니다.
+            </p>
+          </li>
+
+          <li>
+            <img src="img/tr4.jpg" alt="" />
+            <p>
+              피로에 지친 발을 <br />
+              감귤로 힐링할 수 있어요.
+            </p>
+          </li>
+          <li>
+            <img src="img/감귤모자.jpg" alt="" />
+            <p>
+              감귤과 함께하는 색다른 방법 <br />
+              감귤 관련 소품들을 구매하실 수 있습니다.
+            </p>
+          </li>
+        </ul>
+        <p class="left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="67"
+            viewBox="0 0 40 67"
+            fill="none"
+          >
+            <rect width="50" height="67" fill="#FE7E03" />
+            <path
+              d="M20.3401 45.2703C12.4183 45.2703 6 40.0021 6 33.5C6 26.9979 12.4183 21.7297 20.3401 21.7297C28.2618 21.7297 34.6801 26.9979 34.6801 33.5C34.6801 40.0021 28.2618 45.2703 20.3401 45.2703ZM13.754 34.3068L21.589 40.7378C22.1326 41.1839 23.0115 41.1839 23.5492 40.7378L24.5322 39.9309C25.0758 39.4848 25.0758 38.7634 24.5322 38.322L18.6574 33.5L24.5322 28.678C25.0758 28.2319 25.0758 27.5105 24.5322 27.0691L23.5492 26.2622C23.0057 25.8161 22.1268 25.8161 21.589 26.2622L13.754 32.6932C13.2105 33.1393 13.2105 33.8607 13.754 34.3068Z"
+              fill="white"
+            />
+          </svg>
+        </p>
+        <p class="right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="67"
+            viewBox="0 0 40 67"
+            fill="none"
+          >
+            <rect
+              width="40"
+              height="67"
+              transform="matrix(-1 0 0 1 40 0)"
+              fill="#FE7E03"
+            />
+            <path
+              d="M19.6599 45.2703C27.5817 45.2703 34 40.0021 34 33.5C34 26.9979 27.5817 21.7297 19.6599 21.7297C11.7382 21.7297 5.31986 26.9979 5.31986 33.5C5.31986 40.0021 11.7382 45.2703 19.6599 45.2703ZM26.246 34.3068L18.411 40.7378C17.8674 41.1839 16.9885 41.1839 16.4508 40.7378L15.4678 39.9309C14.9242 39.4848 14.9242 38.7634 15.4678 38.322L21.3426 33.5L15.4678 28.678C14.9242 28.2319 14.9242 27.5105 15.4678 27.0691L16.4508 26.2622C16.9943 25.8161 17.8732 25.8161 18.411 26.2622L26.246 32.6932C26.7895 33.1393 26.7895 33.8607 26.246 34.3068Z"
+              fill="white"
+            />
+          </svg>
+        </p>
+      </div>
+    </div>
+    <div class="box4">
+      <div class="box4-1">
+        <div class="titleBox">
+          <ul>
+            <li class="to"><span>자주하는 질문</span></li>
+            <li><span>박물관 소식</span></li>
+            <li><span>보도 자료</span></li>
+          </ul>
+        </div>
+        <div class="listBox">
+          <ul>
+            <li>
+              <h3>
+                <i class="fa-solid fa-q" style="color: #979696"></i>박물관 관람
+                시 유의사항이 따로 있나요?
+              </h3>
+              <p>
+                <i class="fa-solid fa-a" style="color: #979696"></i>다른
+                방문객의 편의와 안전을 위해 박물관 내에서 다음 행위를
+                제한합니다. 전구역은 금연·금주 구역 그리고 취사는 절대
+                불가입니다.
+              </p>
+            </li>
+            <li>
+              <h3>
+                <i class="fa-solid fa-q" style="color: #979696"></i>분실문
+                신고는 어디에서 하나요?
+              </h3>
+              <p>
+                <i class="fa-solid fa-a" style="color: #979696"></i>분실물
+                신고는 방문자센터 안내데스크에 신고해 주시면 됩니다.물품 수령 시
+                물품의 상태와 본인 획인후 방문 및 택배 착불 수령도 가능합니다.
+              </p>
+            </li>
+            <li>
+              <h3>
+                <i class="fa-solid fa-q" style="color: #979696"></i>이용요금은
+                어떻게 되나요? 단체할인은 어떻게 되나요?
+              </h3>
+              <p>
+                <i class="fa-solid fa-a" style="color: #979696"></i>성인:
+                5,000원, 청소년: 4,000원, 어린이: 3,000원 / 단체요금 성인:
+                4,000원, 청소년: 3,000원, 어린이: 2,000원
+              </p>
+            </li>
+            <li>
+              <h3>
+                <i class="fa-solid fa-q" style="color: #979696"></i>관람시간은
+                얼마나 걸리나요?
+              </h3>
+              <p>
+                <i class="fa-solid fa-a" style="color: #979696"></i
+                >관람소요시간은 코스별로 조금씩 다릅니다만 최단코스는 1시간
+                소요되고, 최장코스는 2시간정도 소요됩니다.
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>11.15</h3>
+              <p>감귤박물관 전시관람회 개최 안내</p>
+            </li>
+            <li>
+              <h3>11.01</h3>
+              <p>서귀포시 감귤문화축제 행사 안내문</p>
+            </li>
+            <li>
+              <h3>10.01</h3>
+              <p>감귤박물관 감귤카페 할인행사 안내</p>
+            </li>
+            <li>
+              <h3>09.01</h3>
+              <p>감귤박물관 전시관람회 개최 안내</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>11.10</h3>
+              <p>서귀포 공영관광지 방문객 코로나 이전 회복세</p>
+            </li>
+            <li>
+              <h3>11.01</h3>
+              <p>
+                아이 웃음소리로 가득한 제주 만든다…다자녀 가정 복지 혜택 '풍성'
+              </p>
+            </li>
+            <li>
+              <h3>10.25</h3>
+              <p>서귀포시, 2023년 재난대응 안전한국훈련 실시</p>
+            </li>
+            <li>
+              <h3>09.15</h3>
+              <p>제주 2031년 감귤재배면적 감소에도 생산량은 그대로</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="box5">
+      <div class="box5-1">
+        <div class="titleBox">
+          <ul>
+            <li class="on"><span>감귤따기체험</span></li>
+            <li><span>감귤피자체험</span></li>
+            <li><span>쿠키머핀체험</span></li>
+            <li><span>족욕힐링체험</span></li>
+          </ul>
+        </div>
+        <div class="listBox">
+          <div class="list">
+            <div class="list_inner">
+              <div>
+                <h2>
+                  감귤따기체험 <br />
+                  예약하기
+                </h2>
+                <p>
+                  <strong>1인당 5,000원</strong> <br />
+                  체험기간 23.00.00 ~ 00.00
+                </p>
+              </div>
+              <div>
+                <h2>
+                  감귤피자체험 <br />
+                  예약하기
+                </h2>
+                <p>
+                  <strong>1인당 7,000원</strong> <br />
+                  체험기간 23.00.00 ~ 00.00
+                </p>
+              </div>
+              <div>
+                <h2>
+                  쿠키머핀체험 <br />
+                  예약하기
+                </h2>
+                <p>
+                  <strong>1인당 6,000원</strong> <br />
+                  체험기간 23.00.00 ~ 00.00
+                </p>
+              </div>
+              <div>
+                <h2>
+                  족욕힐링체험 <br />
+                  예약하기
+                </h2>
+                <p>
+                  <strong>1인당 8,000원</strong> <br />
+                  체험기간 23.00.00 ~ 00.00
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+                <div class="cal">
+                  <h2>2023년 10월</h2>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+             
+              <div class="imgBox"></div>
+            </div>
+            <div class="book">
+              <div class="bookIn">
+                <div class="user">
+                  <i class="fa-solid fa-user" style="color: #fe7e03"></i>
+                  <h3>인원</h3>
+                  <div class="bar">
+                    <p class="minus">
+                      <i class="fa-solid fa-minus" style="color: #ffff"></i>
+                    </p>
+                    <p class="board">
+                       00
+                    </p>
+                    <p class="plus"><i class="fa-solid fa-plus" style="color: #fff"></i></p>
+                  </div>
+                </div>
+                <div class="time">
+                  <div class="timeIn">
+                    <i class="fa-solid fa-clock" style="color: #fe7203"></i>
+                    <h3>시간선택 <span>일자 : 2023년 10월 <em>15</em>일</span></h3>
+                  </div>
+                  <div class="timebar">
+                    <ul>
+                      <li>11:00</li>
+                      <li>12:00</li>
+                      <li>13:00</li>
+                      <li>14:00</li>
+                      <li>15:00</li>
+                      <li>16:00</li>
+                      <li>17:00</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cash">
+                  <i class="fa-solid fa-coins" style="color: #fe7203"></i>
+                  <h3>총금액</h3>
+                  <div class="cashbar"><b>0</b>,000원</div>
+                </div>
+                <div>
+                  <p class="btn">
+                    <a href="#">예약하기</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box6">
+      <h1><span>오시는 길</span></h1>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.8076347727665!2d126.60508547632475!3d33.27152805854913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350c54cb0626e143%3A0x5d4025946e2f852c!2z6rCQ6rek67CV66y86rSA!5e0!3m2!1sko!2skr!4v1699926631246!5m2!1sko!2skr"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <div class="box7">
+      <div class="box7-1">
+        <ul>
+          <li>
+            <div class="ico">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="91"
+                height="87"
+                viewBox="0 0 91 87"
+                fill="none"
+              >
+                <ellipse
+                  cx="45.5"
+                  cy="43.5"
+                  rx="45.5"
+                  ry="43.5"
+                  fill="#FF942E"
+                />
+                <path
+                  d="M49.1917 25.3659C51.7645 25.3659 53.8519 23.2683 53.8519 20.683C53.8519 18.0976 51.7645 16 49.1917 16C46.6189 16 44.5315 18.0976 44.5315 20.683C44.5315 23.2683 46.6189 25.3659 49.1917 25.3659ZM58.3665 39.9124L56.1043 38.7612L55.1626 35.8928C53.7354 31.5416 49.7548 28.4977 45.2403 28.4879C41.7451 28.4781 39.8131 29.4733 36.182 30.9465C34.0849 31.7952 32.3665 33.405 31.3568 35.4538L30.7063 36.7806C29.949 38.3221 30.5607 40.1953 32.0849 40.966C33.5995 41.7368 35.4442 41.1124 36.2112 39.5709L36.8616 38.2441C37.2014 37.5611 37.7646 37.0246 38.4636 36.7416L41.0655 35.688L39.5898 41.61C39.0849 43.6392 39.6286 45.7954 41.0364 47.3466L46.8519 53.7271C47.5509 54.4979 48.0461 55.4247 48.2985 56.4296L50.0752 63.5809C50.4927 65.2492 52.182 66.2736 53.8422 65.854C55.5024 65.4345 56.5218 63.737 56.1043 62.0686L53.949 53.3857C53.6966 52.3808 53.2014 51.4442 52.5024 50.6832L48.0849 45.8344L49.7548 39.1319L50.2888 40.7417C50.8034 42.3124 51.9102 43.61 53.3665 44.3514L55.6286 45.5027C57.1432 46.2734 58.9878 45.649 59.7548 44.1075C60.5024 42.5758 59.8907 40.6831 58.3665 39.9124ZM36.1432 53.6393C35.8325 54.4296 35.3665 55.1418 34.7646 55.7369L29.9102 60.6247C28.6966 61.8443 28.6966 63.8248 29.9102 65.0443C31.1238 66.2638 33.0849 66.2638 34.2985 65.0443L40.0655 59.2491C40.6578 58.654 41.1238 57.9418 41.4442 57.1515L42.7548 53.854C37.3859 47.971 38.9976 49.7759 38.1529 48.6149L36.1432 53.6393Z"
+                  fill="white"
+                />
+              </svg>
+              <p>도보</p>
+            </div>
+            <div class="txt">
+              <p>지도 참조</p>
+            </div>
+          </li>
+          <li>
+            <div class="ico">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="91"
+                height="87"
+                viewBox="0 0 91 87"
+                fill="none"
+              >
+                <ellipse
+                  cx="45.5"
+                  cy="43.5"
+                  rx="45.5"
+                  ry="43.5"
+                  fill="#FF942E"
+                />
+                <path
+                  d="M66.5396 37.495L65.3215 34.9385L63.1616 30.405C61.3073 26.5138 56.8845 24 51.8917 24H38.1281C33.1364 24 28.7125 26.5138 26.8582 30.405L24.6983 34.9385L23.4802 37.495C20.8662 38.3293 19 40.4363 19 42.9237V47.2907C19 48.7573 19.6676 50.0811 20.734 51.1055V56.0248C20.734 57.6324 22.287 58.9361 24.202 58.9361H27.67C29.5849 58.9361 31.138 57.6324 31.138 56.0248V53.1134H58.8819V56.0248C58.8819 57.6324 60.4349 58.9361 62.3498 58.9361H65.8178C67.7328 58.9361 69.2858 57.6324 69.2858 56.0248V51.1055C70.3522 50.082 71.0198 48.7582 71.0198 47.2907V42.9237C71.0198 40.4363 69.1536 38.3293 66.5396 37.495ZM33.2979 32.5675C34.0879 30.9099 36.0007 29.8227 38.1281 29.8227H51.8917C54.0191 29.8227 55.9319 30.9099 56.722 32.5675L58.8819 37.101H31.138L33.2979 32.5675ZM27.67 47.2725C25.5892 47.2725 24.202 46.1116 24.202 44.3703C24.202 42.629 25.5892 41.4681 27.67 41.4681C29.7508 41.4681 32.872 44.0801 32.872 45.8214C32.872 47.5628 29.7508 47.2725 27.67 47.2725ZM62.3498 47.2725C60.2691 47.2725 57.1479 47.5628 57.1479 45.8214C57.1479 44.0801 60.2691 41.4681 62.3498 41.4681C64.4306 41.4681 65.8178 42.629 65.8178 44.3703C65.8178 46.1116 64.4306 47.2725 62.3498 47.2725Z"
+                  fill="white"
+                />
+              </svg>
+              <p>차량</p>
+            </div>
+            <div class="txt">
+              <p>
+                제주공항 기준 <strong>약 1시간 10분</strong> 소요 <br />
+                연삼로 6km → 번영로 11km → 남조로 17km
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="ico">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="91"
+                height="87"
+                viewBox="0 0 91 87"
+                fill="none"
+              >
+                <ellipse
+                  cx="45.5"
+                  cy="43.5"
+                  rx="45.5"
+                  ry="43.5"
+                  fill="#FF942E"
+                />
+                <path
+                  d="M70.8868 29.1929H70.0198V23.8705C70.0198 18.903 59.2691 15 45.7439 15C32.2188 15 21.468 18.903 21.468 23.8705V29.1929H20.601C19.165 29.1929 18 30.3837 18 31.854V40.7246C18 42.1938 19.165 43.3857 20.601 43.3857H21.468V61.1268C21.468 63.0861 23.021 64.6751 24.936 64.6751V68.2233C24.936 70.1826 26.489 71.7715 28.404 71.7715H31.872C33.7869 71.7715 35.3399 70.1826 35.3399 68.2233V64.6751H56.1479V68.2233C56.1479 70.1826 57.7009 71.7715 59.6159 71.7715H63.0838C64.9988 71.7715 66.5518 70.1826 66.5518 68.2233V64.6751H67.2454C68.9794 64.6751 70.0198 63.2558 70.0198 61.8365V43.3857H70.8868C72.3228 43.3857 73.4878 42.1938 73.4878 40.7246V31.854C73.4878 30.3837 72.3228 29.1929 70.8868 29.1929ZM30.138 59.3527C28.223 59.3527 26.67 57.7638 26.67 55.8045C26.67 53.8452 28.223 52.2563 30.138 52.2563C32.0529 52.2563 33.6059 53.8452 33.6059 55.8045C33.6059 57.7638 32.0529 59.3527 30.138 59.3527ZM31.872 46.934C29.957 46.934 28.404 45.345 28.404 43.3857V29.1929C28.404 27.2336 29.957 25.6447 31.872 25.6447H59.6159C61.5308 25.6447 63.0838 27.2336 63.0838 29.1929V43.3857C63.0838 45.345 61.5308 46.934 59.6159 46.934H31.872ZM61.3498 59.3527C59.4349 59.3527 57.8819 57.7638 57.8819 55.8045C57.8819 53.8452 59.4349 52.2563 61.3498 52.2563C63.2648 52.2563 64.8178 53.8452 64.8178 55.8045C64.8178 57.7638 63.2648 59.3527 61.3498 59.3527Z"
+                  fill="white"
+                />
+              </svg>
+              <p>버스</p>
+            </div>
+            <div class="txt">
+              <p>
+                <strong>181번</strong> <br />
+                제주 공항 → 하례2리입구(56분) → 615번 환승 →
+                동상효회전교차로(9분) → 도보 이동(11분)
+              </p>
+              <p>
+                <strong>131번</strong> <br />
+                제주 공항 → 의귀환승정류장(56분) → 295번 환승 → 신효동(22분) →
+                도보 이동(20분)
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="btn">
+          <p><a href="#">주변관광지를 알고싶나요?</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="box8">
+      <h2>제주감귤박물관</h2>
+      <div class="menu">
+        <ul>
+          <li><a href="#">관람안내</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">오시는길</a></li>
+        </ul>
+      </div>
+      <div class="logoBot">
+        <h3>
+          <a href="#"><img src="img/logo.png" alt="" /></a>
+        </h3>
+      </div>
+    </div>
+  </body>
+</html>
