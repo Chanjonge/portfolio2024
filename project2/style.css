@@ -24,6 +24,7 @@ img {
   vertical-align: bottom;
 }
 
+
 .box5 , .box6 {height: 100vh;}
 /* font-family: 'Jacques Francois', serif; */
 
@@ -152,6 +153,7 @@ header nav li span.on {
 /* 박스 1 설정 */
 
 .box1 {
+
   height: 700px;
   background-color: #000;
   position: relative;
@@ -338,6 +340,7 @@ opacity: 1;}
 }
 
 .box2 {
+  overflow: hidden;
   display: flex;
   width: 70%;
   margin: 100px auto;
@@ -449,6 +452,7 @@ width: 50%;}
 /* 박스3  설정 */
 
 .box3 {
+  overflow: hidden;
   height: 500px;
   overflow: hidden;
   position: relative;
@@ -545,15 +549,17 @@ display: none;}
 /* 박스4 설정 */
 
 
-.box4 {height: 100vh;
-  background-color: #fff;}
+.box4 {height: 80vh;
+  width: 100%;
+  background-color: #fff;
+overflow: hidden;}
   
 
 
 
 .box4_inner {background-color: #fff;
-  width: 1680px;
-  max-width: 1680px;
+  width: 1800px;
+  
   margin: 0 auto;
 
 height: 900px;
@@ -653,6 +659,7 @@ background-color: #fff;
 background-image: url(img/run.JPG);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 .box5 .titleBox {width: 80%;
   height: 100%;
@@ -674,14 +681,16 @@ background-image: url(img/run.JPG);
 
 .box6 {background-color: #000;
       height: 1000px;
-    padding-top: 30px;}
+    padding-top: 30px;
+    width: 100%;
+    overflow: hidden;}
 
-.box6_inner {width: 1800px;
-  max-width: 1800px;
+.box6_inner {width: 90%;
+  
   height: 850px;
   margin: 0 auto;}
 
-.box6 .mainBox {width: 80%;
+.box6 .mainBox {width: 100%;
         margin: 0 auto;
         background-color: #000;
         height: 100%;

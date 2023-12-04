@@ -10,13 +10,15 @@ $(document).ready(function(){
     var ht = $(window).height()
     $('article').height(ht)
     $('.box56').height(1500)
+    $('.box56').height(1500)
+    $('.box3').height(700)
 
     $(window).resize(function(){
         var ht = $(window).height()
 
     $('article').height(ht)
     $('.box56').height(1500)
-
+    $('.box3').height(700)
     });
 
 
@@ -136,7 +138,7 @@ $(document).ready(function(){
         console.log(i)
 
 
-        $('html ,body').stop().animate({'scrollTop':4000},1400)
+        $('html ,body').stop().animate({'scrollTop':3800},1400)
 
 
     });
@@ -147,7 +149,7 @@ $(document).ready(function(){
         console.log(i)
 
 
-        $('html ,body').stop().animate({'scrollTop':5000},1400)
+        $('html ,body').stop().animate({'scrollTop':4700},1400)
 
 
     });
