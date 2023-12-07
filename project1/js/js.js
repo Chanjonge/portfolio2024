@@ -205,7 +205,7 @@ setInterval(cycleSlides, 4000);
         $(window).scroll(function () {
         
             var sc = $(this).scrollTop();
-            $('.box1 h1').text(sc);
+            
 
 
             if (sc > 2000) {

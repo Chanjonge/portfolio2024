@@ -15,11 +15,7 @@ img {border: none;
 
 /* 박스1 설정 */
 
-.box1 h1 {position: fixed;
-            top: 0;
-            left: 0;
-            font-size: 30px;
-            color: #000;}
+
 
 .box1 {position: relative;
         display: flex;
