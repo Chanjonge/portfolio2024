@@ -202,6 +202,39 @@ setInterval(cycleSlides, 4000);
         // });
 
        
+        $(window).scroll(function () {
+        
+            var sc = $(this).scrollTop();
+            $('.box1 h1').text(sc);
+
+
+            if (sc > 2000) {
+                $(".box6 .map").addClass("on");
+              } else {
+                $(".box6 .map").removeClass("on");
+              }
+
+              if (sc > 2800) {
+                $(".box7-1 ul .map1").addClass("on");
+              } else {
+                $(".box7-1 ul .map1").removeClass("on");
+              }
+              if (sc > 2900) {
+                $(".box7-1 ul .map2").addClass("on");
+              } else {
+                $(".box7-1 ul .map2").removeClass("on");
+              }
+            
+              if (sc > 3000) {
+                $(".box7-1 ul .map3").addClass("on");
+              } else {
+                $(".box7-1 ul .map3").removeClass("on");
+              }
+            
+            
+        });
+
+       
 
   });
 

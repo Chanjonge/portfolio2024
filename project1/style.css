@@ -15,6 +15,12 @@ img {border: none;
 
 /* 박스1 설정 */
 
+.box1 h1 {position: fixed;
+            top: 0;
+            left: 0;
+            font-size: 30px;
+            color: #000;}
+
 .box1 {position: relative;
         display: flex;
         width: 80%;
@@ -581,12 +587,18 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25)
 
 
 .box6 .map {width: 100%;
-            height: 90%;}
+            height: 90%;
+            transform: translateX(-800px
+            );
+        opacity: 0;
+    transition: all 2s;}
 .box6 iframe {width: 100%;
-                height: 100%;}
+                height: 100%;
+            }
 
 
-
+.box6 .map.on {transform: translateX(0);
+opacity: 1;}
 
 /* 박스7 설정 */
 
@@ -604,7 +616,31 @@ box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25)
 
 .box7-1 ul>li {padding: 60px 20px 20px 100px;
                 display: flex;
-                border-bottom: 1px solid #ddd;}
+                border-bottom: 1px solid #ddd;
+            transition: all 2s;}
+
+.box7-1 ul .map1 {transform: translateX(400px
+    );
+opacity: 0;}
+    .box7-1 ul .map2 {transform: translateX(-400px
+        );opacity: 0;}
+        .box7-1 ul .map3 {transform: translateX(400px
+            );opacity: 0;}
+
+
+.box7-1 ul .map1.on {transform: translateX(0);
+                opacity: 1;}
+                .box7-1 ul .map2.on {transform: translateX(0);
+                    opacity: 1;}
+                    .box7-1 ul .map3.on {transform: translateX(0);
+                        opacity: 1;}
+
+
+
+
+
+
+
 
 .box7-1 .ico {width: 20%;
             text-align: center;
