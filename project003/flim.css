@@ -107,13 +107,14 @@ header nav li:nth-child(4) a.on {color: #A2CCE4;}
 
 
 
-section {height: 940px;
-            width: 1900px;
+section {height: 100vh;
+            width: 100%;
             overflow: hidden;
            }
+           
 article {overflow: hidden;
   width: 1900px;
-  height: 940px;}
+  height: 960px;}
 
 .flim1 {width: 100%;
     height: 100%;
@@ -529,12 +530,18 @@ width: 100%;}
     padding-top: 0px;}
 
 .flim2 .txtBox2 { font-family: "MaplestoryOTFBold";
+  width: 440px;
+  height: 300px;
   left: 37%;
   top: 37%;
   text-align: center;
   font-size: 35px;
 color: #fff;
 z-index: 120;}
+
+.flim2 .txtBox2 p {width: 100%;
+          height: 100%;}
+
 
 .flim2 .txtBox3 {font-family: 'Orbit', sans-serif;
 right: 20px;
@@ -650,12 +657,17 @@ text-align: right;}
     padding-top: 0px;}
 
 .flim3 .txtBox2 { font-family: "MaplestoryOTFBold";
+  width: 320px;
+  height: 300px;
   right: 40%;
   top: 35%;
   text-align: center;
   font-size: 35px;
 color: #fff;
 z-index: 120;}
+
+.flim3 .txtBox2 p { width: 100%;
+      height: 100%;}
 
 .flim3 .txtBox3 {font-family: 'Orbit', sans-serif;
 left: 20px;
@@ -765,12 +777,18 @@ text-align: right;}
     padding-top: 0px;}
 
 .flim4 .txtBox2 { font-family: "MaplestoryOTFBold";
-  right: 45%;
+  width: 300px;
+  height: 300px;
+  right: 44%;
   top: 35%;
   text-align: center;
   font-size: 40px;
 color: #fff;
 z-index: 120;}
+
+
+.flim4 .txtBox2 p {width: 100%;
+      height: 100%;}
 
 .flim4 .txtBox3 {font-family: 'Orbit', sans-serif;
 left: 20px;
@@ -883,12 +901,21 @@ text-align: right;}
     padding-top: 0px;}
 
 .flim5 .txtBox2 { font-family: "MaplestoryOTFBold";
+  width: 330px;
+    height: 300px;
   right: 40%;
   top: 35%;
   text-align: center;
   font-size: 35px;
 color: #fff;
 z-index: 120;}
+
+.flim5 .txtBox2 p {width: 100%;
+        height: 100%;}
+
+
+
+
 
 .flim5 .txtBox3 {font-family: 'Orbit', sans-serif;
 left: 20px;

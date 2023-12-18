@@ -208,14 +208,18 @@ header {
 
     position: absolute;
     right: 46%;
-    bottom: 10%;
-
+    bottom: 20%;
+  animation: ani 0.5s infinite linear alternate;
 
 }
 
+.profile1 .arrow {position: absolute;
+          right: 51%;
+            bottom: 5%;}
 
 
 
+            
 
 
 /* profile2 설정 */
@@ -315,10 +319,30 @@ header {
         }
         
         .profile2 .scroll {
-        
-            position: absolute;
-            right: 46%;
-            bottom: 10%;
-        
-        
-        }
+
+          position: absolute;
+          right: 46%;
+          bottom: 20%;
+        animation: ani 0.5s infinite linear alternate;
+      
+      }
+      
+      .profile2 .arrow {position: absolute;
+                right: 51%;
+                  bottom: 10%;}
+
+
+
+
+
+        @keyframes ani {
+
+
+          0% {transform :rotate(-10deg) }
+          
+          
+          100% {transform: rotate(0);}
+          
+          
+          }
+          
