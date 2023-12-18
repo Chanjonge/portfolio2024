@@ -1,0 +1,931 @@
+/* 언어설정 */
+@charset 'UTF-8';
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+/* font-family: 'Orbit', sans-serif; */
+/* font-family: 'Loved by the King', cursive; */
+/* font-family: 'Noto Serif JP', serif; */
+/* font-family: 'Love Ya Like A Sister', cursive; */
+/* font-family: 'Libre Barcode 128 Text' */
+
+
+
+/* 헤더 설정 */
+header {
+  
+  
+}
+/* header h1 {position: fixed;
+                left: 0;
+                top: 0;} */
+/* 헤더 nav 설정 */
+header nav {
+  height: 50px;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  z-index: 111;
+  left: 0;
+  top: 0;
+  
+ 
+}
+header nav ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+header nav li {
+  
+  transform: scaleY(1);
+}
+
+header nav li a {
+  display: block;
+  font-family: "Libre Barcode 128";
+  font-size: 60px;
+  transition: all 0.8s;
+  transform-origin: left top;
+}
+
+header nav li span {
+  display: block;
+text-align: center;
+font-family: 'Orbit', sans-serif;
+transform: translateY(-20px
+);
+font-size: 30px;
+transition: all 0.8s;
+
+}
+
+
+
+header nav li:hover a {color: #C38EA4;
+  transform: scaleY(2);}
+  header nav li:hover span { transform: translateY(20px
+    );
+  color: #C38EA4;}
+
+header nav li:nth-child(4) a {color: #C38EA4;
+}
+header nav li:nth-child(4) span {color: #C38EA4;
+}
+header nav li:nth-child(4) a.on {color: #A2CCE4;}
+
+
+
+
+section {height: 940px;
+            width: 1900px;
+            overflow: hidden;
+           }
+article {overflow: hidden;
+  width: 1900px;
+  height: 940px;}
+
+.flim1 {width: 100%;
+    height: 100%;
+      position: relative;
+      background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;}
+
+
+
+    
+
+.flim1 {display: flex ;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 1s;
+       
+        opacity: 1;}
+
+
+.flim1 h2 {position: fixed;
+            bottom: 10%;
+            left: 45%;
+            font-size: 30px;
+            color: #000;
+            font-family: 'Love Ya Like A Sister', cursive;}
+
+
+
+/* 이미지박스1 ------------------------------------------------------------------------- */ 
+
+
+
+
+.flim1 .imgBox1 {
+  background-image: url('img/remove/flim_main (1).png');
+  width: 500px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 120;
+  left: 10%;
+  top: 0;
+  
+  transition: all 1s;
+ 
+}
+
+.flim1 .imgBox1 p {
+  
+  font-style: normal;
+  font-weight: 300;
+  text-align: right;
+  padding-right: 10px;
+  color: #A2CCE4;
+  width: 320px;
+  height: 180px;
+  background-image: url(img/gallery\ \(48\).jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "MaplestoryOTFBold";
+  font-size: 13px;
+  background-color: #fff;
+  opacity: 0;
+  text-indent: 0; 
+  position: absolute; 
+  top: 50%; 
+  left: -20%;
+  transition: all 1s;
+  transform: translate(-50%, -50%); 
+
+}
+
+
+
+
+
+.flim1 .imgBox1 a {display: inline-block;
+  color: #C38EA4;
+    text-align: center;
+      margin-top: 10px;
+      padding : 5px 10px 5px 10px;
+    font-weight: 200;
+    font-size: 11px;
+    background-color: #fff;
+   border: 1px solid #C38EA4;
+  border-radius: 10px;}
+
+
+.flim1 .imgBox1 b {display: block;
+  color: #000;
+  font-weight: 200;
+  text-align: right;
+  font-size: 15px;
+  padding-top: 10px;
+    padding-bottom: 10px;}
+
+
+.flim1 .imgBox1 p.on {
+  transform: scale(1.25) translateY(-300px);
+  opacity: 1;
+  left: 5%;
+  top: 50%;
+}
+
+.flim1 .imgBox1 a:hover  {color: #000;}
+
+
+/* 이미지박스2 ------------------------------------------------------------------------- */ 
+
+.flim1 .imgBox2 {background-image: url(img/remove/flim_main\ \(2\).png);
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  right: 5%;
+  bottom: 0;
+  z-index: 120;
+  text-indent: -9999px;}
+
+
+
+
+  .flim1 .imgBox2 p {
+  
+    font-style: normal;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 20px;
+    color: #fff;
+    width: 300px;
+    height: 180px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-image: url(img/gallery\ \(41\).jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: "MaplestoryOTFBold";
+    font-size: 12px;
+    background-color: #b48799;
+    opacity: 0;
+    text-indent: 0; 
+    position: absolute; 
+    top: 0%; 
+    left: 30%;
+    transition: all 1s;
+    transform: translate(-50%, -50%); 
+    
+  }
+  
+  .flim1 .imgBox2 a {display: inline-block;
+                            color: #A2CCE4;
+                              text-align: center;
+                                margin-top: 15px;
+                                padding : 5px 10px 5px 10px;
+                              font-weight: 200;
+                              font-size: 11px;
+                              background-color: #fff;
+                              
+                            border-radius: 10px;}
+
+
+                            .flim1 .imgBox2 b {display: block;
+                              text-align: right;
+                              color: #000;
+                              font-weight: 200;
+                              font-size: 15px;
+                                padding-bottom: 10px;}
+                            
+                            
+                            .flim1>.imgBox2>p.on {
+                              transform: scale(1.25) translateY(-300px);
+                             opacity: 1; /* 마우스 오버 시 텍스트 보임 */
+                              top: 50%;
+                            }
+                            
+                            .flim1 .imgBox2 a:hover  {color: #000;}
+
+
+
+/* 이미지박스3 ------------------------------------------------------------------------- */ 
+
+
+  .flim1 .imgBox3 {background-image: url(img/remove/flim_main\ \(3\).png);
+    width: 500px;
+  height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 20%;
+    bottom: 0;
+    z-index: 120;
+    text-indent: -9999px;}
+
+
+    .flim1 .imgBox3 p {
+  
+      font-style: normal;
+      font-weight: 300;
+      text-align: right;
+      padding-right: 15px;
+      color: #fff;
+      width: 350px;
+      height: 160px;
+      
+      background-image: url(img/gallery\ \(3\).jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      font-family: "MaplestoryOTFBold";
+      font-size: 12px;
+      background-color: #A2CCE4;
+      opacity: 0;
+      text-indent: 0; 
+      position: absolute; 
+      top: 45%; 
+      right: 0%;
+      transition: all 1s;
+      transform: translate(-50%, -50%); 
+      
+    }
+    
+    .flim1 .imgBox3 a {display: inline-block;
+                              color: #C38EA4;
+                                text-align: center;
+                                  margin-top: 10px;
+                                  padding : 5px 10px 5px 10px;
+                                font-weight: 200;
+                                font-size: 11px;
+                                background-color: #fff;
+                               
+                              border-radius: 10px;}
+  
+  
+                              .flim1 .imgBox3 b {display: block;
+                                text-align: right;
+                                color: #000;
+                                font-weight: 200;
+                                font-size: 15px;
+                                padding-top: 10px;
+                                  padding-bottom: 10px;}
+                              
+                              
+                              .flim1 .imgBox3 p.on {
+                                transform: scale(1.25) translateY(-300px);
+                                opacity: 1; 
+                                right: 30%
+                              }
+                              
+                              .flim1 .imgBox3 a:hover  {color: #000;}
+
+
+
+/* 이미지박스4 ------------------------------------------------------------------------- */ 
+
+
+
+    .flim1 .imgBox4 {background-image: url(img/remove/flim_main\ \(4\).png);
+      width: 500px;
+  height: 500px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      right:  20%;
+    top: 10%;
+    z-index: 120;
+    text-indent: -9999px;}
+
+    .flim1 .imgBox4 p {
+  
+      font-style: normal;
+      font-weight: 300;
+      text-align: right;
+      padding-right: 5px;
+      color: #C38EA4;
+      width: 360px;
+      height: 160px;
+      
+      background-image: url(img/gallery\ \(20\).jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      font-family: "MaplestoryOTFBold";
+      font-size: 13px;
+      background-color: #fff;
+      opacity: 0;
+      text-indent: 0; 
+      position: absolute; 
+      top: 45%; 
+      right: 0%;
+      transition: all 1s;
+      transform: translate(-50%, -50%) scale(0.5); 
+      
+    }
+    
+    .flim1 .imgBox4 a {display: inline-block;
+      color: #A2CCE4;
+        text-align: center;
+          margin-top: 15px;
+          padding : 5px 10px 5px 10px;
+        font-weight: 200;
+        font-size: 11px;
+        background-color: #fff;
+        border: 1px solid #A2CCE4;
+      border-radius: 10px;}
+  
+  
+                              .flim1 .imgBox4 b {display: block;
+                                text-align: right;
+                                color: #000;
+                                font-size: 15px;
+                                font-weight: 200;
+                                  padding-top: 10px;
+                                  padding-bottom: 10px;}
+                              
+                              
+                              .flim1 .imgBox4 p.on {
+                                transform: scale(1.25) translateY(-300px);
+                                opacity: 1; 
+                                right: 5%;/* 마우스 오버 시 텍스트 보임 */
+                              }
+                              
+                              .flim1 .imgBox4 a:hover  {color: #000;}
+
+
+
+
+
+/* flim2 설정 ------------------------------------------------------------------------- */ 
+
+
+
+
+.flim2 {
+  
+ 
+   opacity: 0;
+  position: absolute;
+  left: -100%;
+  top: -100%;
+width: 100%;
+z-index: 100;
+height: 100%;
+background-color: #fff;
+transition: all 2s;
+overflow: hidden;
+}
+
+
+
+
+.flim2_inner { position: relative;
+        width: 1900px;
+          height: 940px;
+          overflow: hidden;
+        }
+
+.flim2_inner .nav {position: absolute;
+  display: flex;
+  font-size: 20px;
+                  right: 45%;
+                  bottom: 50px;}
+.flim2_inner .nav li { margin-left: 30px;
+  font-family: 'Orbit', sans-serif;
+cursor: pointer;
+transition: all 0.5s;}
+
+
+.flim2_inner .nav li:nth-child(1) {color: #C38EA4;}
+.flim2_inner .nav li:nth-child(2):hover {color: #C38EA4;
+        transform: translateY(-10px
+        );}
+        .flim2_inner .nav li:nth-child(3):hover {color: #C38EA4;
+          transform: translateY(-10px
+          );}
+          .flim2_inner .nav li:nth-child(4):hover {color: #C38EA4;
+            transform: translateY(-10px
+            );}
+
+
+
+
+
+
+
+.flim2_inner>img {position: absolute;
+      width: 500px;
+        height: 400px;
+      z-index: 103;
+      left: 35%;
+    top: 30%;}
+.flim2_inner>div {position: absolute;}
+
+.flim2 .vid { width: 700px;
+  height: 400px;
+                right: 20px;
+                  top: 10%;
+                  border-radius: 40px;
+                  overflow: hidden;}
+
+.flim2 video {height: 400px;
+width: 100%;}
+.flim2 source {object-fit: contain;}
+
+
+
+
+.flim2 .txtBox1 {font-family: 'Orbit', sans-serif;
+  left: 100px;
+  top: 10%;
+  font-size: 25px;}
+  .flim2 .txtBox1 span { font-family: "MaplestoryOTFBold";
+    display: inline-block;
+    font-size: 45px;
+    padding-top: 0px;}
+
+.flim2 .txtBox2 { font-family: "MaplestoryOTFBold";
+  left: 37%;
+  top: 37%;
+  text-align: center;
+  font-size: 35px;
+color: #fff;
+z-index: 120;}
+
+.flim2 .txtBox3 {font-family: 'Orbit', sans-serif;
+right: 20px;
+bottom: 10%;
+font-size: 23px;
+text-align: right;}
+
+.flim2 .txtBox3 span { font-family: "MaplestoryOTFBold";
+      display: block;
+      font-size: 35px;
+      padding-top: 5px;}
+
+.flim2 .imgBox1 {
+  left: 5%;
+  bottom: 10%;
+  background-image: url(img/gallery\ \(2\).jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  text-indent: -9999px;
+  border-radius: 30px;
+}
+.flim2 .imgBox2 {
+  left: 10%;
+  bottom: 35%;
+  background-image: url(img/gallery\ \(1\).jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  text-indent: -9999px;
+  border-radius: 30px;
+}
+
+
+
+
+
+
+/* flim3 설정 ------------------------------------------------------------------------- */ 
+
+
+
+.flim3 {
+  opacity: 0;
+ background-color: aliceblue;
+  position: absolute;
+  left: -100%;
+  top: -100%;
+  width: 1900px;
+z-index: 101;
+height: 100%;
+overflow: hidden;
+transition: all 2s;
+
+}
+
+
+.flim3 .nav {position: absolute;
+  display: flex;
+  font-size: 20px;
+                  right: 45%;
+                  bottom: 50px;}
+.flim3 .nav li { margin-left: 30px;
+  font-family: 'Orbit', sans-serif;
+cursor: pointer;
+transition: all 0.5s;}
+
+
+.flim3 .nav li:nth-child(2) {color: #C38EA4;}
+.flim3 .nav li:nth-child(1):hover {color: #C38EA4;
+        transform: translateY(-10px
+        );}
+        .flim3 .nav li:nth-child(3):hover {color: #C38EA4;
+          transform: translateY(-10px
+          );}
+          .flim3 .nav li:nth-child(4):hover {color: #C38EA4;
+            transform: translateY(-10px
+            );}
+
+.flim3 .vid { width: 700px;
+  height: 400px;
+                left: 20px;
+                  top: 10%;
+                  border-radius: 40px;
+                  overflow: hidden;}
+
+.flim3 video {height: 400px;
+width: 100%;}
+.flim3 source {object-fit: contain;}
+
+
+.flim3>img {position: absolute;
+  
+  width: 600px;
+    height: 400px;
+  z-index: 103;
+  left: 33%;
+top: 30%;}
+.flim3>div {position: absolute;}
+
+
+
+.flim3 .txtBox1 {font-family: 'Orbit', sans-serif;
+ right: 100px;
+  top: 10%;
+  font-size: 25px;
+text-align: right;}
+  .flim3 .txtBox1 span { font-family: "MaplestoryOTFBold";
+    display: inline-block;
+    font-size: 45px;
+    padding-top: 0px;}
+
+.flim3 .txtBox2 { font-family: "MaplestoryOTFBold";
+  right: 40%;
+  top: 35%;
+  text-align: center;
+  font-size: 35px;
+color: #fff;
+z-index: 120;}
+
+.flim3 .txtBox3 {font-family: 'Orbit', sans-serif;
+left: 20px;
+bottom: 10%;
+font-size: 23px;
+text-align: left;}
+
+.flim3 .txtBox3 span { font-family: "MaplestoryOTFBold";
+      display: block;
+      font-size: 35px;
+      padding-top: 5px;}
+
+.flim3 .imgBox1 {
+  right: 5%;
+  bottom: 10%;
+  background-image: url(img/gif/flim3_1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  text-indent: -9999px;
+  border-radius: 30px;
+}
+.flim3 .imgBox2 {
+  right: 10%;
+  bottom: 35%;
+  background-image: url(img/gif/flim3_3.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  text-indent: -9999px;
+  border-radius: 30px;
+}
+
+/* flim4 설정 ------------------------------------------------------------------------- */ 
+
+
+
+
+.flim4 {
+  opacity: 0;
+ background-color: aliceblue;
+  position: absolute;
+ 
+  bottom: 100%;
+  width: 1900px;
+z-index: 101;
+height: 100%;
+transition: all 2s;
+overflow: hidden;
+
+}
+.flim4 .nav {position: absolute;
+  display: flex;
+  font-size: 20px;
+                  right: 45%;
+                  bottom: 50px;}
+.flim4 .nav li { margin-left: 30px;
+  font-family: 'Orbit', sans-serif;
+cursor: pointer;
+transition: all 0.5s;}
+
+
+.flim4 .nav li:nth-child(3) {color: #C38EA4;}
+.flim4 .nav li:nth-child(1):hover {color: #C38EA4;
+        transform: translateY(-10px
+        );}
+        .flim4 .nav li:nth-child(2):hover {color: #C38EA4;
+          transform: translateY(-10px
+          );}
+          .flim4 .nav li:nth-child(4):hover {color: #C38EA4;
+            transform: translateY(-10px
+            );}
+
+.flim4 .vid { width: 700px;
+  height: 400px;
+                left: 20px;
+                  top: 10%;
+                  border-radius: 40px;
+                  overflow: hidden;}
+
+.flim4 video {height: 400px;
+width: 100%;}
+.flim4 source {object-fit: contain;}
+
+
+.flim4>img {position: absolute;
+  
+  width: 600px;
+    height: 400px; 
+  z-index: 103;
+  left: 33%;
+top: 30%;}
+.flim4>div {position: absolute;}
+
+
+
+.flim4 .txtBox1 {font-family: 'Orbit', sans-serif;
+ right: 100px;
+  top: 10%;
+  font-size: 25px;
+text-align: right;}
+  .flim4 .txtBox1 span { font-family: "MaplestoryOTFBold";
+    display: inline-block;
+    font-size: 45px;
+    padding-top: 0px;}
+
+.flim4 .txtBox2 { font-family: "MaplestoryOTFBold";
+  right: 45%;
+  top: 35%;
+  text-align: center;
+  font-size: 40px;
+color: #fff;
+z-index: 120;}
+
+.flim4 .txtBox3 {font-family: 'Orbit', sans-serif;
+left: 20px;
+bottom: 10%;
+font-size: 23px;
+text-align: left;}
+
+.flim4 .txtBox3 span { font-family: "MaplestoryOTFBold";
+      display: block;
+      font-size: 35px;
+      padding-top: 5px;}
+
+.flim4 .imgBox1 {
+  right: 5%;
+  bottom: 10%;
+  
+  background-image: url(img/gif/flim5.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  text-indent: -9999px;
+  border-radius: 30px;
+}
+.flim4 .imgBox2 {
+  right: 10%;
+  bottom: 40%;
+  z-index: 121;
+  background-image: url(img/gallery\ \(7\).PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  text-indent: -9999px;
+  border-radius: 30px;
+}
+
+
+/* flim5 설정 ------------------------------------------------------------------------- */ 
+
+
+
+
+.flim5 {
+  opacity: 0;
+ background-color: aliceblue;
+  position: absolute;
+  right: -100%;
+  top: -100%;
+  width: 1930px;
+z-index: 101;
+height: 100%;
+transition: all 2s;
+overflow: hidden;
+
+}
+.flim5 .nav {position: absolute;
+  display: flex;
+  font-size: 20px;
+                  right: 45%;
+                  bottom: 50px;}
+.flim5 .nav li { margin-left: 30px;
+  font-family: 'Orbit', sans-serif;
+cursor: pointer;
+transition: all 0.5s;}
+
+
+.flim5 .nav li:nth-child(4) {color: #C38EA4;}
+.flim5 .nav li:nth-child(1):hover {color: #C38EA4;
+        transform: translateY(-10px
+        );}
+        .flim5 .nav li:nth-child(2):hover {color: #C38EA4;
+          transform: translateY(-10px
+          );}
+          .flim5 .nav li:nth-child(3):hover {color: #C38EA4;
+            transform: translateY(-10px
+            );}
+
+.flim5 .vid { width: 700px;
+  height: 400px;
+                left: 20px;
+                  top: 10%;
+                  border-radius: 40px;
+                  overflow: hidden;}
+
+.flim5 video {height: 400px;
+width: 100%;}
+.flim5 source {object-fit: contain;}
+
+
+.flim5>img {position: absolute;
+  
+  width: 600px;
+    height: 400px;
+  z-index: 103;
+  left: 33%;
+top: 30%;}
+.flim5>div {position: absolute;}
+
+
+
+.flim5 .txtBox1 {font-family: 'Orbit', sans-serif;
+ right: 100px;
+  top: 10%;
+  font-size: 25px;
+text-align: right;}
+  .flim5 .txtBox1 span { font-family: "MaplestoryOTFBold";
+    display: inline-block;
+    font-size: 45px;
+    padding-top: 0px;}
+
+.flim5 .txtBox2 { font-family: "MaplestoryOTFBold";
+  right: 40%;
+  top: 35%;
+  text-align: center;
+  font-size: 35px;
+color: #fff;
+z-index: 120;}
+
+.flim5 .txtBox3 {font-family: 'Orbit', sans-serif;
+left: 20px;
+bottom: 10%;
+font-size: 23px;
+text-align: left;}
+
+.flim5 .txtBox3 span { font-family: "MaplestoryOTFBold";
+      display: block;
+      font-size: 35px;
+      padding-top: 5px;}
+
+.flim5 .imgBox1 {
+  right: 5%;
+  bottom: 10%;
+  
+  background-image: url(img/gif/flim4_1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  text-indent: -9999px;
+  border-radius: 30px;
+}
+.flim5 .imgBox2 {
+  right: 10%;
+  bottom: 40%;
+  z-index: 121;
+  background-image: url(img/gif/flim4_2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  text-indent: -9999px;
+  border-radius: 30px;
+}
+
+
+
+

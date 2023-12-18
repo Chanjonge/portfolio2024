@@ -1,0 +1,449 @@
+/* 언어설정 */
+@charset 'UTF-8';
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+/* font-family: 'Orbit', sans-serif; */
+/* font-family: 'Loved by the King', cursive; */
+/*  font-family: 'Noto Serif JP', serif; */
+/* font-family: 'Love Ya Like A Sister', cursive; */
+/* font-family: 'Libre Barcode 128 Text' */
+
+
+
+/* 헤더 설정 */
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 500;
+}
+/* header h1 {position: fixed;
+                left: 0;
+                top: 0;} */
+/* 헤더 nav 설정 */
+header nav {
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+ 
+}
+header nav ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+header nav li {
+  
+  transform: scaleY(1);
+}
+
+header nav li a {
+  display: block;
+  font-family: "Libre Barcode 128";
+  font-size: 60px;
+  transition: all 0.8s;
+  transform-origin: left top;
+}
+
+header nav li span {
+  display: block;
+text-align: center;
+font-family: 'Orbit', sans-serif;
+transform: translateY(-20px
+);
+font-size: 30px;
+transition: all 0.8s;
+
+}
+
+
+
+
+
+
+header nav li:hover a {color: #C38EA4;
+  transform: scaleY(2);}
+  header nav li:hover span { transform: translateY(20px
+    );
+  color: #C38EA4;}
+
+  header nav li:nth-child(1) a {color: #C38EA4;}
+header nav li:nth-child(1) span {color: #C38EA4;
+}
+header nav li:nth-child(1) a.on {color: #A2CCE4;}
+
+
+section {
+  overflow: hidden;
+  width: 1900px;
+}
+
+
+.main1 {position: relative;
+  opacity: 1;
+  transition: all 1s;}
+.main2 {position: absolute;
+      top: 0;
+      left: 0;
+    opacity: 0;
+    perspective: 700px;
+    transition: all 1s;}
+.main1.on {opacity: 0;}
+.main2.on {opacity: 1;}
+
+/* 박스1 설정 */
+
+.box1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.box1 h2 {
+  writing-mode: vertical-lr;
+  font-size: 140px;
+  position: absolute;
+  right: 80px;
+  top: 10%;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: normal;
+  color: #C38EA4;
+}
+
+.box1 h3 {
+  writing-mode: vertical-lr;
+  font-family: "Libre Barcode 128 Text";
+  position: absolute;
+  right: 0;
+  top: 10%;
+  font-size: 60px;
+  font-weight: normal;
+  color: #C38EA4;
+}
+
+
+.box1 .scroll {position: absolute;
+    left: 5%;
+   bottom: 20%;
+    width: 300px;
+    height: 250px;
+ }
+
+
+.box1 .scroll img { animation: ani linear infinite 1.2s alternate;
+width: 100%;
+height: 100%;}
+
+
+/*  박스1 메인 설정 */
+.box1 .main {width: 1900px;
+    height: 100vh;
+    position: relative;
+  perspective: 700px;}
+.box1 .main p {position: absolute;}
+
+.box1 .main .imgBox1 {
+    background-image: url(img/remove/main_bg.png);
+    left: 35%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 750px;
+height: 750px;
+text-indent: -9999px;
+z-index: 5;
+
+}
+
+
+
+.box1 .main .imgBox2 {
+    background-image: url(img/remove/main1.png);
+    width: 743px;
+height: 700px;
+background-repeat: no-repeat;
+background-size: contain;
+bottom: 0;
+left: 35%;
+text-indent: -9999px;
+z-index: 6;
+transition: all 1.5s;
+}
+.box1 .main .imgBox2.on {transform: rotateY(180deg);
+                  opacity: 0;}
+
+.box1 .main .imgBox3 {
+    background-image: url(img/remove/main1_1.png);
+    
+background-repeat: no-repeat;
+background-size: contain;
+width: 447px;
+height: 500px;
+left: 18%;
+bottom: 0;
+text-indent: -9999px;
+z-index: 7;
+opacity: 1;
+transition: all 2.5s ease-in-out;
+}
+
+.box1 .main .imgBox3.on {opacity: 0;}
+
+
+.box1 .main .imgBox4 {
+    background-image: url(img/remove/main1_4.png);
+    background-repeat: no-repeat;
+background-size: contain;
+width: 447px;
+height: 500px;
+right: 20%;
+bottom: 0;
+transform: scaleX(-1);
+text-indent: -9999px;
+z-index: 8;
+opacity: 1;
+transition: all 1.5s ease-in-out;
+}
+
+.box1 .main .imgBox4.on {opacity: 0;}
+
+.box1 .main .imgBox5 {
+    background-image: url(img/remove/main1_3.png);
+    background-repeat: no-repeat;
+background-size: contain;
+width: 250px;
+height: 350px;
+right: 33%;
+text-indent: -9999px; 
+transition: all 1.5s ease-in-out;
+}
+
+.box1 .main .imgBox5.on {
+  transform-origin: bottom left;
+  transform: rotate(60deg);}
+
+.box1 .main .imgBox6 {
+    background-image: url(img/remove/sign\(remove\).png);
+    width: 550px;
+    height: 550px;
+    left: 10%;
+    top: 50px;
+    
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+background-size: contain;
+}
+
+
+
+
+
+
+
+/*  박스2 설정 */
+
+.box2 {
+  width: 100%;
+    height: 100vh;
+  position: relative;
+  
+}
+.box2  {
+}
+.box2  {
+}
+
+.box2 h2 {
+    writing-mode: vertical-lr;
+    font-size: 140px;
+    position: absolute;
+    right: 80px;
+    top: 10%;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: normal;
+    color: #A2CCE4;
+  }
+  
+  .box2 h3 {
+    writing-mode: vertical-lr;
+    font-family: "Libre Barcode 128 Text";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    font-size: 60px;
+    font-weight: normal;
+    color: #A2CCE4;
+  }
+
+
+  .box2 .scroll {position: absolute;
+    left: 5%;
+   bottom: 15%;
+    width: 250px;
+    height: 250px;
+ }
+
+
+.box2 .scroll img { animation: ani linear infinite 1.2s alternate;
+width: 100%;
+height: 100%;}
+
+/* 박스2 메인 설정 */
+
+.box2 .main {width: 1500px;
+}
+.box2 .main p {position: absolute;}
+
+.box2 .main .imgBox1 {
+    background-image: url(img/remove/main_bg2.png);
+    left: 35%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 750px;
+height: 750px;
+text-indent: -9999px;
+z-index: 5;
+}
+.box2 .main .imgBox2 {
+    background-image: url(img/remove/main2.png);
+    width: 743px;
+height: 700px;
+background-repeat: no-repeat;
+background-size: contain;
+bottom: 0;
+left: 35%;
+text-indent: -9999px;
+z-index: 6;
+transition: all 1.5s;
+transform-origin: center;
+opacity: 1;
+}
+
+.box2 .main .imgBox2.on {transform: rotateY(-180deg);
+  opacity: 0;
+  }
+
+.box2 .main .imgBox3 {
+    background-image: url(img/remove/main2_1.png);
+    
+background-repeat: no-repeat;
+background-size: contain;
+width: 547px;
+height: 500px;
+left: 20%;
+bottom: 0;
+text-indent: -9999px;
+z-index: 7;
+}
+.box2 .main .imgBox4 {
+    background-image: url(img/remove/main2_2.png);
+    background-repeat: no-repeat;
+background-size: contain;
+width: 647px;
+height: 600px;
+right: 10%;
+bottom: 0;
+
+text-indent: -9999px;
+z-index: 8;
+}
+
+.box2 .main .img5 {
+  width: 250px;
+  height: 350px;
+  right: 33%;
+  text-indent: -9999px;
+  position: absolute;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 1s;
+}
+
+
+
+.box2 .main .imgBox5 {
+    background-image: url(img/remove/main2_3.png);
+    background-repeat: no-repeat;
+background-size: contain;
+width: 100%;
+height: 100%;
+
+}
+
+.box2 .main .img5.on {transform: rotate(0);
+      opacity: 1;}
+
+.box2 .main .imgBox6 {
+    background-image: url(img/remove/sign\(remove\).png);
+    width: 550px;
+    height: 550px;
+    left: 10%;
+    top: 50px;
+    
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+background-size: contain;
+}
+
+
+
+/* 박스3 설정 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes ani {
+
+
+0% {transform :scale(0.9) }
+
+
+100% {transform: scale(1.1);}
+
+
+}
+

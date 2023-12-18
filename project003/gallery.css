@@ -1,0 +1,206 @@
+/* 언어설정 */
+@charset 'UTF-8';
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+/* font-family: 'Orbit', sans-serif; */
+/* font-family: 'Loved by the King', cursive; */
+/* font-family: 'Noto Serif JP', serif; */
+/* font-family: 'Love Ya Like A Sister', cursive; */
+/* font-family: 'Libre Barcode 128 Text' */
+
+
+
+/* 헤더 설정 */
+header {
+  
+  
+}
+/* header h1 {position: fixed;
+                left: 0;
+                top: 0;} */
+/* 헤더 nav 설정 */
+header nav {
+  height: 50px;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  z-index: 111;
+  left: 0;
+  top: 0;
+  
+ 
+}
+header nav ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+header nav li {
+  
+  transform: scaleY(1);
+}
+
+header nav li a {
+  display: block;
+  font-family: "Libre Barcode 128";
+  font-size: 60px;
+  transition: all 0.8s;
+  transform-origin: left top;
+  color: #fff;
+}
+
+header nav li span {
+  display: block;
+text-align: center;
+color: #fff;
+font-family: 'Orbit', sans-serif;
+transform: translateY(-20px
+);
+font-size: 30px;
+transition: all 0.8s;
+
+}
+
+
+
+header nav li:hover a {color: #C38EA4;
+  transform: scaleY(1.5);}
+  header nav li:hover span { transform: translateY(10px
+    );
+  color: #C38EA4;}
+
+header nav li:nth-child(3) a {color: #C38EA4;
+}
+header nav li:nth-child(3) span {color: #C38EA4;
+}
+
+
+
+
+section {
+    width: 100%;
+    height: 100vh;
+  overflow: hidden;
+  position: relative;
+  
+  
+}
+
+section .vid {position: absolute;
+                z-index: -1;
+              width: 100%;
+              height: 100%;}
+
+              section .vid video {width: 100%;
+                        height: 100%;
+                      opacity: 0.8;}
+
+
+
+
+section ul {
+    
+    position: absolute;
+    }
+
+    section ul li { width: 200px;
+      height: 250px;
+      opacity: 0;
+      transition: all 0.5s;
+     
+  }
+
+
+section .imgBox1 {top: 10%;
+                    left: 5%;
+                   }
+
+section .imgBox2 {top: 0;
+                    left: 15%;
+                   }
+
+section .imgBox3 {top: 10%;
+    left: 25%;
+    }
+    
+    section .imgBox4 { top: 0; left: 35%;}
+    section .imgBox5 { top: 10%; left: 45%;}
+    section .imgBox6 { top: 0; left: 55%;}
+    section .imgBox7 { top: 0; left: 65%;}
+    section .imgBox8 { top: 0; left: 75%;}
+    section .imgBox9 { top: 0; left: 85%;}
+    
+section ul li img {
+            height: 300px;
+            width: 100%;
+            
+            
+           border: 5px solid #fff;
+           
+            
+           } 
+
+
+           section ul li:hover {opacity: 1;
+                  transform: scale(2);}
+
+
+
+            /* 슬라이더 애니메이션 */
+/*  @keyframes slide1 {
+    0% { top: 0; left: 5%;}
+    50% { top: 20%; left: 5%; }
+    
+    100% { top: 0; left: 5%;}
+  }
+
+
+
+ @keyframes slide2 {
+    0% { top: 0; left: 20%;}
+    50% { top: -20%; left: 20%; }
+    
+    
+    100% { top: 0; left: 20%%;}
+  }
+
+
+   @keyframes slide3 {
+    0% {top: -100%; left: 20%;}
+    50% { top: 0; left: 40%; }
+    100% {top: -100%; left: 0%;}
+  }  
+
+  
+ 

@@ -1,0 +1,324 @@
+/* 언어설정 */
+
+@charset 'UTF-8';
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+/* font-family: 'Orbit', sans-serif; */
+/* font-family: 'Loved by the King', cursive; */
+/* font-family: 'Noto Serif JP', serif; */
+/* font-family: 'Love Ya Like A Sister', cursive; */
+/* font-family: 'Libre Barcode 128 Text' */
+
+
+
+
+
+/* 헤더 설정 */
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 500;
+  }
+  /* header h1 {position: fixed;
+                  left: 0;
+                  top: 0;} */
+  /* 헤더 nav 설정 */
+
+  header nav ul {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  header nav li {
+    
+    transform: scaleY(1);
+  }
+  
+  header nav li a {
+    display: block;
+    font-family: "Libre Barcode 128";
+    font-size: 60px;
+    transition: all 0.8s;
+    transform-origin: left top;
+  }
+  
+  header nav li span {
+    display: block;
+  text-align: center;
+  font-family: 'Orbit', sans-serif;
+  transform: translateY(-20px
+  );
+  font-size: 30px;
+  transition: all 0.8s;
+  
+  }
+  
+  
+ 
+  
+
+
+  header nav li:hover a {color: #C38EA4;
+    transform: scaleY(2);}
+    header nav li:hover span { transform: translateY(20px
+      );
+    color: #C38EA4;}
+  
+    header nav li:nth-child(2) a {color: #C38EA4;}
+  header nav li:nth-child(2) span {color: #C38EA4;
+  }
+  header nav li:nth-child(2) a.on {color: #A2CCE4;}
+
+
+
+
+
+
+
+
+
+
+  section {height: 100vh;}
+  
+  
+
+
+
+/* profile1 설정 */
+.profile1 {
+    width: 1900px;
+    overflow: hidden;
+    }
+
+.profile1_inner {width:1900px;
+                height: 100%;
+                position: relative;}
+
+.profile1 h2 {
+    color: #C38EA4;
+    font-family: 'Noto Serif JP', serif;
+                font-weight: normal;
+                position: absolute;
+                right: 20px;
+            top: 10%;
+        font-size: 100px;}
+.profile1 h3 {
+    color: #C38EA4;
+    font-family: "MaplestoryOTFBold";
+                font-weight: 300;
+                position: absolute;
+                right: 20px;
+            top: 25%;
+        font-size: 60px}
+
+
+.profile1 .txtBox {
+    color: #C38EA4;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+
+.profile1 .txtBox p:nth-child(1) {font-family: 'Love Ya Like A Sister', cursive;
+                        font-size: 80px;}
+.profile1 .txtBox p:nth-child(2) {font-family: 'Noto Serif JP', serif;
+                        font-size: 50px;
+                        margin-top: 0;
+                    padding-top: 0;
+                line-height: 0;}
+
+.profile1 .imgBox1 {
+    background-image: url(img/remove/chanel\ logo\(remove\).png);
+    background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        height: 600px;
+        text-indent: -9999px;
+        position: absolute;
+        left: -100px;
+        transform: rotate(-20deg);
+        top: 10px;
+}
+.profile1 .imgBox2 {
+    background-image: url(img/remove/profile_main1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 700px;
+    height: 900px;
+    text-indent: -9999px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+}
+.profile1 .imgBox3 {
+    background-image: url(img/remove/profile1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    border-radius: 100px;
+    border: 10px solid #C38EA4;
+   bottom: 15%;
+    left: 10%;
+    text-indent: -9999px;
+}
+
+.profile1 .txtTag {
+
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+}
+
+.profile1 .scroll {
+
+    position: absolute;
+    right: 46%;
+    bottom: 10%;
+
+
+}
+
+
+
+
+
+
+/* profile2 설정 */
+
+
+.profile2 {}
+
+.profile2 {
+    width: 1900px;
+    overflow: hidden;
+    }
+
+.profile2_inner {width:1900px;
+                height: 100%;
+                position: relative;}
+
+.profile2 h2 {
+    color: #A2CCE4;
+    font-family: 'Noto Serif JP', serif;
+                font-weight: normal;
+                position: absolute;
+                right: 20px;
+            top: 10%;
+        font-size: 100px;}
+.profile2 h3 {
+    color: #A2CCE4;
+    font-family: "MaplestoryOTFBold";
+                font-weight: 300;
+                position: absolute;
+                right: 20px;
+            top: 25%;
+        font-size: 60px}
+
+
+        
+        
+        
+        .profile2 .imgBox1 {
+            background-image: url(img/remove/profile_tr.png);
+            background-repeat: no-repeat;
+                background-size: contain;
+                width: 500px;
+                height: 500px;
+                text-indent: -9999px;
+                position: absolute;
+                left: 0px;
+                transform: rotate(20deg);
+                top: 50px;
+        }
+
+
+        .profile2 .txtBox {
+            display: flex;
+            position: absolute;
+            left: 20%;
+            top: 15%;
+        }
+
+        .profile2 .txtBox ul {}
+        .profile2 .txtBox li { font-family: "MaplestoryOTFBold";
+                                padding-bottom: 20px;
+                                font-size: 30px;}
+        
+        .profile2 .txtBox ul:nth-child(1) {padding-right: 50px}
+
+
+        .profile2 .imgBox2 {
+            background-image: url(img/remove/profile_main2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 700px;
+            height: 750px;
+            text-indent: -9999px;
+            position: absolute;
+            right: 10%;
+            bottom: 0;
+        }
+        .profile2 .imgBox3 {
+            background-image: url(img/remove/profile2.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 500px;
+            height: 400px;
+            position: absolute;
+            border-radius: 100px;
+            border: 10px solid #A2CCE4;
+           bottom: 15%;
+            left: 10%;
+            text-indent: -9999px;
+        }
+        
+        .profile2 .txtTag {
+        
+            position: absolute;
+            right: 0;
+            bottom: 25%;
+        }
+        
+        .profile2 .scroll {
+        
+            position: absolute;
+            right: 46%;
+            bottom: 10%;
+        
+        
+        }
