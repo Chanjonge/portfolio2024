@@ -52,7 +52,9 @@ $(document).ready(function(){
       setTimeout(typingEffect, 100);
     }
   };
-  typingEffect();
+  if ($('.txtBox2 p').text().trim() === "") {
+    typingEffect();
+  }
 
     });
 
@@ -84,7 +86,9 @@ $(document).ready(function(){
       setTimeout(typingEffect, 100);
     }
   };
-  typingEffect();
+  if ($('.txtBox2 p').text().trim() === "") {
+    typingEffect();
+  }
     })
 
 
@@ -113,7 +117,9 @@ $(document).ready(function(){
             setTimeout(typingEffect, 100);
           }
         };
-        typingEffect();
+        if ($('.txtBox2 p').text().trim() === "") {
+          typingEffect();
+        }
 
 
 
@@ -145,7 +151,9 @@ $(document).ready(function(){
             setTimeout(typingEffect, 100);
           }
         };
-        typingEffect();
+        if ($('.txtBox2 p').text().trim() === "") {
+          typingEffect();
+        }
           });
 
 
@@ -160,6 +168,9 @@ $(document).ready(function(){
           'top': 0 ,
        'opacity' : 1 ,
           'display':'block'})
+      $('header nav li:nth-child(4)').addClass('on')
+
+
 
           var text = "\n멈춰버린 꿈\n지나가버린 꿈\n이 비가 그치면, 괜찮아질까요?\n";
   var index = 0;
@@ -173,10 +184,14 @@ $(document).ready(function(){
   };
   setTimeout(function() {
     $('.txtBox2 p').empty();
-    typingEffect();
+    if ($('.txtBox2 p').text().trim() === "") {
+      typingEffect();
+    }
   }, 1000);
 
       })
+
+
 
       $('.nav li:nth-child(2)').click(function(){
 
@@ -202,10 +217,14 @@ $(document).ready(function(){
   };
   setTimeout(function() {
     $('.txtBox2 p').empty();
-    typingEffect();
+    if ($('.txtBox2 p').text().trim() === "") {
+      typingEffect();
+    }
   }, 1000);
 
       })
+
+
 
       $('.nav li:nth-child(3)').click(function(){
 
@@ -231,7 +250,9 @@ $(document).ready(function(){
         };
         setTimeout(function() {
           $('.txtBox2 p').empty();
-          typingEffect();
+          if ($('.txtBox2 p').text().trim() === "") {
+            typingEffect();
+          }
         }, 1000);
 
       })
@@ -261,7 +282,9 @@ $(document).ready(function(){
 
         setTimeout(function() {
           $('.txtBox2 p').empty();
-          typingEffect();
+          if ($('.txtBox2 p').text().trim() === "") {
+            typingEffect();
+          }
         }, 1000);
 
       })

@@ -10,7 +10,7 @@ $('section').mousewheel(function(event,delta){
         var prev = $(this).prev().offset().top //지금 나의 이전 요소의 위치값을 찾아라.
 
         $('html ,body').stop().animate({'scrollTop': prev},1400,'easeOutBounce')
-        $("header nav li:nth-child(2) a").removeClass("on");
+        $("header nav li:nth-child(2)").removeClass("on");
     }
 
 
@@ -22,7 +22,7 @@ $('section').mousewheel(function(event,delta){
         var next = $(this).next().offset().top
         $('html ,body').stop().animate({'scrollTop':next},1400,'easeOutBounce')
 
-        $("header nav li:nth-child(2) a").addClass("on");
+        $("header nav li:nth-child(2)").addClass("on");
     }
 
 

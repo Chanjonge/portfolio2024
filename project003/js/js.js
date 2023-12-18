@@ -25,7 +25,7 @@ $('section').mousewheel(function(event,delta){
     // 마우스 올렸을 때
     if(delta>0){
 
-        $("header nav li:nth-child(1) a").removeClass("on");
+        $("header nav li:nth-child(1)").removeClass("on");
 
         $(".box1 .main .imgBox2").removeClass("on")
         $(".box1 .main .imgBox3").removeClass("on")
@@ -46,7 +46,7 @@ $('section').mousewheel(function(event,delta){
     // 마우스 내렸을 때
     else if(delta<0){
 
-        $("header nav li:nth-child(1) a").addClass("on");
+        $("header nav li:nth-child(1)").addClass("on");
 
         $(".box1 .main .imgBox2").addClass("on");
         $(".box1 .main .imgBox3").addClass("on");

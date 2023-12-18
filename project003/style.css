@@ -101,8 +101,8 @@ header nav li:hover a {color: #C38EA4;
   header nav li:nth-child(1) a {color: #C38EA4;}
 header nav li:nth-child(1) span {color: #C38EA4;
 }
-header nav li:nth-child(1) a.on {color: #A2CCE4;}
-
+header nav li:nth-child(1).on a {color: #A2CCE4;}
+header nav li:nth-child(1).on span {color: #A2CCE4;}
 
 section {
   overflow: hidden;

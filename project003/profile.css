@@ -100,8 +100,8 @@ header {
     header nav li:nth-child(2) a {color: #C38EA4;}
   header nav li:nth-child(2) span {color: #C38EA4;
   }
-  header nav li:nth-child(2) a.on {color: #A2CCE4;}
-
+  header nav li:nth-child(2).on a {color: #A2CCE4;}
+  header nav li:nth-child(2).on span {color: #A2CCE4;}
 
 
 

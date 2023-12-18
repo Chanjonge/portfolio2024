@@ -113,12 +113,12 @@ section {
     height: 100vh;
   overflow: hidden;
   position: relative;
-  
+  background-color: #000;
   
 }
 
 section .vid {position: absolute;
-                z-index: -1;
+                z-index: 1;
               width: 100%;
               height: 100%;}
 
@@ -132,6 +132,7 @@ section .vid {position: absolute;
 section ul {
     
     position: absolute;
+    z-index: 2;
     }
 
     section ul li { width: 200px;
