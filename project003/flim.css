@@ -173,7 +173,7 @@ article {overflow: hidden;
   color: #A2CCE4;
   width: 320px;
   height: 180px;
-  background-image: url(img/gallery\ \(48\).jpg);
+  background-image: url(img/gallery72.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "MaplestoryOTFBold";
@@ -251,7 +251,7 @@ article {overflow: hidden;
     height: 180px;
     padding-right: 10px;
     padding-top: 10px;
-    background-image: url(img/gallery\ \(41\).jpg);
+    background-image: url(img/gallery65.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     font-family: "MaplestoryOTFBold";
@@ -321,7 +321,7 @@ article {overflow: hidden;
       width: 350px;
       height: 160px;
       
-      background-image: url(img/gallery\ \(3\).jpg);
+      background-image: url(img/gallery8.jpg);
       background-size: contain;
       background-repeat: no-repeat;
       font-family: "MaplestoryOTFBold";
@@ -392,7 +392,7 @@ article {overflow: hidden;
       width: 360px;
       height: 160px;
       
-      background-image: url(img/gallery\ \(20\).jpg);
+      background-image: url(img/gallery42.jpg);
       background-size: contain;
       background-repeat: no-repeat;
       font-family: "MaplestoryOTFBold";
@@ -557,7 +557,7 @@ text-align: right;}
 .flim2 .imgBox1 {
   left: 5%;
   bottom: 10%;
-  background-image: url(img/gallery\ \(2\).jpeg);
+  background-image: url(img/gallery5.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 500px;
@@ -568,7 +568,7 @@ text-align: right;}
 .flim2 .imgBox2 {
   left: 10%;
   bottom: 35%;
-  background-image: url(img/gallery\ \(1\).jpeg);
+  background-image: url(img/gallery1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 500px;
@@ -817,7 +817,7 @@ text-align: left;}
   right: 10%;
   bottom: 40%;
   z-index: 121;
-  background-image: url(img/gallery\ \(7\).PNG);
+  background-image: url(img/gallery17.PNG);
   background-repeat: no-repeat;
   background-size: cover;
   width: 500px;
