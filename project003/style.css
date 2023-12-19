@@ -110,6 +110,38 @@ section {
 }
 
 
+.intro {position: absolute;
+  z-index: 500;
+  left: 5%;
+  top: 5%;
+  width: 150px;
+        height: 150px;
+          border-radius: 100px;
+          overflow: hidden;
+        cursor: pointer;
+      
+    }
+body>img {position: absolute;
+        width: 280px;
+        height: 280px;
+        left: 30px;
+        top: -2%;
+        animation: circle  infinite linear 8s;
+      transform-origin: 50% 50%;}
+
+
+        @keyframes circle {
+
+          
+          100% {transform: rotate(360deg);}
+
+
+        }
+.intro a {display: inline-block;}
+.intro img {width: 90%;
+            height: 90%;}
+
+
 .main1 {position: relative;
   opacity: 1;
   transition: all 1s;}
