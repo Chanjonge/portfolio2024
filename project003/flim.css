@@ -152,8 +152,8 @@ article {overflow: hidden;
 
 .flim1 .imgBox1 {
   background-image: url('img/remove/flim_main (1).png');
-  width: 500px;
-  height: 600px;
+  width: 25%;
+  height: 60%;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 120;
@@ -227,8 +227,8 @@ article {overflow: hidden;
 /* 이미지박스2 ------------------------------------------------------------------------- */ 
 
 .flim1 .imgBox2 {background-image: url(img/remove/flim_main\ \(2\).png);
-  width: 500px;
-  height: 500px;
+  width: 25%;
+  height: 55%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -301,8 +301,8 @@ article {overflow: hidden;
 
 
   .flim1 .imgBox3 {background-image: url(img/remove/flim_main\ \(3\).png);
-    width: 500px;
-  height: 500px;
+    width: 25%;
+  height: 55%;
     background-repeat: no-repeat;
     background-size: contain;
     left: 20%;
@@ -373,8 +373,8 @@ article {overflow: hidden;
 
 
     .flim1 .imgBox4 {background-image: url(img/remove/flim_main\ \(4\).png);
-      width: 500px;
-  height: 500px;
+      width: 25%;
+  height: 55%;
       background-repeat: no-repeat;
       background-size: contain;
       right:  20%;
@@ -465,8 +465,9 @@ overflow: hidden;
 
 
 .flim2_inner { position: relative;
-        width: 1900px;
-          height: 940px;
+        width: 100%;
+          height:100%
+          ;
           overflow: hidden;
         }
 
@@ -499,29 +500,30 @@ transition: all 0.5s;}
 
 
 .flim2_inner>img {position: absolute;
-      width: 500px;
-        height: 400px;
+      width: 25%;
+        height: 40%;
       z-index: 103;
-      left: 35%;
+      left: 36%;
     top: 30%;}
 .flim2_inner>div {position: absolute;}
 
-.flim2 .vid { width: 700px;
-  height: 400px;
-                right: 20px;
+.flim2 .vid { width: 40%;
+  height: 50%;
+                right: 2%;
                   top: 10%;
-                  border-radius: 40px;
+                  
                   overflow: hidden;}
 
-.flim2 video {height: 400px;
-width: 100%;}
+.flim2 video {height: 100%;
+width: 100%;
+}
 .flim2 source {object-fit: contain;}
 
 
 
 
 .flim2 .txtBox1 {font-family: 'Orbit', sans-serif;
-  left: 100px;
+  left: 3%;
   top: 10%;
   font-size: 25px;}
   .flim2 .txtBox1 span { font-family: "MaplestoryOTFBold";
@@ -530,10 +532,10 @@ width: 100%;}
     padding-top: 0px;}
 
 .flim2 .txtBox2 { font-family: "MaplestoryOTFBold";
-  width: 440px;
-  height: 300px;
-  left: 37%;
-  top: 37%;
+  width: 25%;
+  height: 50%;
+  left: 36%;
+  top: 33%;
   text-align: center;
   font-size: 35px;
 color: #fff;
@@ -560,8 +562,8 @@ text-align: right;}
   background-image: url(img/gallery5.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 300px;
+  width: 25%;
+  height: 30%;
   text-indent: -9999px;
   border-radius: 30px;
 }
@@ -571,8 +573,8 @@ text-align: right;}
   background-image: url(img/gallery1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 300px;
+  width: 25%;
+  height: 30%;
   text-indent: -9999px;
   border-radius: 30px;
 }
@@ -592,7 +594,7 @@ text-align: right;}
   position: absolute;
   left: -100%;
   top: -100%;
-  width: 1900px;
+  width: 100%;
 z-index: 101;
 height: 100%;
 overflow: hidden;
@@ -623,31 +625,31 @@ transition: all 0.5s;}
             transform: translateY(-10px
             );}
 
-.flim3 .vid { width: 700px;
-  height: 400px;
+.flim3 .vid { width: 40%;
+  height: 40%;
                 left: 20px;
                   top: 10%;
                   border-radius: 40px;
                   overflow: hidden;}
 
-.flim3 video {height: 400px;
+.flim3 video {height: 100%;
 width: 100%;}
 .flim3 source {object-fit: contain;}
 
 
 .flim3>img {position: absolute;
   
-  width: 600px;
-    height: 400px;
+  width: 30%;
+    height: 40%;
   z-index: 103;
-  left: 33%;
+  left: 35%;
 top: 30%;}
 .flim3>div {position: absolute;}
 
 
 
 .flim3 .txtBox1 {font-family: 'Orbit', sans-serif;
- right: 100px;
+ right: 2%;
   top: 10%;
   font-size: 25px;
 text-align: right;}
@@ -657,9 +659,9 @@ text-align: right;}
     padding-top: 0px;}
 
 .flim3 .txtBox2 { font-family: "MaplestoryOTFBold";
-  width: 320px;
-  height: 300px;
-  right: 40%;
+  width: 20%;
+  height: 30%;
+  right: 37%;
   top: 35%;
   text-align: center;
   font-size: 35px;
@@ -686,8 +688,8 @@ text-align: left;}
   background-image: url(img/gif/flim3_1.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 300px;
+  width: 25%;
+  height: 30%;
   text-indent: -9999px;
   border-radius: 30px;
 }
@@ -697,8 +699,8 @@ text-align: left;}
   background-image: url(img/gif/flim3_3.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 300px;
+  width: 25%;
+  height: 30%;
   text-indent: -9999px;
   border-radius: 30px;
 }
@@ -714,7 +716,7 @@ text-align: left;}
   position: absolute;
  
   bottom: 100%;
-  width: 1900px;
+  width: 100%;
 z-index: 101;
 height: 100%;
 transition: all 2s;
@@ -743,31 +745,31 @@ transition: all 0.5s;}
             transform: translateY(-10px
             );}
 
-.flim4 .vid { width: 700px;
-  height: 400px;
-                left: 20px;
+.flim4 .vid { width: 40%;
+  height: 40%;
+                left: 0;
                   top: 10%;
                   border-radius: 40px;
                   overflow: hidden;}
 
-.flim4 video {height: 400px;
+.flim4 video {height: 100%;
 width: 100%;}
 .flim4 source {object-fit: contain;}
 
 
 .flim4>img {position: absolute;
   
-  width: 600px;
-    height: 400px; 
+  width: 30%;
+    height: 35%; 
   z-index: 103;
-  left: 33%;
+  left: 34%;
 top: 30%;}
 .flim4>div {position: absolute;}
 
 
 
 .flim4 .txtBox1 {font-family: 'Orbit', sans-serif;
- right: 100px;
+ right: 5%;
   top: 10%;
   font-size: 25px;
 text-align: right;}
@@ -777,8 +779,8 @@ text-align: right;}
     padding-top: 0px;}
 
 .flim4 .txtBox2 { font-family: "MaplestoryOTFBold";
-  width: 300px;
-  height: 300px;
+  width: 15%;
+  height: 30%;
   right: 44%;
   top: 35%;
   text-align: center;
@@ -808,20 +810,20 @@ text-align: left;}
   background-image: url(img/gif/flim5.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 300px;
+  width: 25%;
+  height: 30%;
   text-indent: -9999px;
   border-radius: 30px;
 }
 .flim4 .imgBox2 {
   right: 10%;
-  bottom: 40%;
+  bottom: 36%;
   z-index: 121;
   background-image: url(img/gallery17.PNG);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 300px;
+  width: 25%;
+  height: 30%;
   text-indent: -9999px;
   border-radius: 30px;
 }
@@ -838,7 +840,7 @@ text-align: left;}
   position: absolute;
   right: -100%;
   top: -100%;
-  width: 1930px;
+  width: 100%;
 z-index: 101;
 height: 100%;
 transition: all 2s;
@@ -867,31 +869,32 @@ transition: all 0.5s;}
             transform: translateY(-10px
             );}
 
-.flim5 .vid { width: 700px;
-  height: 400px;
+.flim5 .vid { width: 40%;
+  height: 45%;
                 left: 20px;
                   top: 10%;
                   border-radius: 40px;
                   overflow: hidden;}
 
-.flim5 video {height: 400px;
+.flim5 video {height:100%
+  ;
 width: 100%;}
 .flim5 source {object-fit: contain;}
 
 
 .flim5>img {position: absolute;
   
-  width: 600px;
-    height: 400px;
+  width: 30%;
+    height: 36%;
   z-index: 103;
-  left: 33%;
-top: 30%;}
+  left: 35%;
+top: 32%;}
 .flim5>div {position: absolute;}
 
 
 
 .flim5 .txtBox1 {font-family: 'Orbit', sans-serif;
- right: 100px;
+ right: 4%;
   top: 10%;
   font-size: 25px;
 text-align: right;}
@@ -901,8 +904,8 @@ text-align: right;}
     padding-top: 0px;}
 
 .flim5 .txtBox2 { font-family: "MaplestoryOTFBold";
-  width: 330px;
-    height: 300px;
+  width: 18%;
+    height: 30%;
   right: 40%;
   top: 35%;
   text-align: center;
@@ -918,7 +921,7 @@ z-index: 120;}
 
 
 .flim5 .txtBox3 {font-family: 'Orbit', sans-serif;
-left: 20px;
+left: 2%;
 bottom: 10%;
 font-size: 23px;
 text-align: left;}
@@ -935,8 +938,8 @@ text-align: left;}
   background-image: url(img/gif/flim4_1.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 300px;
+  width: 25%;
+  height: 30%;
   text-indent: -9999px;
   border-radius: 30px;
 }
@@ -947,8 +950,8 @@ text-align: left;}
   background-image: url(img/gif/flim4_2.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 300px;
+  width: 25%;
+  height: 30%;
   text-indent: -9999px;
   border-radius: 30px;
 }
