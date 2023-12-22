@@ -71,7 +71,7 @@ header nav li {
 header nav li a {
   display: block;
   font-family: "Libre Barcode 128";
-  font-size: 60px;
+  font-size: 3vw;
   transition: all 0.8s;
   transform-origin: left top;
 }
@@ -106,7 +106,7 @@ header nav li:nth-child(1).on span {color: #A2CCE4;}
 
 section {
   overflow: hidden;
-  width: 1900px;
+  width: 100%;
 }
 
 
@@ -114,17 +114,17 @@ section {
   z-index: 500;
   left: 5%;
   top: 5%;
-  width: 150px;
-        height: 150px;
-          border-radius: 100px;
+  width: 8%;
+        height: 15%;
+          border-radius: 100%;
           overflow: hidden;
         cursor: pointer;
       
     }
 body>img {position: absolute;
-        width: 280px;
-        height: 280px;
-        left: 30px;
+        width: 15%;
+        height: 30%;
+        left: 1%;
         top: -2%;
         animation: circle  infinite linear 8s;
       transform-origin: 50% 50%;}
@@ -144,11 +144,13 @@ body>img {position: absolute;
 
 .main1 {position: relative;
   opacity: 1;
-  transition: all 1s;}
+  transition: all 1s;
+}
 .main2 {position: absolute;
       top: 0;
       left: 0;
     opacity: 0;
+    
     perspective: 700px;
     transition: all 1s;}
 .main1.on {opacity: 0;}
@@ -164,9 +166,9 @@ body>img {position: absolute;
 
 .box1 h2 {
   writing-mode: vertical-lr;
-  font-size: 140px;
+  font-size: 7vw;
   position: absolute;
-  right: 80px;
+  right: 4%;
   top: 10%;
   font-family: 'Noto Serif JP', serif;
   font-weight: normal;
@@ -179,7 +181,7 @@ body>img {position: absolute;
   position: absolute;
   right: 0;
   top: 10%;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: normal;
   color: #C38EA4;
 }
@@ -188,8 +190,8 @@ body>img {position: absolute;
 .box1 .scroll {position: absolute;
     left: 5%;
    bottom: 20%;
-    width: 300px;
-    height: 250px;
+    width: 15%;
+    height: 30%;
  }
 
 
@@ -199,7 +201,7 @@ height: 100%;}
 
 
 /*  박스1 메인 설정 */
-.box1 .main {width: 1900px;
+.box1 .main {width: 100%;
     height: 100vh;
     position: relative;
   perspective: 700px;}
@@ -212,7 +214,7 @@ height: 100%;}
     background-repeat: no-repeat;
     background-size: contain;
     width: 750px;
-height: 750px;
+height: 85%;
 text-indent: -9999px;
 z-index: 5;
 
@@ -222,8 +224,8 @@ z-index: 5;
 
 .box1 .main .imgBox2 {
     background-image: url(img/remove/main1.png);
-    width: 743px;
-height: 700px;
+    width: 40%;
+height: 80%;
 background-repeat: no-repeat;
 background-size: contain;
 bottom: 0;
@@ -241,9 +243,9 @@ transition: all 1.5s;
 background-repeat: no-repeat;
 background-size: contain;
 width: 447px;
-height: 500px;
+height: 60%;
 left: 18%;
-bottom: 0;
+bottom: -2%;
 text-indent: -9999px;
 z-index: 7;
 opacity: 1;
@@ -257,8 +259,8 @@ transition: all 2.5s ease-in-out;
     background-image: url(img/remove/main1_4.png);
     background-repeat: no-repeat;
 background-size: contain;
-width: 447px;
-height: 500px;
+width: 30%;
+height: 50%;
 right: 20%;
 bottom: 0;
 transform: scaleX(-1);
@@ -274,9 +276,10 @@ transition: all 1.5s ease-in-out;
     background-image: url(img/remove/main1_3.png);
     background-repeat: no-repeat;
 background-size: contain;
-width: 250px;
-height: 350px;
-right: 33%;
+width: 20%;
+height: 40%;
+right: 25%;
+top: 0;
 text-indent: -9999px; 
 transition: all 1.5s ease-in-out;
 }
@@ -288,9 +291,9 @@ transition: all 1.5s ease-in-out;
 .box1 .main .imgBox6 {
     background-image: url(img/remove/sign\(remove\).png);
     width: 550px;
-    height: 550px;
+    height: 60%;
     left: 10%;
-    top: 50px;
+    top: 1%;
     
     text-indent: -9999px;
     background-repeat: no-repeat;
@@ -318,9 +321,9 @@ background-size: contain;
 
 .box2 h2 {
     writing-mode: vertical-lr;
-    font-size: 140px;
+    font-size: 7vw;
     position: absolute;
-    right: 80px;
+    right: 5%;
     top: 10%;
     font-family: 'Noto Serif JP', serif;
     font-weight: normal;
@@ -333,7 +336,7 @@ background-size: contain;
     position: absolute;
     right: 0;
     top: 10%;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: normal;
     color: #A2CCE4;
   }
@@ -342,8 +345,8 @@ background-size: contain;
   .box2 .scroll {position: absolute;
     left: 5%;
    bottom: 15%;
-    width: 250px;
-    height: 250px;
+    width: 15%;
+    height: 30%;
  }
 
 
@@ -353,7 +356,7 @@ height: 100%;}
 
 /* 박스2 메인 설정 */
 
-.box2 .main {width: 1500px;
+.box2 .main {width: 100%;
 }
 .box2 .main p {position: absolute;}
 
@@ -364,14 +367,14 @@ height: 100%;}
     background-repeat: no-repeat;
     background-size: contain;
     width: 750px;
-height: 750px;
+height: 85%;
 text-indent: -9999px;
 z-index: 5;
 }
 .box2 .main .imgBox2 {
     background-image: url(img/remove/main2.png);
-    width: 743px;
-height: 700px;
+    width: 40%;
+height: 80%;
 background-repeat: no-repeat;
 background-size: contain;
 bottom: 0;
@@ -392,8 +395,8 @@ opacity: 1;
     
 background-repeat: no-repeat;
 background-size: contain;
-width: 547px;
-height: 500px;
+width: 30%;
+height: 60%;
 left: 20%;
 bottom: 0;
 text-indent: -9999px;
@@ -403,8 +406,8 @@ z-index: 7;
     background-image: url(img/remove/main2_2.png);
     background-repeat: no-repeat;
 background-size: contain;
-width: 647px;
-height: 600px;
+width: 35%;
+height: 70%;
 right: 10%;
 bottom: 0;
 
@@ -414,8 +417,8 @@ z-index: 8;
 
 .box2 .main .img5 {
   width: 250px;
-  height: 350px;
-  right: 33%;
+  height: 40%;
+  right: 32%;
   text-indent: -9999px;
   position: absolute;
   transform-origin: bottom left;
@@ -441,9 +444,9 @@ height: 100%;
 .box2 .main .imgBox6 {
     background-image: url(img/remove/sign\(remove\).png);
     width: 550px;
-    height: 550px;
+    height: 60%;
     left: 10%;
-    top: 50px;
+    top: 1%;
     
     text-indent: -9999px;
     background-repeat: no-repeat;

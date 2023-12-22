@@ -70,7 +70,7 @@ header {
   header nav li a {
     display: block;
     font-family: "Libre Barcode 128";
-    font-size: 60px;
+    font-size: 3vw;
     transition: all 0.8s;
     transform-origin: left top;
   }
@@ -119,11 +119,11 @@ header {
 
 /* profile1 설정 */
 .profile1 {
-    width: 1900px;
+    width: 100%;
     overflow: hidden;
     }
 
-.profile1_inner {width:1900px;
+.profile1_inner {width:100%;
                 height: 100%;
                 position: relative;}
 
@@ -132,15 +132,15 @@ header {
     font-family: 'Noto Serif JP', serif;
                 font-weight: normal;
                 position: absolute;
-                right: 20px;
+                right: 3%;
             top: 10%;
-        font-size: 100px;}
+        font-size: 5vw;}
 .profile1 h3 {
     color: #C38EA4;
     font-family: "MaplestoryOTFBold";
                 font-weight: 300;
                 position: absolute;
-                right: 20px;
+                right: 3%;
             top: 25%;
         font-size: 60px}
 
@@ -153,9 +153,9 @@ header {
 }
 
 .profile1 .txtBox p:nth-child(1) {font-family: 'Love Ya Like A Sister', cursive;
-                        font-size: 80px;}
+                        font-size: 4vw;}
 .profile1 .txtBox p:nth-child(2) {font-family: 'Noto Serif JP', serif;
-                        font-size: 50px;
+                        font-size: 2vw;
                         margin-top: 0;
                     padding-top: 0;
                 line-height: 0;}
@@ -164,20 +164,20 @@ header {
     background-image: url(img/remove/chanel\ logo\(remove\).png);
     background-repeat: no-repeat;
         background-size: contain;
-        width: 600px;
-        height: 600px;
+        width: 40%;
+        height: 60%;
         text-indent: -9999px;
         position: absolute;
-        left: -100px;
+        left: -5%;
         transform: rotate(-20deg);
-        top: 10px;
+        top: 5%;
 }
 .profile1 .imgBox2 {
     background-image: url(img/remove/profile_main1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 700px;
-    height: 900px;
+    width: 35%;
+    height: 90%;
     text-indent: -9999px;
     position: absolute;
     right: 10%;
@@ -187,8 +187,8 @@ header {
     background-image: url(img/remove/profile1.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 500px;
-    height: 400px;
+    width: 30%;
+    height: 40%;
     position: absolute;
     border-radius: 100px;
     border: 10px solid #C38EA4;
@@ -228,11 +228,11 @@ header {
 .profile2 {}
 
 .profile2 {
-    width: 1900px;
+    width: 100%;
     overflow: hidden;
     }
 
-.profile2_inner {width:1900px;
+.profile2_inner {width:100%;
                 height: 100%;
                 position: relative;}
 
@@ -261,13 +261,13 @@ header {
             background-image: url(img/remove/profile_tr.png);
             background-repeat: no-repeat;
                 background-size: contain;
-                width: 500px;
-                height: 500px;
+                width: 40%;
+        height: 50%;
                 text-indent: -9999px;
                 position: absolute;
                 left: 0px;
                 transform: rotate(20deg);
-                top: 50px;
+                top: 10%;
         }
 
 
@@ -290,19 +290,19 @@ header {
             background-image: url(img/remove/profile_main2.png);
             background-repeat: no-repeat;
             background-size: contain;
-            width: 700px;
-            height: 750px;
+            width: 35%;
+            height: 85%;
             text-indent: -9999px;
             position: absolute;
             right: 10%;
-            bottom: 0;
+            bottom: -10%;
         }
         .profile2 .imgBox3 {
             background-image: url(img/remove/profile2.gif);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 500px;
-            height: 400px;
+            width: 30%;
+    height: 40%;
             position: absolute;
             border-radius: 100px;
             border: 10px solid #A2CCE4;
@@ -312,9 +312,10 @@ header {
         }
         
         .profile2 .txtTag {
-        
+          width: 20%;
+          height: 10%;
             position: absolute;
-            right: 0;
+            right: 5%;
             bottom: 25%;
         }
         
