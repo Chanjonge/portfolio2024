@@ -740,17 +740,17 @@ opacity: 0;}
 
 @keyframes ani1 {
 
-    0% {left: 100%;}
+    0% {left: 125%;}
     50% {left: 0;}
-    100% {left: -100%;}
+    100% {left: -125%;}
 
 
   }
   @keyframes ani2 {
 
 0% {left: 0;}
-50% {left: -100%;}
-50.000000001% {left: 100%}
+50% {left: -125%;}
+50.000000001% {left: 125%}
 100% {left: 0;}
 
 
