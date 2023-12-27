@@ -31,7 +31,7 @@ $(function () {
         e.preventDefault()
 
         $(".alert").css({'display':'block'})
-
+        $('body').addClass('fix')
         
     })
 
@@ -40,7 +40,7 @@ $(function () {
         e.preventDefault()
 
         $(".alert").css({'display':'none'})
-
+        $('body').removeClass('fix')
         
     })
 

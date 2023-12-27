@@ -11,7 +11,8 @@ a {text-decoration: none;
 img {border: none;
     vertical-align: bottom;}
 
-
+body.fix {overflow: hidden;
+           }
 
 /* 박스1 설정 */
 
@@ -259,31 +260,43 @@ margin-right: 10px;
    }
 
 
-   .alert {position: absolute;
-    top: 10%;
-    left: 25%;
-    height: 90%;
-width: 50%;
+   .alert {position: fixed;
+    z-index: 500;
+    top: 10px;
+    left: 0%;
+    height: 100%;
+width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+display: none;}
+
+
+
+.alertIn { height: 75%;
+    width: 70%;
+    border-radius: 20px;
     background-color: #fff;
     z-index: 10;
 border: 3px solid #FE7E03;
 border-radius: 20px;
-display: none;}
-.alertIn { height: 100%;
+position: absolute;
+left: 15%;
+top: 10%;
 }
 
-.alertIn h2 {padding-top: 50px;
+.alertIn h2 {padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
             font-size: 30px;
                 text-align: center;
                     color: #Fff;
-                    padding-bottom: 20px;
                     background-image: url(img/reserv.jpg);
                     border-bottom: 2px solid #FE7E03;
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: top top;
+                    border-radius: 15px 15px 0 0;
                 }
-.alertIn p {padding-top: 50px;
+.alertIn p {padding-top: 20px;
             padding-bottom: 50px;
             text-align: center;
             font-size: 25px;
@@ -294,18 +307,37 @@ display: none;}
 .alertIn b {display: inline-block;
         font-style: normal;}
 
-.alertIn .imgBox { 
-                height: 40%;
+.alertIn .imgBox { position: relative;
+                height: 45%;
                 background-image: url(img/reserv.jpg);
                 background-size: cover;
-                text-indent: -9999px;}
-
-.alertIn .btn {}
+                }
+.alertIn .imgBox p {background-color: rgba(255, 255, 255, 0.9);
+                    margin: 0 auto;
+                  position: absolute;
+                  top: 40px;
+                  left: 0%;
+                    width: 100%;
+                    height: 40%;
+                    text-align: center;
+                    font-family: 'Gowun Dodum', sans-serif;}
+.alertIn .imgBox p>i {margin: 0 10px;
+                    color: #7ab551;}
+.alertIn .imgBox p strong {display: inline-block;
+                            font-size: 20px;
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                            text-align: left;
+                        font-style: normal;
+                    font-weight: 400;}
+.alertIn .imgBox p strong i {color: #FE7E03;
+                            margin-right: 10px;}
+.alertIn .btn {margin-top: 30px;}
 .alertIn .btn a {border: none;
                     display: inline-block;
                 color: #FFF;
                     background-color: #FE7E03;
-                    padding: 5px 30px;
+                    padding: 5px 25px;
                     border-radius: 10px;}
 
 .alertIn .btn p:hover {opacity: 0.7;}
