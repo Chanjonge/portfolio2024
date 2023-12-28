@@ -25,6 +25,16 @@ $(document).ready(function(){
        })
 
 
+    $('.box1 .txtBox .btn1').click(function(){
+
+      var ni = $('.box1 .txtBox .numBox .num').text()
+      console.log(ni)
+      $('header .numb').text(ni)
+
+    })
+
+
+
 
 
 $(window).scroll(function () {

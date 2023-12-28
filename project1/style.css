@@ -59,7 +59,9 @@ body.fix {overflow: hidden;
                     border-radius: 5px;
                     cursor: pointer;
                 }
+.box1 .util button:hover {background-color: #BBBABA;}    
                 
+
 .box1 .util button i {padding: 8px;
                         font-size: 20px;}            
 

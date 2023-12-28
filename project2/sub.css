@@ -54,6 +54,8 @@ header h1 {
   cursor: pointer;
 }
 
+
+
 header .util {
   position: fixed;
   top: 30px;
@@ -67,6 +69,34 @@ header .util p {
   cursor: pointer;
   transition: all 0.3s;
 }
+
+header .util p:nth-child(2) {position: relative;}
+
+header .numb {border-radius: 100px;
+  background-color: #e6a019;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -15px;
+      right: 36%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10001;
+      color: #fff;
+      font-family: "Gowun Dodum", sans-serif;
+   }
+
+
+header .sear {position: absolute;
+              bottom: -20px;
+              right: 0;
+              border-radius: 10px;
+              border: 1px solid #e6a019;
+              width: 50px;
+              height: 20px;}
+
+
 header .util i {
   font-size: 25px;
 }
