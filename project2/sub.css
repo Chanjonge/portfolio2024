@@ -68,6 +68,7 @@ header .util p {
   margin-right: 40px;
   cursor: pointer;
   transition: all 0.3s;
+  z-index: 10002;
 }
 
 header .util p:nth-child(2) {position: relative;}
@@ -78,25 +79,32 @@ header .numb {border-radius: 100px;
     width: 28px;
     height: 28px;
     top: -15px;
-      right: 36%;
+      right: 53%;
       display: flex;
       align-items: center;
       justify-content: center;
       z-index: 10001;
       color: #fff;
       font-family: "Gowun Dodum", sans-serif;
+      z-index: 10010;
    }
 
 
-header .sear {position: absolute;
-              bottom: -20px;
-              right: 0;
-              border-radius: 10px;
-              border: 1px solid #e6a019;
-              width: 50px;
+header input {position: absolute;
+              bottom: 0px;
+              right: 30px;
+              border-radius: 5px;
+              border: 2px solid #e6a019;
+              width: 50%;
               height: 20px;
-            display: none;}
+              padding: 5px;
+              opacity: 0;
+              transition: all 0.8s;
+              z-index: -10;
+            }
 
+header input.on {opacity: 1;
+                  bottom: -40px;}
 
 header .util i {
   font-size: 25px;
@@ -106,6 +114,10 @@ header .util p:hover {
   transform: scale(1.2);
   color: #e6a019;
 }
+
+header .util p.on {color: #fff; }
+
+
 
 header nav {
   width: 60%;

@@ -33,7 +33,11 @@ $(document).ready(function(){
 
     })
 
+    $('header .util .fa-magnifying-glass').click(function(){
 
+      $('header input').toggleClass('on')
+
+    })
 
 
 
@@ -42,11 +46,19 @@ $(window).scroll(function () {
     // $(".box3>h2").text(sc);
     // console.log(sc)
 
+  
+
+
+
+
+
      if (sc >= 1200) {
        $(".box3-1 .imgBox").addClass("on");
      } else {
        $(".box3-1 .imgBox").removeClass("on");
      }
+
+
      if (sc >= 1200) {
         $(".box3-1 .txtBox").addClass("on");
       } else {
@@ -106,6 +118,15 @@ $(window).scroll(function () {
       $(".box3-4 .txtBox").removeClass("on");
 
     }
+
+    if (sc >= 5400 ) {
+
+      $('header .util p').addClass('on')
+    }else {
+
+      $('header .util p').removeClass('on')
+    }
+
 
 
   });
