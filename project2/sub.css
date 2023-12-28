@@ -94,7 +94,8 @@ header .sear {position: absolute;
               border-radius: 10px;
               border: 1px solid #e6a019;
               width: 50px;
-              height: 20px;}
+              height: 20px;
+            display: none;}
 
 
 header .util i {
