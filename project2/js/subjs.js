@@ -25,6 +25,13 @@ $(document).ready(function(){
        })
 
 
+      
+      
+
+       
+
+
+
     $('.box1 .txtBox .btn1').click(function(){
 
       var ni = $('.box1 .txtBox .numBox .num').text()
@@ -47,9 +54,6 @@ $(window).scroll(function () {
     // console.log(sc)
 
   
-
-
-
 
 
      if (sc >= 1200) {
@@ -133,13 +137,6 @@ $(window).scroll(function () {
      
 
 
-  
-
-
-
-
-
-
   $('.trailer ul').draggable({
     containment: 'parent',
     snap: false,
@@ -156,16 +153,73 @@ $(window).scroll(function () {
   });
 
 
-  
-
       // li를 클릭할 때마다 p의 이미지가 바뀌어라.
       $(".trailer li").click(function () {
         var i = $(this).index();
         console.log(i);
         $(".main>ul li").fadeOut();
         $(".main>ul li").eq(i).fadeIn();
+
+        
       });
     
+
+      $('.box1 .imgBox .main span').click(function(){
+        let t = $('.box1 .txtBox .p1').text()
+let p = $(this).parents('li').find('em').html()
+let p2 = p + t +'<p class="plus">+</p><span>00</span><p class="minus">-</p>'
+let p3 = '<li>' + p2 + '</li>'
+
+        console.log(p)
+        $(".shop section").find("div").append(p3);
+
+
+      })
+
+
+     
+
+
+
+
+      let i = 0;
+      $('.box1 .txtBox .btn1').click(function (e) {
+          e.preventDefault();
+          $(".shop").css({ display: "block" });
+          i++;
+          console.log(i);
+
+          // $(".util").find("span").text(i);
+
+          
+          console.log(txt);
+        
+        });
+
+
+      //   reset을 클릭했을 떄 shop이 사라져라
+
+      $('.reset').click(function(){
+
+
+          $('.shop').css({'display':'none'})
+
+      })
+
+      var b = 0
+      $('.shop section div .plus').click(function(){
+       
+      b++;
+        $(this).sibling('span').text(b)
+
+        console.log(b)
+          
+
+
+      })
+
+
+
 
 
   

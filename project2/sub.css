@@ -240,6 +240,25 @@ overflow: hidden;
   
 }
 
+.box1 .imgBox .main ul li span {
+  color: #000;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  background-color: #fff;
+  z-index: 10000;
+  border: 2px solid #e6a019;
+  cursor: pointer;
+}
+
+
+
+
+
+
 .box1 .imgBox .trailer ul li:nth-child(1) {
   background-image: url(img/libre4.png);
   background-size: cover;
@@ -277,6 +296,104 @@ overflow: hidden;
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+
+
+
+
+
+
+.shop {
+  
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #000;
+  z-index: 50000;
+}
+
+.shop h2 {font-family: 'Jacques Francois', serif;
+  padding: 5px;
+        }
+
+
+.shop section { width: 60%;
+                  margin: 10% auto;
+                display: flex;
+               padding: 10px;
+                background-color: #fff;
+}
+
+.shop div {
+ 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 20%;
+}
+
+.shop div img {width: 170px;
+            height: 100%;
+          }
+
+
+
+
+.shop section div { display: flex;
+  width: 100%;
+            align-items: center;
+            justify-content: space-between;
+                }
+
+
+.shop section div ul {width: 100%;
+      }             
+.shop section div li {list-style: none;
+            display: flex;
+              align-items: center;
+              justify-content: space-around;}
+
+
+.shop section div p { cursor: pointer;
+  text-align: center;
+    
+              }  
+              
+              
+.shop section div .plus {margin-left: 50px;
+  margin-right: 20px;
+            border: 1px solid #e6a019;
+              padding: 2px 5px 2px 5px;
+              line-height: 0.9;
+            }
+
+.shop section div .minus {
+  margin-left: 20px;
+  border: 1px solid #e6a019;
+  padding: 2px 6px 2px 6px;
+              line-height: 1.0;
+}
+
+.shop section div li span {display: block;}          
+
+.shop div.btn {background-color: transparent;
+                  display: block;
+              text-align: center;
+              width: 100%;
+             }
+
+              .shop div.btn button {cursor: pointer;
+                padding: 5px;
+                border-radius: 5px;}
+
+                .shop div.btn button:hover { background-color: #e6a019;}
+
 
 
 
