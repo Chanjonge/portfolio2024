@@ -4,7 +4,34 @@
 $(document).ready(function(){
 
 
-  
+    var a = 0
+    $('.fa-minus').click(function(){
+     if(a>0)a--;
+     $('.num').text(a)
+     
+
+
+    })
+    $('.fa-plus').click(function(){
+        if(a<10)a++;
+        $('.num').text(a)
+        
+   
+    if(a==10){
+
+        alert('최대 10개까지 구매 가능합니다')
+    }
+   
+       })
+
+
+      
+      
+
+       
+
+
+
     $('.box1 .txtBox .btn1').click(function(){
 
       var ni = $('.box1 .txtBox .numBox .num').text()
@@ -28,11 +55,12 @@ $(window).scroll(function () {
 
   
 
-if (sc >= 1200) {
-      $(".box3-1 .imgBox").addClass("on");
-} else {
-      $(".box3-1 .imgBox").removeClass("on");
-  }
+
+     if (sc >= 1200) {
+       $(".box3-1 .imgBox").addClass("on");
+     } else {
+       $(".box3-1 .imgBox").removeClass("on");
+     }
 
 
      if (sc >= 1200) {
@@ -142,11 +170,29 @@ let p = $(this).parents('li').find('em').html()
 let p2 = p + t +'<p><p class="plus">+</p><span class="text">00</span><p class="minus">-</p></p>'
 let p3 = '<li>' + p2 + '</li>'
 
-        console.log(p)
-        $(".shop section").find("div ul").append(p3);
+
+
+
+         console.log(p)
+         $(".shop section").find("div").append(p3);
+
+        let itemCount = $(".shop section").find("div").children().length;
+    console.log(itemCount);
+        $('header .numb').text(itemCount)
+        
+
+     
+
+
+
 
 
       })
+
+      
+
+     
+
 
 
 
@@ -157,9 +203,19 @@ let p3 = '<li>' + p2 + '</li>'
           i++;
           console.log(i);
 
-    
+         
         
         });
+
+        $('.empty').click(function(){
+
+          i=0;
+          $(".shop").find("span").text(i);
+          $(".util").find("span").text(i);
+          // $('.shop section').find('div').html('')
+          $('.shop section').find('div').empty()
+          $('header .numb').text('00')
+        })
 
 
       //   reset을 클릭했을 떄 shop이 사라져라
@@ -182,7 +238,7 @@ $(document).on('click', '.plus', function() {
       count++;
       $text.text(count);
   } else {
-      alert("최대 10개까지 구매가능합니다!"); // 10 이상일 때 경고창 표시
+      alert("최대 10개까지"); // 10 이상일 때 경고창 표시
   }
 });
 

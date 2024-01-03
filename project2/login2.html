@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인창</title>
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>로고</h1>
+    </header>
+
+    <section>
+        <article>
+            <h2>로그인</h2>
+                <form action="">
+                    <div class="input-row">
+                        <input type="text" placeholder="Username" class="input1">
+                        <input type="text" placeholder="Password" class="input2">
+                    </div>
+                    <div class="btn">
+                        <button>Login</button>
+                    </div>
+    
+                  
+                   
+    
+                </form>
+                <div id="naver_id_login"></div>
+        </article>
+        <div class="txt">
+            <p>비밀번호 찾기</p>
+            <p>아이디 찾기</p>
+            <p>회원가입</p>
+        </div>
+    </section>
+    
+</body>
+
+<style>
+
+body {height: 100%;
+    background-color: #fff;}
+header { width: 40%;
+            margin: 50px auto;
+            text-align: center;}
+
+section { width: 30%;
+    position: relative;
+    box-shadow: 1px 2px 3px #999;
+            height: 450px;
+            margin: 50px auto;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        background-color: #fff;}
+
+h1 {background-image: url(img/logo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+text-indent: -9999px;
+padding: 20px;
+    }
+
+h2 {text-align: center;
+        margin-top: 50px;
+        font-weight: 400;}
+
+.txt {position: absolute;
+            bottom: -50px;
+            display: flex;
+           
+            width: 70%;
+            margin: 0 auto;
+            align-items: center;
+            left: 18%;
+            }
+
+.txt p { margin-right: 20px;
+                        padding-right: 20px;
+                    color: #e6a019;}
+                    .txt p:hover {color: #000;
+                    cursor: pointer;}
+.input-row {
+            margin: 10px;
+            }
+.input1 , .input2 {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #e6a019;;
+  display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin: 30px auto 20px auto;
+    margin-top: 30px ;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #999;
+    border-color: #e6a019;
+outline: none;
+    appearance: none;}
+
+.btn {margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;}
+button {width: 40%;
+        margin: 20px auto;
+        display: block;
+        background-color: #e6a019;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 11px;
+    font-size: 20px;
+    cursor: pointer;}
+    button:hover { background-color: #000;
+                color: #fff;
+                }
+#naver_id_login {width: 50%;
+            margin: 30px auto;
+        text-align: center;
+        }
+
+</style>
+
+<script type="text/javascript">
+    var naver_id_login = new naver_id_login("YOUR_CLIENT_ID", "YOUR_CALLBACK_URL");
+    var state = naver_id_login.getUniqState();
+    naver_id_login.setButton("green", 3,50);
+    naver_id_login.setDomain("YOUR_SERVICE_URL");
+    naver_id_login.setState(state);
+    naver_id_login.setPopup();
+    naver_id_login.init_naver_id_login();
+</script>
+</html>

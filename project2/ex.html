@@ -120,6 +120,8 @@
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
+        height: 400px;
+        overflow-y: scroll;
       }
 
       .shop div.btn {background-color: transparent;
@@ -166,11 +168,25 @@
         //   reset을 클릭했을 떄 shop이 사라져라
 
         $('.reset').click(function(){
-
-
+          
             $('.shop').css({'display':'none'})
 
+
+
         })
+
+        // empty를 클릭했을때 shop section div 내용을 지워라
+        // shop에 span의 변수값을 0으로 바꿔라
+
+        $('.empty').click(function(){
+
+          i=0;
+          $(".shop").find("span").text(i);
+          $(".util").find("span").text(i);
+          // $('.shop section').find('div').html('')
+          $('.shop section').find('div').empty()
+        })
+
 
 
       });
@@ -264,8 +280,9 @@
       </section>
 
      <div class="btn">
-          <button class="login"><a href="#">결제하기</a></button>
+          <button class="login"><a href="login2.html" target="_blank">결제하기</a></button>
           <button class="reset">되돌아가기</button>
+          <button class="empty">장바구니비우기</button>
      </div>
     </div>
   </body>
