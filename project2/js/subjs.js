@@ -4,40 +4,13 @@
 $(document).ready(function(){
 
 
-    var a = 0
-    $('.fa-minus').click(function(){
-     if(a>0)a--;
-     $('.num').text(a)
-     
-
-
-    })
-    $('.fa-plus').click(function(){
-        if(a<10)a++;
-        $('.num').text(a)
-        
-   
-    if(a==10){
-
-        alert('최대 10개까지 구매 가능합니다')
-    }
-   
-       })
-
-
-      
-      
-
-       
-
-
-
+  
     $('.box1 .txtBox .btn1').click(function(){
 
       var ni = $('.box1 .txtBox .numBox .num').text()
       console.log(ni)
       $('header .numb').text(ni)
-
+      $('.shop').css({'display':'block'})
     })
 
     $('header .util .fa-magnifying-glass').click(function(){
@@ -55,12 +28,11 @@ $(window).scroll(function () {
 
   
 
-
-     if (sc >= 1200) {
-       $(".box3-1 .imgBox").addClass("on");
-     } else {
-       $(".box3-1 .imgBox").removeClass("on");
-     }
+if (sc >= 1200) {
+      $(".box3-1 .imgBox").addClass("on");
+} else {
+      $(".box3-1 .imgBox").removeClass("on");
+  }
 
 
      if (sc >= 1200) {
@@ -165,20 +137,16 @@ $(window).scroll(function () {
     
 
       $('.box1 .imgBox .main span').click(function(){
-        let t = $('.box1 .txtBox .p1').text()
+        let t = $('.box1 .txtBox h2').text()
 let p = $(this).parents('li').find('em').html()
-let p2 = p + t +'<p class="plus">+</p><span>00</span><p class="minus">-</p>'
+let p2 = p + t +'<p><p class="plus">+</p><span class="text">00</span><p class="minus">-</p></p>'
 let p3 = '<li>' + p2 + '</li>'
 
         console.log(p)
-        $(".shop section").find("div").append(p3);
+        $(".shop section").find("div ul").append(p3);
 
 
       })
-
-
-     
-
 
 
 
@@ -189,10 +157,7 @@ let p3 = '<li>' + p2 + '</li>'
           i++;
           console.log(i);
 
-          // $(".util").find("span").text(i);
-
-          
-          console.log(txt);
+    
         
         });
 
@@ -204,20 +169,30 @@ let p3 = '<li>' + p2 + '</li>'
 
           $('.shop').css({'display':'none'})
 
-      })
-
-      var b = 0
-      $('.shop section div .plus').click(function(){
-       
-      b++;
-        $(this).sibling('span').text(b)
-
-        console.log(b)
-          
+      });
 
 
-      })
 
+
+      // .plus 버튼 클릭 이벤트 처리
+$(document).on('click', '.plus', function() {
+  var $text = $(this).closest('li').find('.text');
+  var count = parseInt($text.text(), 10);
+  if (count < 10) {
+      count++;
+      $text.text(count);
+  } else {
+      alert("최대 10개까지 구매가능합니다!"); // 10 이상일 때 경고창 표시
+  }
+});
+
+// .minus 버튼 클릭 이벤트 처리
+$(document).on('click', '.minus', function() {
+  var $text = $(this).closest('li').find('.text');
+  var count = parseInt($text.text(), 10);
+  count = count > 0 ? count - 1 : 0;
+  $text.text(count);
+});
 
 
 

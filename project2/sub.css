@@ -255,6 +255,9 @@ overflow: hidden;
 }
 
 
+.box1 .imgBox .main ul li span:hover {background-color: #e6a019;
+        color: #fff;}
+
 
 
 
@@ -304,7 +307,7 @@ overflow: hidden;
 
 
 .shop {
-  
+  display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -353,11 +356,15 @@ overflow: hidden;
 
 
 .shop section div ul {width: 100%;
+  
       }             
 .shop section div li {list-style: none;
             display: flex;
               align-items: center;
-              justify-content: space-around;}
+              width: 100%;
+              justify-content: space-around;
+            border: 1px solid #999;
+            margin-bottom: 5px;}
 
 
 .shop section div p { cursor: pointer;
@@ -366,21 +373,29 @@ overflow: hidden;
               }  
               
               
-.shop section div .plus {margin-left: 50px;
-  margin-right: 20px;
+.shop .plus {
             border: 1px solid #e6a019;
               padding: 2px 5px 2px 5px;
               line-height: 0.9;
             }
 
-.shop section div .minus {
-  margin-left: 20px;
+.shop .minus {
+  
   border: 1px solid #e6a019;
   padding: 2px 6px 2px 6px;
               line-height: 1.0;
 }
 
-.shop section div li span {display: block;}          
+
+
+.shop .plus:hover { background-color: #e6a019;
+                          color: #fff;}
+
+.shop .minus:hover { background-color: #e6a019;
+                            color: #fff;}
+
+
+.shop .text {display: inline-block;}          
 
 .shop div.btn {background-color: transparent;
                   display: block;
