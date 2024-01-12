@@ -1,0 +1,927 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Pretendard-Black";
+  font-weight: 900;
+  font-display: swap;
+  src: local("Pretendard Black"),
+    url("./otf/Pretendard-Black.otf") format("opentype"),
+    url("./woff2/Pretendard-Black.woff2") format("woff2"),
+    url("./woff/Pretendard-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  font-weight: 800;
+  font-display: swap;
+  src: local("Pretendard ExtraBold"),
+    url("./otf/Pretendard-ExtraBold.otf") format("opentype"),
+    url("./woff2/Pretendard-ExtraBold.woff2") format("woff2"),
+    url("./woff/Pretendard-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"),
+    url("./otf/Pretendard-Bold.otf") format("opentype"),
+    url("./woff2/Pretendard-Bold.woff2") format("woff2"),
+    url("./woff/Pretendard-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"),
+    url("./otf/Pretendard-SemiBold.otf") format("opentype"),
+    url("./woff2/Pretendard-SemiBold.woff2") format("woff2"),
+    url("./woff/Pretendard-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-Medium";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Pretendard Medium"),
+    url("./otf/Pretendard-Medium.otf") format("opentype"),
+    url("./woff2/Pretendard-Medium.woff2") format("woff2"),
+    url("./woff/Pretendard-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"),
+    url("./otf/Pretendard-Regular.otf") format("opentype"),
+    url("./woff2/Pretendard-Regular.woff2") format("woff2"),
+    url("./woff/Pretendard-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-Light";
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"),
+    url("./otf/Pretendard-Light.otf") format("opentype"),
+    url("./woff2/Pretendard-Light.woff2") format("woff2"),
+    url("./woff/Pretendard-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-ExtraLight";
+  font-weight: 200;
+  font-display: swap;
+  src: local("Pretendard ExtraLight"),
+    url("./otf/Pretendard-ExtraLight.otf") format("opentype"),
+    url("./woff2/Pretendard-ExtraLight.woff2") format("woff2"),
+    url("./woff/Pretendard-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-Thin";
+  font-weight: 100;
+  font-display: swap;
+  src: local("Pretendard Thin"),
+    url("./otf/Pretendard-Thin.otf") format("opentype"),
+    url("./woff2/Pretendard-Thin.woff2") format("woff2"),
+    url("./woff/Pretendard-Thin.woff") format("woff");
+}
+
+:root {
+  --font-family-pretendard-black: "Pretendard-Black", Helvetica;
+  --font-family-pretendard-extrabold: "Pretendard-ExtraBold", Helvetica;
+  --font-family-pretendard-bold: "Pretendard-Bold", Helvetica;
+  --font-family-pretendard-semibold: "Pretendard-SemiBold", Helvetica;
+  --font-family-pretendard-medium: "Pretendard-Medium", Helvetica;
+  --font-family-pretendard-regular: "Pretendard-Regular", Helvetica;
+  --font-family-pretendard-light: "Pretendard-Light", Helvetica;
+  --font-family-pretendard-extralight: "Pretendard-ExtraLight", Helvetica;
+  --font-family-pretendard-thin: "Pretendard-Thin", Helvetica;
+}
+
+/* 전체 설정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  background-color: #fff;
+}
+body > section {
+  width: 100vw;
+  height: 100vh;
+}
+/* 스크롤 설정 */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #fff;
+  background-clip: padding-box;
+  border: 2px solid #8e69f6;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scroll {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 100;
+}
+
+/* header 설정 */
+
+header {
+  position: fixed;
+  top: 1%;
+  left: 2.5%;
+  width: 95%;
+  z-index: 800;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header gnb 기본 설정 */
+
+header .gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header .gnb p {
+  font-family: var(--font-family-pretendard-bold);
+  color: #9fa0a0;
+  font-size: 20px;
+}
+
+header .gnb ul {
+  display: flex;
+  font-family: var(--font-family-pretendard-regular);
+  color: #000;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  right: 20%;
+  top: 0%;
+}
+
+header .gnb ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* gnb hover 디자인 */
+
+header .gnb ul li {
+  overflow: visible;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+@keyframes eff24-move {
+  30% {
+    -webkit-transform: translate3d(0, -5px, 0) rotate(5deg);
+    transform: translate3d(0, -5px, 0) rotate(5deg);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -3px, 0) rotate(-4deg);
+    transform: translate3d(0, -3px, 0) rotate(-4deg);
+  }
+  80% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
+    transform: translate3d(0, 0, 0) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+header .gnb ul li:hover {
+  -webkit-animation-name: eff24-move;
+  animation-name: eff24-move;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* home 설정 */
+#home {
+  position: relative;
+  background-color: #fff;
+}
+#home article {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+#home p {
+  font-family: var(--font-family-pretendard-extrabold);
+  font-size: 100px;
+  color: #000;
+  width: 50%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+#home_top p {
+  bottom: 5%;
+  left: 0;
+}
+#home_bottom p {
+  top: 5%;
+  right: 0;
+}
+
+#home span {
+  font-family: var(--font-family-pretendard-extrabold);
+  font-size: 100px;
+  font-weight: bold;
+  color: #000;
+  width: 70%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home_top span {
+  bottom: 5%;
+  left: 15%;
+}
+#home_bottom span {
+  top: 5%;
+  left: 15%;
+}
+
+#home_line {
+  position: absolute;
+  top: 49.6%;
+  left: 32.5%;
+  width: 35%;
+  height: 0.5%;
+  background-color: #8e69f6;
+  transform: scaleX(0);
+  z-index: 1;
+}
+
+#home .img1 {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  width: 30%;
+  height: 60%;
+  z-index: 12;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#home .img2 {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  width: 30%;
+  height: 50%;
+  z-index: 11;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#home .imgbg {
+  position: absolute;
+  right: 15%;
+  top: 20%;
+  width: 70%;
+  height: 60%;
+  z-index: 10;
+}
+
+#home .txt {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  font-size: 35px;
+  font-family: var(--font-family-pretendard-semibold);
+  text-align: right;
+}
+
+#home .txt b {
+  font-size: 35px;
+  font-family: var(--font-family-pretendard-semibold);
+  color: #8e69f6;
+  font-weight: 400;
+}
+
+/* 프로필 설정 */
+
+#profile {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+#profile .line {
+  position: absolute;
+  left: 49%;
+  height: 100%;
+  top: 7%;
+}
+
+#profile .mdl {
+  width: 100%;
+  height: 9%;
+  background-color: #8e69f6;
+  position: absolute;
+  top: 45%;
+}
+
+#profile .mdl .mdt {
+  box-sizing: border-box;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-right: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#profile .mdl .mdt p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 50px;
+  margin-top: 10px;
+  font-family: var(--font-family-pretendard-light);
+}
+
+#profile .img {
+  position: absolute;
+  border: 1px solid #8e69f6;
+  border-radius: 60%;
+  left: 40%;
+  top: 30%;
+  width: 18%;
+  height: 45%;
+  z-index: 10;
+  background-image: url(img/profile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  flex-shrink: 0;
+
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#profile .key {
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  width: 20%;
+  height: 35%;
+}
+
+#profile .key img {
+  width: 100%;
+  height: 100%;
+}
+
+#profile .ic {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 12%;
+  right: 22%;
+}
+#profile .ic ul {
+}
+#profile .ic ul li {
+  margin-bottom: 25px;
+}
+#profile .ic ul li img {
+  width: 27%;
+  height: 5%;
+}
+
+.pr {
+  position: absolute;
+  right: 8%;
+  top: 13%;
+  width: 20%;
+  height: 10%;
+}
+
+#progress {
+  appearance: none;
+  display: block;
+  height: 30%;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+#progress::-webkit-progress-bar {
+  background: #f0f0f0;
+
+  border: 1px solid #eeeeee;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#progress::-webkit-progress-value {
+  background: #8e69f6;
+  border-radius: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+#profile .mb {
+  position: absolute;
+  bottom: -2%;
+  left: 11%;
+  width: 25%;
+  height: 45%;
+}
+
+#profile .mb img {
+  width: 100%;
+  height: 100%;
+}
+
+#profile .time {
+  position: absolute;
+  right: 10%;
+  bottom: -7%;
+  height: 53%;
+}
+
+#profile .time img {
+  height: 100%;
+}
+
+#profile .name {
+  width: 15%;
+  height: 15%;
+  background-color: #fff;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 41.5%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#profile .name h2 {
+  font-family: var(--font-family-pretendard-medium);
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#profile .name .en {
+  font-family: var(--font-family-pretendard-regular);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#profile .name .em {
+  font-family: var(--font-family-pretendard-light);
+  font-size: 20px;
+}
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+/* 프로젝트 설정 */
+
+#proJect1 {
+  width: 100%;
+  height: 100vh;
+
+  padding-top: 100px;
+}
+
+#proJect1 .imgBox {
+  width: 90%;
+  margin: 0 auto;
+  height: 60%;
+
+  position: relative;
+}
+
+#proJect1 .imgBox > div {
+  position: absolute;
+}
+
+#proJect1 .imgBox .img1 {
+  width: 53%;
+  height: 90%;
+  left: -10%;
+  top: 5%;
+}
+
+#proJect1 .imgBox .img1 img {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#proJect1 .imgBox .img2 {
+  width: 53%;
+  height: 100%;
+  left: 23%;
+  z-index: 50;
+}
+
+#proJect1 .imgBox .img2 img {
+  width: 100%;
+  height: 100%;
+}
+
+#proJect1 .imgBox .img3 {
+  width: 53%;
+  height: 90%;
+  left: 59%;
+  top: 5%;
+}
+
+#proJect1 .imgBox .img3 img {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#proJect1 .txtBox {
+  display: flex;
+  margin: 100px auto 0 auto;
+  width: 70%;
+}
+
+#proJect1 .txtBox h2 {
+  color: #520a78;
+  font-size: 30px;
+  text-align: center;
+  width: 30%;
+  font-family: var(--font-family-pretendard-semibold);
+}
+
+#proJect1 .txtBox .txtIn {
+  width: 40%;
+  font-size: 25px;
+  text-align: left;
+}
+#proJect1 .txtBox .title {
+  margin-bottom: 30px;
+  font-family: var(--font-family-pretendard-bold);
+}
+#proJect1 .txtBox .tag {
+  margin-bottom: 30px;
+  font-family: var(--font-family-pretendard-semibold);
+}
+#proJect1 .txtBox .arti {
+  font-family: var(--font-family-pretendard-regular);
+}
+
+#proJect1 .txtBox .arti em {
+  font-style: normal;
+  color: #fe7e03;
+  font-family: var(--font-family-pretendard-semibold);
+}
+
+#proJect1 .txtBox .btn {
+  width: 15%;
+}
+#proJect1 .txtBox .btn p {
+  border: 2px solid #520a78;
+  border-radius: 2px;
+  padding: 10px 0;
+  margin: 10px 0;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#proJect1 .txtBox .btn a {
+  
+  display: block;
+  font-size: 20px;
+  font-family: var(--font-family-pretendard-regular);
+}
+
+
+#proJect1 .txtBox .btn p:hover {
+  background-color: #520a78;
+}
+#proJect1 .txtBox .btn p:hover a {
+  color: #fff;
+}
+
+
+/* 프로젝트2 설정 --------------------------------------------------------------- */
+
+#proJect2 {
+  width: 100%;
+  height: 100vh;
+
+  padding-top: 100px;
+}
+
+#proJect2 .imgBox {
+  width: 90%;
+  margin: 0 auto;
+  height: 60%;
+
+  position: relative;
+}
+
+#proJect2 .imgBox > div {
+  position: absolute;
+}
+
+#proJect2 .imgBox .img1 {
+  width: 53%;
+  height: 90%;
+  left: -10%;
+  top: 5%;
+}
+
+#proJect2 .imgBox .img1 img {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#proJect2 .imgBox .img2 {
+  width: 53%;
+  height: 100%;
+  left: 23%;
+  z-index: 50;
+}
+
+#proJect2 .imgBox .img2 img {
+  width: 100%;
+  height: 100%;
+}
+
+#proJect2 .imgBox .img3 {
+  width: 53%;
+  height: 90%;
+  left: 59%;
+  top: 5%;
+}
+
+#proJect2 .imgBox .img3 img {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#proJect2 .txtBox {
+  display: flex;
+  margin: 100px auto 0 auto;
+  width: 70%;
+}
+
+#proJect2 .txtBox h2 {
+  color: #520a78;
+  font-size: 30px;
+  text-align: center;
+  width: 30%;
+  font-family: var(--font-family-pretendard-semibold);
+}
+
+#proJect2 .txtBox .txtIn {
+  width: 40%;
+  font-size: 25px;
+  text-align: left;
+}
+#proJect2 .txtBox .title {
+  margin-bottom: 30px;
+  font-family: var(--font-family-pretendard-bold);
+}
+#proJect2 .txtBox .tag {
+  margin-bottom: 30px;
+  font-family: var(--font-family-pretendard-semibold);
+}
+#proJect2 .txtBox .arti {
+  font-family: var(--font-family-pretendard-regular);
+}
+
+#proJect2 .txtBox .arti strong {
+  font-style: normal;
+  color: #d6a243;
+  font-family: var(--font-family-pretendard-semibold);
+}
+
+#proJect2 .txtBox .btn {
+  width: 15%;
+}
+#proJect2 .txtBox .btn p {
+  border: 2px solid #520a78;
+  border-radius: 2px;
+  padding: 10px 0;
+  margin: 10px 0;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#proJect2 .txtBox .btn a {
+  
+  display: block;
+  font-size: 20px;
+  font-family: var(--font-family-pretendard-regular);
+}
+
+#proJect2 .txtBox .btn p:hover {
+  background-color: #520a78;
+}
+#proJect2 .txtBox .btn p:hover a {
+  color: #fff;
+}
+
+
+
+/* 프로젝트3 설정 ------------------------------------------------------------*/
+
+#proJect3 {
+  width: 100%;
+  height: 100vh;
+
+  padding-top: 100px;
+}
+
+#proJect3 .imgBox {
+  width: 90%;
+  margin: 0 auto;
+  height: 60%;
+
+  position: relative;
+}
+
+#proJect3 .imgBox > div {
+  position: absolute;
+}
+
+#proJect3 .imgBox .img1 {
+  width: 53%;
+  height: 90%;
+  left: -10%;
+  top: 5%;
+}
+
+#proJect3 .imgBox .img1 img {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#proJect3 .imgBox .img2 {
+  width: 53%;
+  height: 100%;
+  left: 23%;
+  z-index: 50;
+}
+
+#proJect3 .imgBox .img2 img {
+  width: 100%;
+  height: 100%;
+}
+
+#proJect3 .imgBox .img3 {
+  width: 53%;
+  height: 90%;
+  left: 59%;
+  top: 5%;
+}
+
+#proJect3 .imgBox .img3 img {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+#proJect3 .txtBox {
+  display: flex;
+  margin: 100px auto 0 auto;
+  width: 70%;
+}
+
+#proJect3 .txtBox h2 {
+  color: #520a78;
+  font-size: 30px;
+  text-align: center;
+  width: 30%;
+  font-family: var(--font-family-pretendard-semibold);
+}
+
+#proJect3 .txtBox .txtIn {
+  width: 41%;
+  font-size: 25px;
+  text-align: left;
+}
+#proJect3 .txtBox .title {
+  margin-bottom: 30px;
+  font-family: var(--font-family-pretendard-bold);
+}
+#proJect3 .txtBox .tag {
+  margin-bottom: 30px;
+  font-family: var(--font-family-pretendard-semibold);
+}
+#proJect3 .txtBox .arti {
+  font-family: var(--font-family-pretendard-regular);
+}
+
+#proJect3 .txtBox .arti span {
+  font-style: normal;
+  color: #a2cce4;
+  font-family: var(--font-family-pretendard-semibold);
+}
+
+#proJect3 .txtBox .arti em {
+  font-style: normal;
+  color: #c38ea4;
+  font-family: var(--font-family-pretendard-semibold);
+}
+
+#proJect3 .txtBox .btn {
+  width: 15%;
+}
+#proJect3 .txtBox .btn p {
+  border: 2px solid #520a78;
+  border-radius: 2px;
+  padding: 10px 0;
+  margin: 10px 0;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#proJect3 .txtBox .btn a {
+  
+  display: block;
+  font-size: 20px;
+  font-family: var(--font-family-pretendard-regular);
+}
+
+#proJect3 .txtBox .btn p:hover {
+  background-color: #520a78;
+}
+#proJect3 .txtBox .btn p:hover a {
+  color: #fff;
+}
+
+
+footer {height: 200px;
+  margin-top: 50px;
+    background-color: #E1D7FD;}
+
+
+    footer div {text-align: center;
+            color: #555;
+            font-family: var(--font-family-pretendard-regular);}
+    footer div p:nth-child(1) {font-size: 30px;
+      padding-top: 40px;
+      padding-bottom: 20px;}
+    footer div p:nth-child(2) {font-size: 25px;}
