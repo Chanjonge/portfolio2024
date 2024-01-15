@@ -20,7 +20,7 @@ $('.active1').click(function(){
   console.log(i)
 
 
-  $('html ,body').stop().animate({'scrollTop':0},1000)
+  $('html ,body').stop().animate({'scrollTop':0},1000 )
 
 
 });
@@ -32,7 +32,7 @@ $('.active2').click(function(){
   console.log(i)
 
 
-  $('html ,body').stop().animate({'scrollTop':1000},1000, )
+  $('html ,body').stop().animate({'scrollTop':1000}, 1000  )
   
 
 });
