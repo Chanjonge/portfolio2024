@@ -536,10 +536,11 @@ http://scripts.sil.org/OFL
 /* 프로젝트 설정 */
 
 #proJect1 {
+  box-shadow: 0px 10px 5px -5px #fe7e03;
   width: 100%;
   height: 100vh;
 
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 #proJect1 .imgBox {
@@ -594,7 +595,7 @@ http://scripts.sil.org/OFL
 
 #proJect1 .txtBox {
   display: flex;
-  margin: 100px auto 0 auto;
+  margin: 50px auto 0 auto;
   width: 70%;
 }
 
@@ -635,12 +636,21 @@ http://scripts.sil.org/OFL
 #proJect1 .txtBox .btn p {
   border: 2px solid #520a78;
   border-radius: 2px;
-  padding: 10px 0;
+  padding: 10px 10px;
   margin: 10px 0;
   width: 150px;
   text-align: center;
   cursor: pointer;
 }
+#proJect1 .txtBox .btn .btn001 {
+
+  color: #520a78;
+  display: block;
+  font-size: 20px;
+  font-family: var(--font-family-pretendard-regular);
+}
+
+
 
 #proJect1 .txtBox .btn a {
   color: #520a78;
@@ -652,19 +662,71 @@ http://scripts.sil.org/OFL
 
 #proJect1 .txtBox .btn p:hover {
   background-color: #520a78;
+  color: #fff;
 }
 #proJect1 .txtBox .btn p:hover a {
   color: #fff;
 }
 
 
+#proJect1 .popUp01 {position: absolute;
+  border: 2px solid #fe7e03;
+  margin: 0 auto;
+  width: 1000px;
+  height: 700px;
+  background-color: #fff;
+  top: 40%;
+  left: 20%;
+  overflow-y: scroll;
+  display: none;
+  z-index: 100;
+ 
+}
+
+#proJect1 .popUp01 img {width: 100%;
+              height: auto;}
+
+              
+#proJect1 .popUp01 span {width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  display: block;
+  cursor: pointer}
+
+  #proJect1 .popUp01 span i {
+    font-size: 40px;
+    color: #fe7e03;
+  }
+
+  #proJect1 .popUp01 span:hover i {color: #000;}
+
+  #proJect1 .popUp01 p {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    
+    right: 0;
+    cursor: pointer;
+
+  }
+
+  #proJect1 .popUp01 p i {font-size: 40px;
+    color: #fe7e03;}
+
+
+    #proJect1 .popUp01 p:hover i {color: #000;}
+
 /* 프로젝트2 설정 --------------------------------------------------------------- */
 
 #proJect2 {
+  
+  box-shadow: 0px 5px 5px 2px #d6a243;
   width: 100%;
   height: 100vh;
-
-  padding-top: 100px;
+  padding-bottom: 40px;
+  margin-top: 100px;
 }
 
 #proJect2 .imgBox {
@@ -719,7 +781,7 @@ http://scripts.sil.org/OFL
 
 #proJect2 .txtBox {
   display: flex;
-  margin: 100px auto 0 auto;
+  margin: 50px auto 0 auto;
   width: 70%;
 }
 
@@ -760,11 +822,20 @@ http://scripts.sil.org/OFL
 #proJect2 .txtBox .btn p {
   border: 2px solid #520a78;
   border-radius: 2px;
-  padding: 10px 0;
+  padding: 10px 10px;
   margin: 10px 0;
   width: 150px;
   text-align: center;
   cursor: pointer;
+}
+
+
+#proJect2 .txtBox .btn .btn002 {
+
+  color: #520a78;
+  display: block;
+  font-size: 20px;
+  font-family: var(--font-family-pretendard-regular);
 }
 
 #proJect2 .txtBox .btn a {
@@ -782,14 +853,61 @@ http://scripts.sil.org/OFL
 }
 
 
+#proJect2 .popUp02 {position: absolute;
+  border: 2px solid #d6a243;
+  margin: 0 auto;
+  width: 1000px;
+  height: 700px;
+  background-color: #fff;
+  top: 60%;
+  left: 20%;
+  overflow-y: scroll;
+  display: none;
+  z-index: 100;
+ 
+}
 
+#proJect2 .popUp02 img {width: 100%;
+              height: auto;}
+
+              
+#proJect2 .popUp02 span {width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  display: block;
+  cursor: pointer}
+
+  #proJect2 .popUp02 span i {
+    font-size: 40px;
+    color: #d6a243;
+  }
+
+  #proJect2 .popUp02 span:hover i {color: #000;}
+
+  #proJect2 .popUp02 p {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    
+    right: 0;
+    cursor: pointer;
+
+  }
+
+  #proJect2 .popUp02 p i {font-size: 40px;
+    color: #d6a243;}
+
+
+    #proJect2 .popUp02 p:hover i {color: #000;}
 /* 프로젝트3 설정 ------------------------------------------------------------*/
 
 #proJect3 {
   width: 100%;
   height: 100vh;
 
-  padding-top: 100px;
+ margin-top: 100px;
 }
 
 #proJect3 .imgBox {
@@ -891,11 +1009,20 @@ http://scripts.sil.org/OFL
 #proJect3 .txtBox .btn p {
   border: 2px solid #520a78;
   border-radius: 2px;
-  padding: 10px 0;
+  padding: 10px 10px;
   margin: 10px 0;
   width: 150px;
   text-align: center;
   cursor: pointer;
+}
+
+
+#proJect3 .txtBox .btn .btn003 {
+
+  color: #520a78;
+  display: block;
+  font-size: 20px;
+  font-family: var(--font-family-pretendard-regular);
 }
 
 #proJect3 .txtBox .btn a {
@@ -911,6 +1038,56 @@ http://scripts.sil.org/OFL
 #proJect3 .txtBox .btn p:hover a {
   color: #fff;
 }
+
+
+#proJect3 .popUp03 {position: absolute;
+  border: 2px solid #a2cce4;
+  margin: 0 auto;
+  width: 1000px;
+  height: 700px;
+  background-color: #fff;
+  top: 80%;
+  left: 25%;
+  overflow-y: scroll;
+  display: none;
+  z-index: 100;
+ 
+}
+
+#proJect3 .popUp03 img {width: 100%;
+              height: auto;}
+
+              
+#proJect3 .popUp03 span {width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  top: 25px;
+  display: block;
+  cursor: pointer}
+
+  #proJect3 .popUp03 span i {
+    font-size: 40px;
+    color: #fff;
+  }
+
+  #proJect3 .popUp03 span:hover i {color: #000;}
+
+  #proJect3 .popUp03 p {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    
+    right: 0;
+    cursor: pointer;
+
+  }
+
+  #proJect3 .popUp03 p i {font-size: 40px;
+    color: #c38ea4;}
+
+
+    #proJect3 .popUp03 p:hover i {color: #000;}
 
 
 footer {height: 200px;

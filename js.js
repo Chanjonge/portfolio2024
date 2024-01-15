@@ -160,6 +160,76 @@ $(window).scroll(function() {
 
 
 
+$('.btn001').click(function(){
+  
+
+  $('#proJect1 .popUp01').css({'display':'block'})
+
+})
+
+$('#proJect1 .popUp01 span').click(function(){
+
+  $('#proJect1 .popUp01').css({'display':'none'})
+})
+
+
+$('#proJect1 .popUp01 p').click(function(){
+
+  $('#proJect1 .popUp01').css({'display':'none'})
+})
+
+$('#proJect1 .popUp01').click(function(){
+
+  $('#proJect1 .popUp01').css({'display':'none'})
+})
+
+
+
+$('.btn002').click(function(){
+  
+
+  $('#proJect2 .popUp02').css({'display':'block'})
+
+})
+
+$('#proJect2 .popUp02 span').click(function(){
+
+  $('#proJect2 .popUp02').css({'display':'none'})
+})
+
+
+$('#proJect2 .popUp02 p').click(function(){
+
+  $('#proJect2 .popUp02').css({'display':'none'})
+})
+
+$('#proJect2 .popUp02').click(function(){
+
+  $('#proJect2 .popUp02').css({'display':'none'})
+})
+
+$('.btn003').click(function(){
+  
+
+  $('#proJect3 .popUp03').css({'display':'block'})
+
+})
+
+$('#proJect3 .popUp03 span').click(function(){
+
+  $('#proJect3 .popUp03').css({'display':'none'})
+})
+
+
+$('#proJect3 .popUp03 p').click(function(){
+
+  $('#proJect3 .popUp03').css({'display':'none'})
+})
+
+$('#proJect3 .popUp03').click(function(){
+
+  $('#proJect3 .popUp03').css({'display':'none'})
+})
 
 
 
