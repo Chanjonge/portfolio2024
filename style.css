@@ -263,7 +263,7 @@ header .gnb ul li.on {color: #8e69f6;
 header .pNav { position: fixed;
             right: 0;
             top: 40%;
-            height: 20%;
+            height: 15%;
           width: 3%;}
 
 header .pNav ul {display: flex;
@@ -412,6 +412,8 @@ header .pNav ul li {font-family: var(--font-family-pretendard-regular);
   height: 100vh;
   position: relative;
   width: 100%;
+  
+  
 }
 
 #profile .line {
@@ -595,8 +597,8 @@ http://scripts.sil.org/OFL
   box-shadow: 0px 10px 5px -5px #fe7e03;
   width: 100%;
   height: 100vh;
-
-  margin-top: 100px;
+  border-top: 2px dotted rgba(142, 105, 246, 0.5);
+  margin-top: 70px;
 }
 
 #proJect1 .imgBox {
@@ -727,7 +729,7 @@ http://scripts.sil.org/OFL
 
 
 #proJect1 .popUp01 {position: absolute;
-  border: 5px solid #fe7e03;
+  border: 9px solid #fe7e03;
   margin: 0 auto;
   width: 1000px;
   height: 700px;
@@ -918,7 +920,7 @@ http://scripts.sil.org/OFL
 
 
 #proJect2 .popUp02 {position: absolute;
-  border: 5px solid #d6a243;
+  border: 9px solid #d6a243;
   margin: 0 auto;
   width: 1000px;
   height: 700px;
@@ -1112,11 +1114,11 @@ http://scripts.sil.org/OFL
 
 
 #proJect3 .popUp03 {position: absolute;
-  border: 5px solid #a2cce4;
+  border: 9px solid #a2cce4;
   margin: 0 auto;
   width: 1000px;
   height: 700px;
-  background-color: #fff;
+  background-color: #c38ea4;
   top: 80%;
   left: 25%;
   overflow-y: scroll;
