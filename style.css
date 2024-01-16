@@ -287,8 +287,8 @@ header .pNav ul li {font-family: var(--font-family-pretendard-regular);
         header .pNav ul li .fa-regular {opacity: 0;}
 
 
-        header .pNav ul li .fa-solid.on {opacity: 0;}
-        header .pNav ul li .fa-regular.on {opacity: 1;}
+        header .pNav ul li.on .fa-solid {opacity: 0;}
+        header .pNav ul li.on .fa-regular {opacity: 1;}
 
 
 
