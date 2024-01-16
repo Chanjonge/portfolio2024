@@ -4,6 +4,24 @@
 $(document).ready(function(){
 
 
+
+
+  const ani1 = gsap.timeline();
+    ani1.to("#home_top p", {x : "50%", duration: 1.2 }, 'move')
+        .to("#home_bottom p", {x : "-50%", duration: 1.2 }, 'move')
+        .to("#home_top p", {y : "150%", duration: 0.8 }, 'move2')
+        .to("#home_bottom p", {y : "-150%", duration: 0.8 }, 'move2')
+        .to("#home_line", {scaleX: 1, duration: 0.8}, 'move2')
+
+        .to("#home_line", {rotate: -180, scaleX: 1.3, duration: 0.4}, '+=0.1')
+
+        .to("#home_line", {scaleX: 0, duration: 0.8}, 'move3')
+        .from("#home_top span", {y : "150%", duration: 0.9 }, 'move2')
+        .from("#home_bottom span", {y : "-150%", duration: 0.9 }, 'move3')
+
+        .to("#home_top span", { y : 4, x : -4, textShadow: "6px -6px 2px #e1d7fd", duration: 0.5 }, "shadow")
+        .to("#home_bottom span", { y : 4, x : -4, textShadow: "6px -6px 2px #e1d7fd", duration: 0.5 }, "-=0.4");
+
   $(window).scroll(function () {
         
     var sc = $(this).scrollTop();
