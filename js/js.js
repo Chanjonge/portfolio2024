@@ -22,6 +22,21 @@ $(document).ready(function(){
         .to("#home_top span", { y : 4, x : -4, textShadow: "6px -6px 2px #e1d7fd", duration: 0.5 }, "shadow")
         .to("#home_bottom span", { y : 4, x : -4, textShadow: "6px -6px 2px #e1d7fd", duration: 0.5 }, "-=0.4");
 
+
+
+        setTimeout(function() {
+          $(".img1").css("opacity", "1");
+        }, 2700); // 3초 후에 투명도 변경
+            
+        setTimeout(function() {
+          $(".img2").css("opacity", "1");
+        }, 2900); // 3초 후에 투명도 변경
+
+
+
+
+
+
   $(window).scroll(function () {
         
     var sc = $(this).scrollTop();
@@ -138,11 +153,7 @@ $('header .pNav ul li').click(function(){
   var p = $(this).index()
   console.log(p)
 
-  $('header .pNav ul li .fa-solid').removeClass('on')
-  $('header .pNav ul li .fa-regular').removeClass('on')
-   $('header .pNav ul li .fa-solid').eq(p).addClass('on')
-   $('header .pNav ul li .fa-regular').eq(p).addClass('on')
-
+  
    var scrollPositions = [2000, 3000, 4100];
    if (p < scrollPositions.length) {
      $('html, body').animate({
@@ -163,29 +174,10 @@ $('header .pNav ul li').click(function(){
 
 
 
-setTimeout(function() {
-  $(".img1").css("opacity", "1");
-}, 2700); // 3초 후에 투명도 변경
-    
-setTimeout(function() {
-  $(".img2").css("opacity", "1");
-}, 2900); // 3초 후에 투명도 변경
-
-
-// $(window).scroll(function(){
-//   var sc = $(this).scrollTop();
-
-//   if (sc >= 553) {
-//     $('#progress').val(80), ;
-//   } else {
-//     $('#progress').val(0);
-//   }
 
 
 
 
-
-// })
 
 $(window).scroll(function() {
   var sc = $(this).scrollTop();
