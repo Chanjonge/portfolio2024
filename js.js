@@ -49,6 +49,8 @@ $(document).ready(function(){
     if (sc >= 1800 && sc < 3000) {
       // 클래스 추가
       $('header .pNav ul li').eq(0).find('.fa-solid, .fa-regular').addClass('on');
+      $('header .pNav ul li').eq(1).find('.fa-solid, .fa-regular').removeClass('on');
+      $('header .pNav ul li').eq(2).find('.fa-solid, .fa-regular').removeClass('on');
     } else {
       // 클래스 제거
       $('header .pNav ul li').eq(0).find('.fa-solid, .fa-regular').removeClass('on');
@@ -57,6 +59,8 @@ $(document).ready(function(){
     // 두 번째 범위 (3000~4000)
     if (sc >= 3000 && sc < 4000) {
       $('header .pNav ul li').eq(1).find('.fa-solid, .fa-regular').addClass('on');
+      $('header .pNav ul li').eq(0).find('.fa-solid, .fa-regular').removeClass('on');
+      $('header .pNav ul li').eq(2).find('.fa-solid, .fa-regular').removeClass('on');
     } else {
       $('header .pNav ul li').eq(1).find('.fa-solid, .fa-regular').removeClass('on');
     }
@@ -64,6 +68,8 @@ $(document).ready(function(){
     // 세 번째 범위 (4000~5000)
     if (sc >= 4000 && sc < 5100) {
       $('header .pNav ul li').eq(2).find('.fa-solid, .fa-regular').addClass('on');
+      $('header .pNav ul li').eq(0).find('.fa-solid, .fa-regular').removeClass('on');
+      $('header .pNav ul li').eq(1).find('.fa-solid, .fa-regular').removeClass('on');
     } else {
       $('header .pNav ul li').eq(2).find('.fa-solid, .fa-regular').removeClass('on');
     }
