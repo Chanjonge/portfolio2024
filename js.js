@@ -9,7 +9,66 @@ $(document).ready(function(){
     var sc = $(this).scrollTop();
     $('.scroll').text(sc)
 
-   
+
+
+
+
+
+    if (sc < 1600 ) {
+      // 클래스 추가
+      $('header .pNav').css({"display":'none'})
+    } else {
+      // 클래스 제거
+      $('header .pNav').css({"display":'block'})
+    }
+
+
+    if (sc >= 0 && sc < 1000 ) {
+        $('header .gnb ul li').eq(0).addClass('on');
+    } else {
+      $('header .gnb ul li').eq(0).removeClass('on');
+
+    }
+    if (sc >= 1000 && sc < 1980 ) {
+      $('header .gnb ul li').eq(1).addClass('on');
+  } else {
+    $('header .gnb ul li').eq(1).removeClass('on');
+
+  }
+
+  if (sc >= 1980  ) {
+    $('header .gnb ul li').eq(2).addClass('on');
+} else {
+  $('header .gnb ul li').eq(2).removeClass('on');
+
+}
+
+
+
+
+    if (sc >= 1800 && sc < 3000) {
+      // 클래스 추가
+      $('header .pNav ul li').eq(0).find('.fa-solid, .fa-regular').addClass('on');
+    } else {
+      // 클래스 제거
+      $('header .pNav ul li').eq(0).find('.fa-solid, .fa-regular').removeClass('on');
+    }
+  
+    // 두 번째 범위 (3000~4000)
+    if (sc >= 3000 && sc < 4000) {
+      $('header .pNav ul li').eq(1).find('.fa-solid, .fa-regular').addClass('on');
+    } else {
+      $('header .pNav ul li').eq(1).find('.fa-solid, .fa-regular').removeClass('on');
+    }
+  
+    // 세 번째 범위 (4000~5000)
+    if (sc >= 4000 && sc < 5100) {
+      $('header .pNav ul li').eq(2).find('.fa-solid, .fa-regular').addClass('on');
+    } else {
+      $('header .pNav ul li').eq(2).find('.fa-solid, .fa-regular').removeClass('on');
+    }
+
+
 });
 
 
@@ -47,6 +106,36 @@ $('.active3').click(function(){
   
 
 });
+
+
+
+$('header .pNav ul li').click(function(){
+
+  var p = $(this).index()
+  console.log(p)
+
+  $('header .pNav ul li .fa-solid').removeClass('on')
+  $('header .pNav ul li .fa-regular').removeClass('on')
+   $('header .pNav ul li .fa-solid').eq(p).addClass('on')
+   $('header .pNav ul li .fa-regular').eq(p).addClass('on')
+
+   var scrollPositions = [2000, 3000, 4100];
+   if (p < scrollPositions.length) {
+     $('html, body').animate({
+       scrollTop: scrollPositions[p]
+     }, 1000); // 1초 동안 스크롤 이동
+   }
+
+
+})
+
+
+
+
+
+
+
+
 
 
 
@@ -159,6 +248,14 @@ $(window).scroll(function() {
 });
 
 
+
+$(window).scroll(function() {
+  
+    $('#proJect1 .popUp01').css('display', 'none');
+    $('#proJect2 .popUp02').css('display', 'none');
+    $('#proJect3 .popUp03').css('display', 'none');
+    
+  })
 
 $('.btn001').click(function(){
   
