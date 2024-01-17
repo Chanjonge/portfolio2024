@@ -255,7 +255,7 @@ $(window).scroll(function() {
         currentValue += increment;
         $('.progress4').val(currentValue);
       } else {
-        clearInterval(interval); // 목표값에 도달하면 인터벌 중지
+        clearInterval(interval); 
       }
     }, speed);
   } else {
