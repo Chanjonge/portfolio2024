@@ -905,6 +905,21 @@ td {
 .box8 .logoBot img {
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes ani1 {
   0% {
     left: 125%;
@@ -1546,12 +1561,13 @@ td {
   .box7-1 .btn a:hover {
     opacity: 0.8;
   }
-}
 
 
 
 
-/* 박스8 설정 */
+
+
+  /* 박스8 설정 */
 
 .box8 {
     background-color: #d9d9d9;
@@ -1600,3 +1616,11 @@ td {
         margin: 0 auto;}
 
   .box8 .logoBot img { width: 100%;}
+
+  
+}
+
+
+
+
+
