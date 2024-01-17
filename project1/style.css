@@ -1,779 +1,935 @@
 /* 언어설정 */
 @charset 'UTF-8';
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
 
 /* reset */
-* {margin: 0;
-    padding: 0;}
-ul,ol {list-style: none;}
-a {text-decoration: none;
-    color: #000;}
-img {border: none;
-    vertical-align: bottom;}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: none;
+  vertical-align: bottom;
+}
 
-body.fix {overflow: hidden;
-           }
+body.fix {
+  overflow: hidden;
+}
 
 /* 박스1 설정 */
 
+.box1 {
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.box1 .logo {
+  width: 20%;
+  padding-top: 40px;
+}
+.box1 .logo h2 {
+}
 
+.box1 .menu {
+  width: 80%;
+  padding-top: 40px;
+}
+.box1 .menu ul {
+  display: flex;
+  justify-content: center;
+}
+.box1 .menu li {
+  padding: 30px;
+}
+.box1 .menu a {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+}
 
-.box1 {position: relative;
-        display: flex;
-        width: 80%;
-        margin: 0 auto;}
-.box1 .logo {width: 20%;
-            padding-top: 40px;}
-.box1 .logo h2 {}
+.box1 .menu li:hover a {
+  background-color: #fe7e03;
+  color: #fff;
+}
 
-.box1 .menu {width: 80%;
-            padding-top: 40px;}
-.box1 .menu ul {display: flex;
-                justify-content: center;
-                }
-.box1 .menu li {padding: 30px;}
-.box1 .menu a {display: block;
-                font-size: 20px;
-                    font-weight: 600;
-                    padding: 5px;}
+.box1 .util {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
 
-.box1 .menu li:hover a {background-color: #FE7E03;
-                        color: #fff;}
+.box1 .util form {
+}
 
-.box1 .util {position: absolute;
-            right: 0;
-            top: 30px;
-            
-            }
+.box1 .util input {
+  border: 2px solid #7ab551;
+  border-radius: 5px;
+  padding: 10px;
+  color: #7ab551;
+}
 
-.box1 .util form  {
-     }
+.box1 .util button {
+  border: none;
+  background-color: #7ab551;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.box1 .util button:hover {
+  background-color: #bbbaba;
+}
 
-.box1 .util input {border: 2px solid #7ab551;
-    border-radius: 5px;
-    padding: 10px;
-    color: #7ab551;}
-
-.box1 .util button {border: none;
-                    background-color: #7ab551;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
-.box1 .util button:hover {background-color: #BBBABA;}    
-                
-
-.box1 .util button i {padding: 8px;
-                        font-size: 20px;}            
-
-
+.box1 .util button i {
+  padding: 8px;
+  font-size: 20px;
+}
 
 /* 박스2 설정 */
 
-.box2 {padding-top: 30px;
-    height: 700px; 
-    width: 80%;
-    margin: 0 auto;
-    }
+.box2 {
+  padding-top: 30px;
+  height: 700px;
+  width: 80%;
+  margin: 0 auto;
+}
 .box2 .slide {
-
-width: 100%;
-padding: 4px;
-height: 700px;
-overflow: hidden;}
-
+  width: 100%;
+  padding: 4px;
+  height: 700px;
+  overflow: hidden;
+}
 
 .slideA {
-    display: none; /* 기본적으로 모든 슬라이드 숨김 */
-    width: 100%;
-    height: 700px;
+  display: none; /* 기본적으로 모든 슬라이드 숨김 */
+  width: 100%;
+  height: 700px;
 }
 
-.box2 .slide ul {width: 100%;
-    
-padding: 0;
-margin: 0;
-height: 700px;
-overflow: hidden;
-position: relative;}
+.box2 .slide ul {
+  width: 100%;
 
-.box2 .slide li {font-size: 30px;
-    width: 100%;
-list-style: none;
-position: absolute;
-display: inline-block;
-padding: 4px 20px;
-height: 700px;
+  padding: 0;
+  margin: 0;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
 }
 
+.box2 .slide li {
+  font-size: 30px;
+  width: 100%;
+  list-style: none;
+  position: absolute;
+  display: inline-block;
+  padding: 4px 20px;
+  height: 700px;
+}
 
-.box2 .slide img { width: 100%;
-    display: block;
-height: 700px;}
+.box2 .slide img {
+  width: 100%;
+  display: block;
+  height: 700px;
+}
 
-
-
-
-    
 /* 박스3 설정 */
 
-.box3 {padding-top: 140px;
-        height: 400px;
-    }
-.box3 .trailer { overflow: hidden;
-                height: 100%;
-                width: 80%;
-                margin: 0 auto;
-                position: relative;
-                display: flex;
-                }
-
-.trailer ul {display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-left: 20px;
-                position: absolute;
-                
-           }
-
-.trailer ul:nth-child(1) {left: 0;
-    animation: ani1 60s infinite linear ;}
-.trailer ul:nth-child(2) {left: 100%;
-    animation: ani2 60s infinite linear ;}
-
-
-
-
-
-.trailer ul li { margin-right: 20px;
-    width: 360px;
-height: 368px;
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 0px 4px 10px 0px #FE7E03;}
-
-.trailer img {width: 360px;
-    height: 250px;
-    border-radius: 10px 10px 0px 0px;
-    background: url(<path-to-image>), lightgray 0px -5.5px / 100% 109.756% no-repeat;
-    }
-
-
-.trailer li:nth-child(2)  {
-
-    border-radius: 10px;
-background: #FFF;
-box-shadow: 0px 4px 10px 0px #7CA65F;
+.box3 {
+  padding-top: 140px;
+  height: 400px;
+}
+.box3 .trailer {
+  overflow: hidden;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
 }
 
-.trailer li:nth-child(4)  {
-
-    border-radius: 10px;
-background: #FFF;
-box-shadow: 0px 4px 10px 0px #7CA65F;
+.trailer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  position: absolute;
 }
 
+.trailer ul:nth-child(1) {
+  left: 0;
+  animation: ani1 60s infinite linear;
+}
+.trailer ul:nth-child(2) {
+  left: 100%;
+  animation: ani2 60s infinite linear;
+}
 
-.trailer p {text-align: center;
-            font-weight: 600;
-            font-size: 20px;
-            padding-top: 30px;
-            font-family: 'Gowun Dodum', sans-serif;}
+.trailer ul li {
+  margin-right: 20px;
+  width: 360px;
+  height: 368px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px #fe7e03;
+}
 
+.trailer img {
+  width: 360px;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  background: url(<path-to-image>),
+    lightgray 0px -5.5px / 100% 109.756% no-repeat;
+}
 
+.trailer li:nth-child(2) {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px #7ca65f;
+}
 
+.trailer li:nth-child(4) {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px #7ca65f;
+}
+
+.trailer p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 30px;
+  font-family: "Gowun Dodum", sans-serif;
+}
 
 /* 박스4 설정 */
 
-.box4 {height: 600px;
-        padding-top: 50px;
-    }
-.box4-1 {width: 80%;
-        margin: 0 auto;}
+.box4 {
+  height: 600px;
+  padding-top: 50px;
+}
+.box4-1 {
+  width: 80%;
+  margin: 0 auto;
+}
 
-.box4-1 .titleBox {}
-.box4-1 .titleBox ul {display: flex;}
+.box4-1 .titleBox {
+}
+.box4-1 .titleBox ul {
+  display: flex;
+}
 .box4-1 .titleBox li {
-    width: 200px;
-height: 84px;
-border-radius: 10px 10px 0px 0px;
-background: #fff;
-box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
-color: #7CA65F;
-text-align: center;
-font-size: 25px;
-font-weight: 600;
-margin-right: 10px;
+  width: 200px;
+  height: 84px;
+  border-radius: 10px 10px 0px 0px;
+  background: #fff;
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #7ca65f;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 10px;
 }
 
 .box4-1 .titleBox .to {
-
-    background-color: #7CA65F;
-    color: #fff
+  background-color: #7ca65f;
+  color: #fff;
 }
 
+.box4-1 .titleBox li span {
+  display: inline-block;
+  padding-top: 25px;
+}
 
-.box4-1 .titleBox li span {display: inline-block;
-                            padding-top: 25px;}
+.box4-1 .titleBox li:hover {
+  background-color: #7ca65f;
+  color: #fff;
+  cursor: pointer;
+}
 
+.box4-1 .listBox {
+  position: relative;
+}
+.box4-1 .listBox ul {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #bbbaba;
+  border-bottom: 2px solid #bbbaba;
+  background: #fff;
+}
 
-.box4-1 .titleBox li:hover {background-color: #7CA65F;
-    color: #FFF;
-    cursor: pointer;}
+.box4-1 .listBox ul:nth-child(2) {
+  display: none;
+}
+.box4-1 .listBox ul:nth-child(3) {
+  display: none;
+}
 
+.box4-1 .listBox li {
+  padding: 20px;
+}
 
-
-.box4-1 .listBox {position: relative;
-    
-    }
-.box4-1 .listBox ul {position: absolute;
-                    width: 100%;
-                    top: 0;
-                    left: 0;
-                    border-top: 2px solid #BBBABA;
-                    border-bottom: 2px solid #BBBABA;
-                    background: #FFF;
-                    }
-
-.box4-1 .listBox ul:nth-child(2) {display: none;} 
-.box4-1 .listBox ul:nth-child(3) {display: none;} 
-
-
-.box4-1 .listBox li {padding: 20px;}
-
-.box4-1 .listBox h3 {font-size: 25px;
-                    margin-bottom: 10px;}
-.box4-1 .listBox i {padding: 0 10px 0 10px;}
-.box4-1 .listBox p {font-size: 20px;}
-
-
-
-
+.box4-1 .listBox h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.box4-1 .listBox i {
+  padding: 0 10px 0 10px;
+}
+.box4-1 .listBox p {
+  font-size: 20px;
+}
 
 /* 박스5 설정 */
 
-
-.box5 {padding-top: 50px;
-        height: 700px;
-        position: relative;
-       }
-.box5-1 {width: 80%;
-    margin: 0 auto;
-    height: 100%;
-   }
-
-
-   .alert {position: fixed;
-    z-index: 500;
-    top: 10px;
-    left: 0%;
-    height: 100%;
-width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-display: none;}
-
-
-
-.alertIn { height: 75%;
-    width: 70%;
-    border-radius: 20px;
-    background-color: #fff;
-    z-index: 10;
-border: 3px solid #FE7E03;
-border-radius: 20px;
-position: absolute;
-left: 15%;
-top: 10%;
+.box5 {
+  padding-top: 50px;
+  height: 700px;
+  position: relative;
+}
+.box5-1 {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
 }
 
-.alertIn h2 {padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-            font-size: 30px;
-                text-align: center;
-                    color: #Fff;
-                    background-image: url(img/reserv.jpg);
-                    border-bottom: 2px solid #FE7E03;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: top top;
-                    border-radius: 15px 15px 0 0;
-                }
-.alertIn p {padding-top: 20px;
-            padding-bottom: 50px;
-            text-align: center;
-            font-size: 25px;
-            font-style: normal;}
-
-.alertIn em {display: inline-block;
-    font-style: normal;}
-.alertIn b {display: inline-block;
-        font-style: normal;}
-
-.alertIn .imgBox { position: relative;
-                height: 45%;
-                background-image: url(img/reserv.jpg);
-                background-size: cover;
-                }
-.alertIn .imgBox p {background-color: rgba(255, 255, 255, 0.9);
-                    margin: 0 auto;
-                  position: absolute;
-                  top: 40px;
-                  left: 0%;
-                    width: 100%;
-                    height: 40%;
-                    text-align: center;
-                    font-family: 'Gowun Dodum', sans-serif;}
-.alertIn .imgBox p>i {margin: 0 10px;
-                    color: #7ab551;}
-.alertIn .imgBox p strong {display: inline-block;
-                            font-size: 20px;
-                                margin-top: 20px;
-                                margin-bottom: 20px;
-                            text-align: left;
-                        font-style: normal;
-                    font-weight: 400;}
-.alertIn .imgBox p strong i {color: #FE7E03;
-                            margin-right: 10px;}
-.alertIn .btn {margin-top: 30px;}
-.alertIn .btn a {border: none;
-                    display: inline-block;
-                color: #FFF;
-                    background-color: #FE7E03;
-                    padding: 5px 25px;
-                    border-radius: 10px;}
-
-.alertIn .btn p:hover {opacity: 0.7;}
-
-.box5-1 .titleBox { }
-.box5-1 .titleBox ul {display: flex;}
-.box5-1 .titleBox li {width: 170px;
-    cursor: pointer;
-    height: 70px;
-    border-radius: 10px 10px 0px 0px;
-    background: #fff;
-    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FE7E03;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    margin-right: 10px;}
-
-.box5-1 .titleBox li.on { background-color: #FE7E03;
-        color: #FFF;}
-
-.box5-1 .titleBox li:nth-child(2).on {background-color: #7ab551;}
-.box5-1 .titleBox li:nth-child(3).on {background-color: #7CA65F;}
-
-
-.box5-1 .titleBox li span {display: inline-block;
-    padding-top: 25px;}
-
-
-
-
-.box5-1 .listBox {display: flex;
-   
-    height: 500px;}
-.box5-1 .list {width: 20%;
-                height: 100%;
-                position: relative;
-                height: 100%;
-                
-
-
-box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.25);
-            }
-
-.box5-1 .list_inner>div {position: absolute;
-    left: 0;
-    top: 0;
-    color: #FFF;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px 0px 0px 10px;
-    }
-
-.box5-1 .list_inner>div { text-align: center;
-                    color: #FFF;
-                }
-
-.box5-1 .list_inner strong {padding-bottom: 5px;
-                        display: block;
-                        font-size: 20px;}
-
-
-
-.box5-1 .list_inner h2 {font-size: 25px;
-                        padding-top: 50px;}
-                        
-.box5-1 .list_inner p {font-size: 15px;
-                        padding-top: 100px;}               
-
-
-
-
-.box5-1 .list_inner div:nth-child(1) {background-color: #FE7E03;
+.alert {
+  position: fixed;
+  z-index: 500;
+  top: 10px;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
 }
-.box5-1 .list_inner>div:nth-child(2) {display: none;
-                                background-color: #7ab551;}
-.box5-1 .list_inner>div:nth-child(3) {display: none;
-                        background-color: #7CA65F;}
-.box5-1 .list_inner>div:nth-child(4) {display: none;
-                background-color: #FE7E03;}
 
-
-
-.box5-1 .form {width: 90%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 0px 0px 10px 0px;
-        position: relative;
-        }
-.box5-1 .form .cal {width: 80%;
-                    text-align: center;
-                    
-                    }
-.box5-1 .cal {border-right: 1px solid rgba(151, 150, 150, 0.50);
-    border-radius: 0px 10px 10px 0px;
-    padding-bottom: 20px;
- }
-
-
-.box5-1 .cal table {margin: 0 auto;
-    padding-bottom: 10px;}
-.cal th , td {
-    font-size: 25px;
-    padding: 8px 20px;
-text-align: center;}
-
-
-.cal td:hover {background-color: #FE7E03;
-                    color: #FFF;
-                    border-radius: 20px;
-                    cursor: pointer;}
-
-                    .cal td.on{background-color: #FE7E03;
-                        color: #FFF;
-                        border-radius: 20px;
-                        cursor: pointer;}
-                    
-
-.box5-1 .cal h2 {padding-top: 20px;
-                    margin-bottom: 20px;
-                    padding-right: 30px;
-                    font-size: 30px;
-                    color: #FE7E03;}
-
-
-
-.box5-1 .form .imgBox {width: 80% ;
-    background-image: url(img/감귤7.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-    border-radius: 0px 0px 10px 10px;
-    }
-
-
-
-
-.box5 .book {box-sizing: border-box;
-    border-radius: 10px;
-    background: #FFF;
-    width: 70%;
-height: 495px;
-    box-shadow: 1px 1px 5px 1px #FE7E03;}
-
-
-.box5 .bookIn { width: 90%;
-                margin: 20px auto;}
-
-.bookIn  i {font-size: 20px;
-            margin-right: 10px;}
-
-.bookIn  h3 {color: #FE7E03;
-            font-weight: 600;
-            font-size: 20px;}  
-           
-            
-
-
-.bookIn .user {display: flex;
-                margin-bottom: 80px;}
-.bookIn .user h3 {margin-right: 200px;}
-.bookIn .user .bar {display: flex;
-                   }
-
-.bookIn .user .bar p:nth-child(1) {background-color: #FE7E03;
-                                border-radius: 10px 0 0 10px;
-                                padding: 5px;
-                                cursor: pointer;
-                                }
-.bookIn .user .bar p:nth-child(1) i {margin-left: 10px;
-    margin-top: 5px;
-                        transition: all 0.5s;}
-
-
-.bookIn .user .bar p:nth-child(1):hover i {transform: scale(0.5);}
-
-
-.bookIn .user .bar p:nth-child(2) {width: 120px;
-    text-align: center;
-    padding: 8px 0;
-                                    border-top: 1px solid #ddd;
-                                    border-bottom: 1px solid #ddd;}
-
-.board {font-size: 15px;
-font-weight: bold;}
-
-
-.bookIn .user .bar p:nth-child(3) {background-color: #FE7E03;
-                                    border-radius: 0 10px 10px 0;
-                                        padding: 3px;
-                                        cursor: pointer;
-                                    }
-.bookIn .user .bar p:nth-child(3) i {margin-left: 10px;
-    margin-top: 5px;
-    transition: all 0.5s;}
-.bookIn .user .bar p:nth-child(3):hover i {transform: scale(0.5);}
-
-
-.bookIn .time {margin-bottom: 30px;}                
-.bookIn .timeIn {display: flex;
-    margin-bottom: 30px;}
-
-.bookIn .timebar {}
-.bookIn .timebar ul {display: flex;
-                        justify-content: flex-start;
-                        flex-wrap: wrap;}
-.bookIn .timebar ul li {width: 20%;
-    border-radius: 10px;
-    border: 1px solid #D9D9D9;
-    margin: 5px;
-    padding: 5px;
-    font-size: 20px;
-    background: #FFF;
-    color: #FE7E03;
-font-weight: 600;
-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25)
+.alertIn {
+  height: 75%;
+  width: 70%;
+  border-radius: 20px;
+  background-color: #fff;
+  z-index: 10;
+  border: 3px solid #fe7e03;
+  border-radius: 20px;
+  position: absolute;
+  left: 15%;
+  top: 10%;
 }
-.bookIn .timebar ul li:hover {background-color: #FE7E03;
-                            color: #FFF;
-                                cursor: pointer;}
-.bookIn .timebar li.on { background-color: #FE7E03;
-    color: #FFF;
-        cursor: pointer;}
 
+.alertIn h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  background-image: url(img/reserv.jpg);
+  border-bottom: 2px solid #fe7e03;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top top;
+  border-radius: 15px 15px 0 0;
+}
+.alertIn p {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+}
 
-.bookIn .cash {display: flex;
-    margin-bottom: 20px;}
-.bookIn .cash h3 {margin-right: 200px;}
+.alertIn em {
+  display: inline-block;
+  font-style: normal;
+}
+.alertIn b {
+  display: inline-block;
+  font-style: normal;
+}
 
+.alertIn .imgBox {
+  position: relative;
+  height: 45%;
+  background-image: url(img/reserv.jpg);
+  background-size: cover;
+}
+.alertIn .imgBox p {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+  position: absolute;
+  top: 40px;
+  left: 0%;
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  font-family: "Gowun Dodum", sans-serif;
+}
+.alertIn .imgBox p > i {
+  margin: 0 10px;
+  color: #7ab551;
+}
+.alertIn .imgBox p strong {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+}
+.alertIn .imgBox p strong i {
+  color: #fe7e03;
+  margin-right: 10px;
+}
+.alertIn .btn {
+  margin-top: 30px;
+}
+.alertIn .btn a {
+  border: none;
+  display: inline-block;
+  color: #fff;
+  background-color: #fe7e03;
+  padding: 5px 25px;
+  border-radius: 10px;
+}
 
-.bookIn .cashbar {font-size: 25px;
-                font-weight: 600;}
-.bookIn .cashbar em {font-style: normal;}
+.alertIn .btn p:hover {
+  opacity: 0.7;
+}
 
+.box5-1 .titleBox {
+}
+.box5-1 .titleBox ul {
+  display: flex;
+}
+.box5-1 .titleBox li {
+  width: 170px;
+  cursor: pointer;
+  height: 70px;
+  border-radius: 10px 10px 0px 0px;
+  background: #fff;
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fe7e03;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+}
 
+.box5-1 .titleBox li.on {
+  background-color: #fe7e03;
+  color: #fff;
+}
 
-.bookIn .btn {border: none;
-            text-align: center;
-            margin-bottom: 10px;}
-.bookIn .btn a {display: inline-block;
-                color: #fff;
-                background-color: #FE7E03;
-                padding: 10px 40px;
-                border-radius: 10px;
-                font-size: 20px;
-                }
+.box5-1 .titleBox li:nth-child(2).on {
+  background-color: #7ab551;
+}
+.box5-1 .titleBox li:nth-child(3).on {
+  background-color: #7ca65f;
+}
 
-.bookIn .btn:hover a {opacity: 0.8;}
+.box5-1 .titleBox li span {
+  display: inline-block;
+  padding-top: 25px;
+}
 
-    
+.box5-1 .listBox {
+  display: flex;
 
+  height: 500px;
+}
+.box5-1 .list {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  height: 100%;
 
+  box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
 
+.box5-1 .list_inner > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 0px 10px;
+}
 
+.box5-1 .list_inner > div {
+  text-align: center;
+  color: #fff;
+}
+
+.box5-1 .list_inner strong {
+  padding-bottom: 5px;
+  display: block;
+  font-size: 20px;
+}
+
+.box5-1 .list_inner h2 {
+  font-size: 25px;
+  padding-top: 50px;
+}
+
+.box5-1 .list_inner p {
+  font-size: 15px;
+  padding-top: 100px;
+}
+
+.box5-1 .list_inner div:nth-child(1) {
+  background-color: #fe7e03;
+}
+.box5-1 .list_inner > div:nth-child(2) {
+  display: none;
+  background-color: #7ab551;
+}
+.box5-1 .list_inner > div:nth-child(3) {
+  display: none;
+  background-color: #7ca65f;
+}
+.box5-1 .list_inner > div:nth-child(4) {
+  display: none;
+  background-color: #fe7e03;
+}
+
+.box5-1 .form {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0px 0px 10px 0px;
+  position: relative;
+}
+.box5-1 .form .cal {
+  width: 80%;
+  text-align: center;
+}
+.box5-1 .cal {
+  border-right: 1px solid rgba(151, 150, 150, 0.5);
+  border-radius: 0px 10px 10px 0px;
+  padding-bottom: 20px;
+}
+
+.box5-1 .cal table {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.cal th,
+td {
+  font-size: 25px;
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.cal td:hover {
+  background-color: #fe7e03;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cal td.on {
+  background-color: #fe7e03;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.box5-1 .cal h2 {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 30px;
+  font-size: 30px;
+  color: #fe7e03;
+}
+
+.box5-1 .form .imgBox {
+  width: 80%;
+  background-image: url(img/감귤7.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.box5 .book {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #fff;
+  width: 70%;
+  height: 495px;
+  box-shadow: 1px 1px 5px 1px #fe7e03;
+}
+
+.box5 .bookIn {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.bookIn i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.bookIn h3 {
+  color: #fe7e03;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.bookIn .user {
+  display: flex;
+  margin-bottom: 80px;
+}
+.bookIn .user h3 {
+  margin-right: 200px;
+}
+.bookIn .user .bar {
+  display: flex;
+}
+
+.bookIn .user .bar p:nth-child(1) {
+  background-color: #fe7e03;
+  border-radius: 10px 0 0 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.bookIn .user .bar p:nth-child(1) i {
+  margin-left: 10px;
+  margin-top: 5px;
+  transition: all 0.5s;
+}
+
+.bookIn .user .bar p:nth-child(1):hover i {
+  transform: scale(0.5);
+}
+
+.bookIn .user .bar p:nth-child(2) {
+  width: 120px;
+  text-align: center;
+  padding: 8px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.board {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bookIn .user .bar p:nth-child(3) {
+  background-color: #fe7e03;
+  border-radius: 0 10px 10px 0;
+  padding: 3px;
+  cursor: pointer;
+}
+.bookIn .user .bar p:nth-child(3) i {
+  margin-left: 10px;
+  margin-top: 5px;
+  transition: all 0.5s;
+}
+.bookIn .user .bar p:nth-child(3):hover i {
+  transform: scale(0.5);
+}
+
+.bookIn .time {
+  margin-bottom: 30px;
+}
+.bookIn .timeIn {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.bookIn .timebar {
+}
+.bookIn .timebar ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.bookIn .timebar ul li {
+  width: 20%;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background: #fff;
+  color: #fe7e03;
+  font-weight: 600;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.bookIn .timebar ul li:hover {
+  background-color: #fe7e03;
+  color: #fff;
+  cursor: pointer;
+}
+.bookIn .timebar li.on {
+  background-color: #fe7e03;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bookIn .cash {
+  display: flex;
+  margin-bottom: 20px;
+}
+.bookIn .cash h3 {
+  margin-right: 200px;
+}
+
+.bookIn .cashbar {
+  font-size: 25px;
+  font-weight: 600;
+}
+.bookIn .cashbar em {
+  font-style: normal;
+}
+
+.bookIn .btn {
+  border: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.bookIn .btn a {
+  display: inline-block;
+  color: #fff;
+  background-color: #fe7e03;
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.bookIn .btn:hover a {
+  opacity: 0.8;
+}
 
 /* 박스6 설정 */
 
-.box6 {height: 600px;
-    width: 80%;
-    margin: 0 auto;}
-.box6 h1 {width: 200px;
-    height: 70px;
-    border-radius: 10px 10px 0px 0px;
-    background: #7CA65F;
-    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    margin-right: 10px;
-    }
+.box6 {
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+.box6 h1 {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px 10px 0px 0px;
+  background: #7ca65f;
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 10px;
+}
 
-.box6 h1 span {display: inline-block;
-    padding-top: 15px;}
+.box6 h1 span {
+  display: inline-block;
+  padding-top: 15px;
+}
 
+.box6 .map {
+  width: 100%;
+  height: 90%;
+  transform: translateX(-800px);
+  opacity: 0;
+  transition: all 2s;
+}
+.box6 iframe {
+  width: 100%;
+  height: 100%;
+}
 
-.box6 .map {width: 100%;
-            height: 90%;
-            transform: translateX(-800px
-            );
-        opacity: 0;
-    transition: all 2s;}
-.box6 iframe {width: 100%;
-                height: 100%;
-            }
-
-
-.box6 .map.on {transform: translateX(0);
-opacity: 1;}
+.box6 .map.on {
+  transform: translateX(0);
+  opacity: 1;
+}
 
 /* 박스7 설정 */
 
-.box7 {height: 800px;
-        padding-top: 30px;
-        padding-top: 30px;
-        margin-bottom: 100px;}
-.box7-1 {width: 50%;
-        margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 30px;}
+.box7 {
+  height: 800px;
+  padding-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 100px;
+}
+.box7-1 {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 
-.box7-1 ul {}
-.box7-1 li {}
+.box7-1 ul {
+}
+.box7-1 li {
+}
 
-.box7-1 ul>li {padding: 60px 20px 20px 100px;
-                display: flex;
-                border-bottom: 1px solid #ddd;
-            transition: all 2s;}
+.box7-1 ul > li {
+  padding: 60px 20px 20px 100px;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  transition: all 2s;
+}
 
-.box7-1 ul .map1 {transform: translateX(400px
-    );
-opacity: 0;}
-    .box7-1 ul .map2 {transform: translateX(-400px
-        );opacity: 0;}
-        .box7-1 ul .map3 {transform: translateX(400px
-            );opacity: 0;}
+.box7-1 ul .map1 {
+  transform: translateX(400px);
+  opacity: 0;
+}
+.box7-1 ul .map2 {
+  transform: translateX(-400px);
+  opacity: 0;
+}
+.box7-1 ul .map3 {
+  transform: translateX(400px);
+  opacity: 0;
+}
 
+.box7-1 ul .map1.on {
+  transform: translateX(0);
+  opacity: 1;
+}
+.box7-1 ul .map2.on {
+  transform: translateX(0);
+  opacity: 1;
+}
+.box7-1 ul .map3.on {
+  transform: translateX(0);
+  opacity: 1;
+}
 
-.box7-1 ul .map1.on {transform: translateX(0);
-                opacity: 1;}
-                .box7-1 ul .map2.on {transform: translateX(0);
-                    opacity: 1;}
-                    .box7-1 ul .map3.on {transform: translateX(0);
-                        opacity: 1;}
+.box7-1 .ico {
+  width: 20%;
+  text-align: center;
+}
+.box7-1 .ico p {
+  text-align: center;
+  color: #fe7e03;
+  font-weight: 600;
+}
 
+.box7-1 .txt {
+  width: 80%;
+}
+.box7-1 .txt p {
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #c46c18;
+}
 
+.box7-1 .txt strong {
+  display: inline-block;
+  color: #fe7e03;
+  font-size: 25px;
+}
 
+.box7-1 .btn {
+  text-align: center;
 
+  padding: 30px 0;
+}
 
+.box7-1 .btn p {
+}
 
+.box7-1 .btn a {
+  display: inline-block;
+  border: none;
+  background-color: #fe7e03;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 25px;
+}
 
-
-.box7-1 .ico {width: 20%;
-            text-align: center;
-            }
-.box7-1 .ico p {text-align: center;
-                color: #FE7E03;
-                font-weight: 600;}
-
-.box7-1 .txt {width: 80%;}
-.box7-1 .txt p {font-size: 20px;
-                padding-bottom: 20px;
-                padding-top: 20px;
-            color: #C46C18;;}
-
-.box7-1 .txt strong {display: inline-block;
-                        color: #FE7E03;
-                        font-size: 25px;}
-
-
-.box7-1 .btn {text-align: center;
-                
-                padding: 30px 0;
-                }
-
-.box7-1 .btn p {}
-
-.box7-1 .btn a {display: inline-block;
-    border: none;
-    background-color: #FE7E03;
-        color: #FFF;
-        padding: 20px 40px;
-        border-radius: 10px;
-        font-size: 25px;}
-
-.box7-1 .btn a:hover {opacity: 0.8;}
-
-
+.box7-1 .btn a:hover {
+  opacity: 0.8;
+}
 
 /* 박스8 설정 */
 
-
-.box8 {background-color: #D9D9D9;
-        height: 300px;
-        text-align: center;}
-
-.box8 h2 {padding-top: 40px;
-            font-size: 30px;}
-
-.box8 .menu {padding: 40px 0;}
-.box8 .menu ul {display: flex;
-            justify-content: center;
-            align-items: center;}
-.box8 .menu li {margin-right: 50px;}
-.box8 .menu li a {display: block;
-    font-size: 20px;
-                }
-
-.box8 .menu li:hover {background-color: #FE7E03;
-                        }
-
-.box8 .menu li:hover a {color: #FFF;
-                    }
-
-.box8 .logoBot {}
-.box8 .logoBot h3 {}
-.box8 .logoBot a {}
-.box8 .logoBot img {}
-
-
-@keyframes ani1 {
-
-    0% {left: 125%;}
-    50% {left: 0;}
-    100% {left: -125%;}
-
-
-  }
-  @keyframes ani2 {
-
-0% {left: 0;}
-50% {left: -125%;}
-50.000000001% {left: 125%}
-100% {left: 0;}
-
-
+.box8 {
+  background-color: #d9d9d9;
+  height: 300px;
+  text-align: center;
 }
 
+.box8 h2 {
+  padding-top: 40px;
+  font-size: 30px;
+}
 
+.box8 .menu {
+  padding: 40px 0;
+}
+.box8 .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box8 .menu li {
+  margin-right: 50px;
+}
+.box8 .menu li a {
+  display: block;
+  font-size: 20px;
+}
 
+.box8 .menu li:hover {
+  background-color: #fe7e03;
+}
 
+.box8 .menu li:hover a {
+  color: #fff;
+}
 
+.box8 .logoBot {
+}
+.box8 .logoBot h3 {
+}
+.box8 .logoBot a {
+}
+.box8 .logoBot img {
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@keyframes ani1 {
+  0% {
+    left: 125%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: -125%;
+  }
+}
+@keyframes ani2 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -125%;
+  }
+  50.000000001% {
+    left: 125%;
+  }
+  100% {
+    left: 0;
+  }
+}
 
 
 
@@ -793,416 +949,654 @@ opacity: 0;}
 
 
 @media (max-width: 769px) {
-   
-   
-   
-    /* 박스1 설정 */
+  /* 박스1 설정 */
 
-body {padding-left: 20px;
-        padding-right: 20px;}
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-.box1 {position: relative;
+  .box1 {
+    position: relative;
     display: block;
     width: 100%;
-   }
-.box1 .logo {width: 20%;
-        padding-top: 40px;}
-.box1 .logo h2 {}
+  }
+  .box1 .logo {
+    width: 50%;
+    padding-top: 40px;
+  }
+  .box1 .logo h2 {
+    width: 100%;
+  }
+  .box1 .logo img {
+    width: 100%;
+  }
 
-.box1 .menu {width: 100%;
-        padding-top: 40px;}
+  .box1 .menu {
+    width: 100%;
+    padding-top: 40px;
+  }
 
-.box1 .menu ul {display: flex;
-            justify-content: center;
-            width: 100%;
-            }
-.box1 .menu li {
+  .box1 .menu ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .box1 .menu li {
     text-align: center;
     padding: 0;
-width: 20%;}
-.box1 .menu a {display: block;
-            font-size: 15px;
-                font-weight: 600;
-                width: 100%;
-                }
+    width: 20%;
+  }
 
+  .box1 .menu a {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    width: 100%;
+  }
 
-.box1 .menu li:hover a {background-color: #FE7E03;
-                    color: #fff;}
+  .box1 .menu li:hover a {
+    background-color: #fe7e03;
+    color: #fff;
+  }
 
-.box1 .util {position: absolute;
-        right: 0;
-        top: 30px;
-        
-        }
+  .box1 .util {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
 
-.box1 .util form  {
- }
+  .box1 .util form {
+  }
 
-.box1 .util input {border: 2px solid #7ab551;
-border-radius: 5px;
-padding: 10px;
-color: #7ab551;}
+  .box1 .util input {
+    display: none;
+  }
 
-.box1 .util button {border: none;
-                background-color: #7ab551;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-.box1 .util button:hover {background-color: #BBBABA;}    
-            
+  .box1 .util button {
+    border: none;
+    background-color: #7ab551;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .box1 .util button:hover {
+    background-color: #bbbaba;
+  }
 
-.box1 .util button i {padding: 8px;
-                    font-size: 20px;}            
+  .box1 .util button i {
+    padding: 8px;
+    font-size: 20px;
+  }
 
+  /* 박스2 설정 */
 
-/* 박스2 설정 */
-
-.box2 {padding-top: 30px;
-    height: 700px; 
+  .box2 {
+    padding-top: 30px;
+    height: 700px;
     width: 90%;
     margin: 0 auto;
-    }
+  }
 
+  /* 박스3 설정 */
 
-/* 박스3 설정 */
-
-.box3 {padding-top: 50px;
+  .box3 {
+    padding-top: 50px;
     height: 400px;
     width: 100%;
-}
-.box3 .trailer { overflow: hidden;
-            height: 100%;
-            width: 100%;
-            margin: 0 auto;
-            position: relative;
-            display: flex;
-            }
+  }
+  .box3 .trailer {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+  }
 
-.trailer ul {
-            padding-left: 0px;
-            margin-left: 0;
-            height: 70%;
-       }
+  .trailer ul {
+    padding-left: 0px;
+    margin-left: 0;
+    height: 70%;
+  }
 
-.trailer ul:nth-child(1) {left: 0;
-animation: ani1 60s infinite linear ;}
-.trailer ul:nth-child(2) {left: 150%;
-    animation: ani2 60s infinite linear ;
-}
+  .trailer ul:nth-child(1) {
+    left: 0;
+    animation: ani1 60s infinite linear;
+  }
+  .trailer ul:nth-child(2) {
+    left: 150%;
+    animation: ani2 60s infinite linear;
+  }
 
+  .trailer ul li {
+    margin-right: 20px;
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px #fe7e03;
+  }
 
+  .trailer img {
+    width: 100%;
+    height: 60%;
+    background: url(<path-to-image>),
+      lightgray 0px -5.5px / 100% 109.756% no-repeat;
+  }
 
+  .trailer p {
+    font-size: 15px;
+  }
 
+  @keyframes ani1 {
+    0% {
+      left: 250%;
+    }
+    50% {
+      left: 0;
+    }
+    100% {
+      left: -250%;
+    }
+  }
 
-.trailer ul li { margin-right: 20px;
-width: 300px;
-height: 100%;
-border-radius: 10px;
-background: #FFF;
-border-radius: 10px;
-box-shadow: 0px 4px 10px 0px #FE7E03;}
+  @keyframes ani2 {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: -250%;
+    }
+    50.000000001% {
+      left: 250%;
+    }
+    100% {
+      left: 0;
+    }
+  }
 
-.trailer img {width: 100%;
-height: 60%;
-background: url(<path-to-image>), lightgray 0px -5.5px / 100% 109.756% no-repeat;
-}
+  /* 박스4 설정 */
+  .box4 {
+    height: 800px;
+  }
+  .box4-1 {
+    width: 100%;
+  }
 
+  .box4-1 .titleBox ul li {
+    width: 250px;
+    height: 65px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
 
+  .box4-1 .listBox h3 {
+    font-size: 20px;
+  }
 
+  .box4-1 .listBox p {
+    font-size: 15px;
+  }
 
-.trailer p {
-        font-size: 15px;
-        }
+  /* 박스5 설정 */
 
-
-
-        @keyframes ani1 {
-
-            0% {left: 250%;}
-            50% {left: 0;}
-            100% {left: -250%;}
-        
-        
-          }
-
-
-          @keyframes ani2 {
-
-            0% {left: 0;}
-            50% {left: -250%;}
-            50.000000001% {left: 250%}
-            100% {left: 0;}
-            
-            
-            }
-
-
-/* 박스4 설정 */
-
-.box4-1 .titleBox ul li {font-size: 20px;}
-.box4-1 .listBox h3 {font-size: 20px;
-               }
-
-.box4-1 .listBox p {font-size: 15px;}
-
-/* 박스5 설정 */
-
-
-.box5 {padding-top: 50px;
-        height: 1200px;
-        position: relative;
-        width: 100%;
-       }
-.box5-1 {width: 100%;
+  .box5 {
+    padding-top: 50px;
+    height: 1200px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .box5-1 {
+    width: 100%;
     margin: 0 auto;
     height: 100%;
-   }
+  }
 
-
- 
-
-
-.alertIn { height: 55%;
+  .alertIn {
+    height: 55%;
     width: 50%;
-    
-    
-left: 10%;
-top: 10%;
-}
 
-.alertIn h2 {
-            font-size: 20px;
-                
-                }
-.alertIn p {padding-top: 20px;
-            padding-bottom: 60px;
-            
-            font-size: 20px;
-            }
+    left: 15%;
+    top: 10%;
+  }
 
+  .alertIn h2 {
+    font-size: 20px;
+  }
+  .alertIn p {
+    padding-top: 20px;
+    padding-bottom: 60px;
 
+    font-size: 20px;
+  }
 
-.box5-1 .titleBox { }
-.box5-1 .titleBox ul {display: flex;
-width: 100%;}
-.box5-1 .titleBox li {width: 25%;
+  .box5-1 .titleBox {
+  }
+  .box5-1 .titleBox ul {
+    display: flex;
+    width: 100%;
+  }
+  .box5-1 .titleBox li {
+    width: 25%;
     cursor: pointer;
-    height: 60px;
+    height: 70px;
     border-radius: 10px 10px 0px 0px;
     background: #fff;
     box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #FE7E03;
+    color: #fe7e03;
     text-align: center;
     font-size: 15px;
     font-weight: 600;
     padding-bottom: 5px;
-    margin-right: 10px;}
+    margin-right: 10px;
+  }
 
-.box5-1 .titleBox li.on { background-color: #FE7E03;
-        color: #FFF;}
+  .box5-1 .titleBox li.on {
+    background-color: #fe7e03;
+    color: #fff;
+  }
 
-.box5-1 .titleBox li:nth-child(2).on {background-color: #7ab551;}
-.box5-1 .titleBox li:nth-child(3).on {background-color: #7CA65F;}
+  .box5-1 .titleBox li:nth-child(2).on {
+    background-color: #7ab551;
+  }
+  .box5-1 .titleBox li:nth-child(3).on {
+    background-color: #7ca65f;
+  }
 
+  .box5-1 .titleBox li span {
+    display: inline-block;
+    padding-top: 25px;
+  }
 
-.box5-1 .titleBox li span {display: inline-block;
-    padding-top: 25px;}
+  .box5-1 .listBox {
+    display: block;
+    height: 1000px;
+  }
+  .box5-1 .list {
+    width: 100%;
+    height: 20%;
+    position: relative;
 
+    box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  }
 
-
-
-.box5-1 .listBox {display: block;
-    height: 1000px;}
-.box5-1 .list {width: 100%;
-                height: 20%;
-                position: relative;
-               
-                
-
-
-box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.25);
-            }
-
-.box5-1 .list_inner>div {position: absolute;
+  .box5-1 .list_inner > div {
+    position: absolute;
     left: 0;
     top: 0;
-    color: #FFF;
+    color: #fff;
     width: 100%;
     height: 100%;
     border-radius: 0px 0px 0px 10px;
-    }
+  }
 
-.box5-1 .list_inner>div { text-align: center;
-                    color: #FFF;
-                }
+  .box5-1 .list_inner > div {
+    text-align: center;
+    color: #fff;
+  }
 
-.box5-1 .list_inner strong {padding-bottom: 5px;
-                        display: block;
-                        font-size: 20px;}
+  .box5-1 .list_inner strong {
+    padding-bottom: 5px;
+    display: block;
+    font-size: 20px;
+  }
 
+  .box5-1 .list_inner h2 {
+    font-size: 25px;
+    padding-top: 30px;
+  }
 
-
-.box5-1 .list_inner h2 {font-size: 25px;
-                        padding-top: 30px;}
-                        
-.box5-1 .list_inner p {font-size: 15px;
+  .box5-1 .list_inner p {
+    font-size: 15px;
     padding-top: 20px;
-                        padding-bottom: 20px;}               
+    padding-bottom: 20px;
+  }
 
+  .box5-1 .list_inner div:nth-child(1) {
+    background-color: #fe7e03;
+  }
+  .box5-1 .list_inner > div:nth-child(2) {
+    display: none;
+    background-color: #7ab551;
+  }
+  .box5-1 .list_inner > div:nth-child(3) {
+    display: none;
+    background-color: #7ca65f;
+  }
+  .box5-1 .list_inner > div:nth-child(4) {
+    display: none;
+    background-color: #fe7e03;
+  }
 
-
-
-.box5-1 .list_inner div:nth-child(1) {background-color: #FE7E03;
-}
-.box5-1 .list_inner>div:nth-child(2) {display: none;
-                                background-color: #7ab551;}
-.box5-1 .list_inner>div:nth-child(3) {display: none;
-                        background-color: #7CA65F;}
-.box5-1 .list_inner>div:nth-child(4) {display: none;
-                background-color: #FE7E03;}
-
-
-
-.box5-1 .form {width: 90%;
-        height: 30%;
-        margin: 10px auto;
-        overflow: hidden;
-        box-shadow: 1px 1px 5px 1px #FE7E03;
-        border-radius: 10px;
-        position: relative;
-        }
-.box5-1 .form .cal {width: 90%;
-                    text-align: center;
-                    height: 100%;
-                    margin: 0 auto;
-                    }
-.box5-1 .cal {border-right: 0px solid rgba(151, 150, 150, 0.50);
+  .box5-1 .form {
+    width: 90%;
+    height: 30%;
+    margin: 10px auto;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 1px #fe7e03;
+    border-radius: 10px;
+    position: relative;
+  }
+  .box5-1 .form .cal {
+    width: 90%;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .box5-1 .cal {
+    border-right: 0px solid rgba(151, 150, 150, 0.5);
     border-radius: 0px 10px 10px 0px;
     padding-bottom: 20px;
- }
+  }
 
-
-.box5-1 .cal table {margin: 0 auto;
-    padding-bottom: 0px;}
-.cal th , td {
+  .box5-1 .cal table {
+    margin: 0 auto;
+    padding-bottom: 0px;
+  }
+  .cal th,
+  td {
     font-size: 18px;
     padding: 5px;
-text-align: center;}
-
-
-
-                    
-
-.box5-1 .cal h2 {
-                    font-size: 23px;
-                    }
-
-
-
-.box5-1 .form .imgBox {display: none;
-    }
-
-
-
-
-.box5 .book {box-sizing: border-box;
-    border-radius: 10px;
-    background: #FFF;
-    width: 90%;
-    margin: 0 auto;
-height: 45%;
-    box-shadow: 1px 1px 5px 1px #FE7E03;}
-
-
-.box5 .bookIn { width: 90%;
-                margin: 20px auto;}
-
-.bookIn  i {font-size: 20px;
-            margin-right: 10px;}
-
-.bookIn  h3 {color: #FE7E03;
-            font-weight: 600;
-            font-size: 20px;}  
-           
-            
-
-
-.bookIn .user {display: flex;
-    padding-top: 20px;
-                margin-bottom: 80px;}
-
-
-
-/* 박스7 설정 */
-
-.box7 { width: 100%;}
-.box7-1 {width: 100%;}
-
-.box7-1 ul>li {padding: 60px 20px 20px 100px;
-            display: flex;
-            border-bottom: 1px solid #ddd;
-        transition: all 2s;}
-
-.box7-1 ul .map1 {transform: translateX(400px
-);
-opacity: 0;}
-.box7-1 ul .map2 {transform: translateX(-400px
-    );opacity: 0;}
-    .box7-1 ul .map3 {transform: translateX(400px
-        );opacity: 0;}
-
-
-.box7-1 ul .map1.on {transform: translateX(0);
-            opacity: 1;}
-            .box7-1 ul .map2.on {transform: translateX(0);
-                opacity: 1;}
-                .box7-1 ul .map3.on {transform: translateX(0);
-                    opacity: 1;}
-
-
-
-
-
-
-
-
-.box7-1 .ico {width: 20%;
-        text-align: center;
-        }
-
-
-.box7-1 .txt {width: 80%;}
-.box7-1 .txt p {
-    text-align: left;
-            ;}
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    text-align: center;
   }
+
+  .box5-1 .cal h2 {
+    font-size: 23px;
+  }
+
+  .box5-1 .form .imgBox {
+    display: none;
+  }
+
+  .box5 .book {
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #fff;
+    width: 90%;
+    height: 425px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px 1px #fe7e03;
+  }
+
+  .box5 .bookIn {
+    width: 100%;
+    margin: 20px 20px;
+    padding: 5px;
+  }
+
+  .bookIn i {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .bookIn h3 {
+    color: #fe7e03;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .bookIn .user {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+  .bookIn .user i {
+    margin-top: 10px;
+  }
+  .bookIn .user h3 {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .bookIn .user .bar {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  .bookIn .user .bar p:nth-child(1) {
+    background-color: #fe7e03;
+    border-radius: 10px 0 0 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .bookIn .user .bar p:nth-child(1) i {
+    margin-left: 10px;
+    margin-top: 5px;
+    transition: all 0.5s;
+  }
+
+  .bookIn .user .bar p:nth-child(1):hover i {
+    transform: scale(0.5);
+  }
+
+  .bookIn .user .bar p:nth-child(2) {
+    width: 50px;
+    text-align: center;
+    padding: 8px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .board {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  
+  
+
+  .bookIn .time {
+    margin-bottom: 10px;
+  }
+  .bookIn .timeIn {
+    margin-bottom: 20px;
+  }
+
+  .bookIn .timebar ul li {
+    width: 15%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+ 
+
+  .bookIn .cash {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+
+  .bookIn .cash i {
+    margin-top: 10px;
+  }
+  .bookIn .cash h3 {
+    margin-top: 10px;
+    margin-right: 100px;
+  }
+
+  .bookIn .cashbar {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .bookIn .cashbar em {
+    font-style: normal;
+  }
+
+  .bookIn .bt {width: 50%;
+    margin-left: 50px;
+    margin-top: 20px;
+       }
+
+  .bookIn .btn {
+    width: 100%;
+    
+    border: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .bookIn .btn a {
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    background-color: #fe7e03;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .bookIn .btn:hover a {
+    opacity: 0.8;
+  }
+
+  /* 박스7 설정 */
+
+  .box7 {
+    width: 100%;
+    overflow: hidden;
+    height: 1250px;
+    margin-bottom: 0;
+  }
+  .box7-1 {
+    width: 100%;
+  }
+
+  .box7-1 ul > li {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 30px 30px 60px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    transition: all 2s;
+  }
+
+  .box7-1 ul .map1 {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  .box7-1 ul .map2 {
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  .box7-1 ul .map3 {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+
+  .box7-1 ul .map1.on {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .box7-1 ul .map2.on {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .box7-1 ul .map3.on {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .box7-1 .ico {
+    width: 20%;
+    text-align: center;
+  }
+  .box7-1 .ico p {
+    text-align: center;
+    color: #fe7e03;
+    font-weight: 600;
+  }
+
+  .box7-1 .txt {
+    width: 100%;
+  }
+  .box7-1 .txt p {
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #c46c18;
+  }
+
+  .box7-1 .txt strong {
+    display: inline-block;
+    color: #fe7e03;
+    font-size: 25px;
+  }
+
+  .box7-1 .btn {
+    text-align: center;
+
+    padding: 20px 0;
+  }
+
+  .box7-1 .btn p {
+  }
+
+  .box7-1 .btn a {
+    display: inline-block;
+    border: none;
+    background-color: #fe7e03;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  .box7-1 .btn a:hover {
+    opacity: 0.8;
+  }
+}
+
+
+
+
+/* 박스8 설정 */
+
+.box8 {
+    background-color: #d9d9d9;
+    height: 300px;
+    text-align: center;
+  }
+  
+  .box8 h2 {
+    padding-top: 10px;
+    font-size: 30px;
+  }
+  
+  .box8 .menu {
+    padding: 20px 0;
+  }
+  .box8 .menu ul {
+    display: block;
+    text-align: center;
+  }
+  .box8 .menu li {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .box8 .menu li a {
+    display: block;
+    font-size: 20px;
+  }
+  
+  .box8 .menu li:hover {
+    background-color: #fe7e03;
+  }
+  
+  .box8 .menu li:hover a {
+    color: #fff;
+  }
+
+
+
+  .box8 .logoBot { 
+
+    width: 100%;
+  }
+
+
+  .box8 .logoBot h3 {width: 50%;
+        margin: 0 auto;}
+
+  .box8 .logoBot img { width: 100%;}
