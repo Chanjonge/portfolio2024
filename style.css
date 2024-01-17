@@ -694,7 +694,7 @@ http://scripts.sil.org/OFL
   border-radius: 2px;
   padding: 10px 10px;
   margin: 10px 0;
-  width: 150px;
+  width: 90%;
   text-align: center;
   cursor: pointer;
 }
@@ -887,7 +887,7 @@ http://scripts.sil.org/OFL
   border-radius: 2px;
   padding: 10px 10px;
   margin: 10px 0;
-  width: 150px;
+  width: 90%;
   text-align: center;
   cursor: pointer;
 }
@@ -910,6 +910,7 @@ http://scripts.sil.org/OFL
 
 #proJect2 .txtBox .btn p:hover {
   background-color: #520a78;
+  color: #fff;
 }
 #proJect2 .txtBox .btn p:hover a {
   color: #fff;
@@ -1081,7 +1082,7 @@ http://scripts.sil.org/OFL
   border-radius: 2px;
   padding: 10px 10px;
   margin: 10px 0;
-  width: 150px;
+  width: 90%;
   text-align: center;
   cursor: pointer;
 }
@@ -1104,6 +1105,7 @@ http://scripts.sil.org/OFL
 
 #proJect3 .txtBox .btn p:hover {
   background-color: #520a78;
+  color: #fff;
 }
 #proJect3 .txtBox .btn p:hover a {
   color: #fff;
