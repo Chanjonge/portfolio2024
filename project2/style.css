@@ -339,6 +339,15 @@ opacity: 1;}
   font-family: "Kurale", serif;
 }
 
+
+/* 박스2 설정 */
+
+
+
+
+
+
+
 .box2 {
   overflow: hidden;
   display: flex;
@@ -887,3 +896,492 @@ footer .bot p {padding-top: 20px;}
 50.00001% {left: 100%;}
 100%{left: 0%;}
 }
+
+
+
+
+/* 반응형 --------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+@media (max-width: 769px) {
+
+
+  header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  
+  video {
+    object-fit: fill;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    object-position: center center;
+  }
+  
+  video source {width: 100%;
+      height: 100%;}
+  
+  
+
+  /* 헤더 nav */
+  
+  header nav {
+    display: none;
+  }
+  
+  
+
+/* 박스 1 설정 */
+
+.box1 {
+
+  height: 400px;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.box1 h2 {
+  top: 5%;
+  text-align: center;
+ width: 100%;
+  font-size: 35px;
+  font-family: "Jacques Francois", serif;
+  color: #e6a019;
+  opacity: 1;
+  
+  
+}
+
+
+.box1_inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* 인터뷰비디오 }*/
+
+.box1 .vid001 {
+  
+  display: none;
+}
+
+.vid001 div {
+  display: none;
+}
+
+
+/* 박스1 이미지박스 */
+
+.box1_inner .imgBox {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.box1_inner div img {
+  width: 86px;
+  height: 120px;
+  
+}
+.box1_inner .imgBox .img1 {
+  top: 15%;
+  left: 25%;
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  filter: drop-shadow(-20px 10px 5px #555);
+}
+.box1_inner .imgBox .img1 span {
+  color: #fff;
+}
+.box1_inner .imgBox .img2 {
+  top: 30%;
+  left: 35%;
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  filter: drop-shadow(-20px 10px 5px #555);
+}
+
+.box1_inner div img:hover {
+  transform: scale(1.4);
+}
+
+/* 박스1 버튼 */
+
+.box1_inner .imgBox .btn {
+ display: none;
+}
+
+
+
+/* 박스1 텍스트박스 */
+
+.box1_inner .txtBox {
+  
+  width: 50%;
+  color: #fff;
+  height: 50%;
+  margin-top: 15%;
+  font-size: 15px;
+}
+.box1_inner .txtBox {
+  font-family: "Inter", sans-serif;
+}
+.box1_inner .txtBox p:nth-child(1) {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  padding-top: 0px;
+  text-align: center;
+}
+.box1_inner .txtBox p:nth-child(2) {
+  margin: 50px auto;
+  width: 100%;
+  text-align: center;
+}
+.box1_inner .txtBox p:nth-child(3) {
+  position: absolute;
+  left: 0%;
+  top: 65%;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+.box1_inner .txtBox p:nth-child(4) {
+  left: 0%;
+  top: 72%;
+  position: absolute;
+  margin:0 auto;
+  width: 100%;
+  text-align: center;
+  padding-left: 0px;
+}
+.box1_inner .txtBox p:nth-child(5) {
+  left: 0%;
+  top: 79%;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-left: 0px;
+}
+.box1_inner .txtBox p:nth-child(6) {
+  left: 0%;
+  top: 86%;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+
+.box1_inner .txtBox strong {
+  
+  font-size: 18px;
+  
+}
+
+
+/* 박스2 설정 */
+
+
+
+
+
+
+
+.box2 {
+  overflow: hidden;
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  
+}
+.box2 .main {
+  width: 100%;
+  height: 70%;
+}
+.box2 .main li {
+}
+.box2 .main .imgBox {
+  width: 100%;
+  height: 320px;
+  position: static;
+  left: 0px;
+  top: 0px;
+  transform: scaleX(-1);
+  z-index: -10;
+}
+.box2 .main  .imgBox img {
+  width: 100%;
+  height: 100%;
+}
+.box2 .main li:nth-child(3) .imgBox {width: 100%;}
+.box2 .main li:nth-child(2) .imgBox img { width: 100%;
+  height: 100%;}
+.box2 .main li:nth-child(3) .imgBox img { width: 100%;
+      height: 100%;}
+      .box2 .main li:nth-child(4) .imgBox img { width:100%;
+        height: 100%;}
+
+
+
+
+
+.box2 .main .txtBox {
+  position: static;
+  
+}
+.box2 .main .txtBox h2 {
+  font-size: 40px;
+  
+  margin-bottom: 20px;
+ 
+}
+.box2 .main .txtBox p {
+  
+  font-size: 15px;
+  
+}
+
+
+
+.box2 .list {display: flex;
+  margin-top: 10px;
+  width: 100%;
+height: 30%;}
+
+.box2 .list li { padding-right: 10px;}
+.box2 .list li img {
+
+  width: 80px;
+  height: 100px;
+  padding-top: 0px;
+  filter: drop-shadow(10px 10px 5px #888);
+  cursor: pointer;
+}
+
+
+
+
+/* 박스3  설정 */
+
+.box3 {
+  overflow: hidden;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 박스 라인박스 */
+
+.box3 .lineBox {overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  height: 40px;
+  background-color: #000;}
+
+.box3 .lineBox ul {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  position: absolute;
+}
+.box3 .lineBox ul li:nth-child(3) {display: none;}
+.box3 .lineBox ul li:nth-child(4) {display: none;}
+
+
+.box3 .lineBox ul li {
+  box-sizing: border-box;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  padding-left: 0px;
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Jacques Francois", serif;
+}
+
+
+
+
+
+
+/* 박스3 슬라이드 */
+
+
+.box3 .slideBox {
+  height: 800px;
+  
+    width: 90%;
+    margin: 30px auto;
+    overflow: visible;
+    position: relative;
+}
+
+.box3 .slideBox ul {display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+          justify-content: space-between;
+        align-items: center;
+      position: static;
+    }
+
+.box3 .slideBox ul li {text-align: center;
+  position: relative;
+width: 50%;}
+
+
+.box3 .slideBox .imgBox {width: 100%;}
+.box3 .slideBox .imgBox img {width: 100%;
+        height: 200px;}
+.box3 .slideBox .txtBox {font-family: 'Jacques Francois', serif;}
+
+
+.box3 .slideBox li span {position: absolute;
+  top: 50%;
+  left: 20%;
+  border: none;
+  
+  background-color: #000;
+  color: #e6a019;
+  padding: 10px 15px;
+display: none;}
+
+  /* 박스4 설정 */
+
+
+.box4 {height: 80vh;
+  width: 100%;
+  background-color: #fff;
+overflow: hidden;}
+  
+
+
+
+.box4_inner {background-color: #fff;
+  width: 100%;
+  
+  margin: 0 auto;
+
+height: 900px;
+position: relative;}
+
+.box4_inner h2 {font-size: 50px;
+  color: #e6a019;
+  font-family: 'Jacques Francois Shadow', serif;
+  font-weight: 400;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+padding-top: 30px;
+z-index: 30;
+  transform: rotate(20deg);}
+
+.box4_inner p {position: absolute;
+        color: #fff;}
+
+
+.box4_inner .imgIn p:nth-child(1) {left: 15%;
+  top: 15%;
+  width: 200px;
+  height: 60px;
+  z-index: 21;
+}
+.box4_inner .imgIn p:nth-child(1) video {
+  width: 100%;
+  height: 100%;
+object-fit: cover;}
+
+
+
+.box4_inner .imgIn p:nth-child(2) {
+  width: 200px;
+  height: 60px;
+  background-image: url(img/libre10.jpg);
+  right: 20%;
+  bottom: 5%;
+  text-indent: -9999px;
+  z-index: 31;
+}
+
+
+.box4_inner .imgIn p:nth-child(3) {bottom: 10px;
+                        left: 30%;
+                        width: 200px;
+                        height: 260px;
+                    z-index: 20;}
+
+.box4_inner .imgIn p:nth-child(3) video {
+      width: 100%;
+      height: 100%;
+    object-fit: cover;
+    object-position: top center;}
+
+.box4_inner .imgIn p:nth-child(4) {right: 30%;
+                          bottom: 40%;
+                          width: 100px;
+                          height: 200px;
+                          z-index: 23;}
+
+.box4_inner .imgIn p:nth-child(4) video {
+                            width: 100%;
+                            height: 100%;
+                          object-fit: cover;
+                          }
+
+
+
+.box4_inner .imgIn p:nth-child(5) {bottom: 15%;
+                        left: 10%;
+                        width: 100px;
+                        height: 300px;
+                      background-image: url(img/model2.jpg);
+                      background-repeat: no-repeat;
+                    text-indent: -9999px;}
+
+
+.box4_inner .imgIn p:nth-child(6) {background-image: url(img/libre3.jpg);
+                            right: 13%;
+                              top: 25%;
+                            width: 100px;
+                            height: 200px;
+                            background-repeat: no-repeat;
+                            text-indent: -9999px;
+                            background-size: cover;
+                          z-index: 30;}
+
+
+
+
+footer { overflow: hidden;}
+
+
+}
+
+
+
+
+
+
+
+
+
+

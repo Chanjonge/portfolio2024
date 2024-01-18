@@ -6,7 +6,7 @@
 
 $(document).ready(function(){
 
-
+    var width = $(window).width();
     var ht = $(window).height()
     $('article').height(ht)
     $('.box56').height(1500)
@@ -15,12 +15,26 @@ $(document).ready(function(){
 
     $(window).resize(function(){
         var ht = $(window).height()
-
+        var width = $(window).width();
     $('article').height(ht)
     $('.box56').height(1500)
     $('.box3').height(700)
+
+    if (width < 768) {
+        
+        $('.box1').height(600); // 예시 값, 필요에 따라 조정
+       $('.box3').height(900);
+       $('.box4').height(900);
+    } 
+
     });
 
+    if (width < 768) {
+        
+        $('.box1').height(600); // 예시 값, 필요에 따라 조정
+        $('.box3').height(900);
+        $('.box4').height(900);
+    } 
 
 
 
