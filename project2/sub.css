@@ -174,7 +174,7 @@ header nav li:hover a {
 /* 박스1 이미지박스 */
 
 .box1 .imgBox {
-  width: 800px;
+  width: 50%;
   box-sizing: border-box;
   position: relative;
 }
@@ -188,7 +188,7 @@ header nav li:hover a {
   
 }
 .box1 .imgBox .main ul {display: flex;
-  width: 60%;
+  width: 250px;
   height: 100%;
 overflow: hidden;
 
@@ -196,9 +196,10 @@ overflow: hidden;
 
 .box1 .imgBox .main ul li {
   
-  padding-left: 70px;
-  padding-bottom: 50px;
-  width: 700px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  width: 230px;
   height: 500px;
   left: 0;
   
@@ -207,8 +208,8 @@ overflow: hidden;
 .box1 .imgBox .main ul li img {
   
   
-  width: 500px;
-  height: 500px;
+  width: 230px;
+  height: 380px;
   
 }
 
@@ -231,13 +232,13 @@ overflow: hidden;
 .box1 .imgBox .trailer ul:nth-child(2) {left: 150%;}
 
 .box1 .imgBox .trailer ul li {
-  width: 200px;
-  height: 100%;
+  width: 120px;
+  height: 250px;
   transition: all 0.5s;
   text-indent: -9999px;
   cursor: move;
   position: relative;
-  
+  margin-right: 50px;
 }
 
 .box1 .imgBox .main ul li span {
@@ -877,4 +878,439 @@ footer .bot p {padding-top: 20px;}
     50%{left:-100% ;}
     50.00001% {left: 100%;}
     100%{left: 0%;}
+    }
+
+
+
+
+    @media (max-width: 769px) {
+
+      header {
+        overflow: hidden;
+        height: 150px;
+        width: 100%;
+        border-bottom: 2px solid #000;
+      }
+      
+      header h1 {
+        text-align: center;
+        background-image: url(img/ysllogoblack.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 150px;
+        height: 100px;
+        text-indent: -9999px;
+        margin: 0 auto;
+        padding-top: 50px;
+        cursor: pointer;
+      }
+      
+      
+      
+      header .util {
+        position: fixed;
+        top: 15px;
+        right: -0px;
+        z-index: 10000;
+        font-size: 10px;
+        
+        display: flex;
+      }
+      header .util p {
+        color: #000;
+        float: none;
+        
+        margin-right: 12px;
+        cursor: pointer;
+        transition: all 0.3s;
+        z-index: 10002;
+      }
+      
+      header .util p:nth-child(2) {position: relative;}
+      
+      header .numb {border-radius: 50px;
+        background-color: #e6a019;
+          position: absolute;
+          width: 28px;
+          height: 28px;
+          top: -15px;
+            right: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10001;
+            color: #fff;
+            font-family: "Gowun Dodum", sans-serif;
+            z-index: 10010; }
+        
+      header nav { display: none;
+      }
+      
+
+      /* 박스1 설정 */
+
+.box1 {
+  overflow: hidden;
+  display: block;
+  height: 1000px;
+  width: 90%;
+  
+}
+
+.box1 > p {
+ 
+  font-size: 14px;
+  left: 0%;
+ 
+}
+
+
+
+/* 박스1 이미지박스 */
+
+.box1 .imgBox {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: 500px;
+}
+.box1 .imgBox .main {
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 100%;
+  padding-left: 0px;
+  padding-top: 50px;
+  height: 70%;
+  
+}
+.box1 .imgBox .main ul {display: flex;
+  width: 100%;
+  height: 100%;
+overflow: hidden;
+
+}
+
+.box1 .imgBox .main ul li {
+  
+  padding-left: 20px;
+  padding-bottom: 0px;
+  width: 50%;
+  margin: 0 auto;
+  height: 300px;
+  left: 0;
+  
+}
+
+.box1 .imgBox .main ul li img {
+  
+  margin: 0;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  
+}
+
+
+.box1 .imgBox .trailer {
+  margin-top: 50px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.box1 .imgBox .trailer ul {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  top: 20%;
+  transition: all 0.5s;
+  overflow: visible;
+}
+
+
+
+
+.box1 .imgBox .trailer ul li {
+  width: 90px;
+  height: 100px;
+  transition: all 0.5s;
+  text-indent: -9999px;
+  cursor: move;
+  position: relative;
+  
+}
+
+.box1 .imgBox .main ul li span {
+  color: #000;
+  position: fixed;
+  top: 90.5%;
+  right: 55%;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  background-color: #fff;
+  z-index: 10000;
+  border: 2px solid #e6a019;
+  cursor: pointer;
+}
+
+
+.box1 .imgBox .main ul li span:hover {background-color: #e6a019;
+        color: #fff;}
+
+
+
+
+
+.box1 .imgBox .trailer ul li:nth-child(1) {
+  background-image: url(img/libre4.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.box1 .imgBox .trailer ul li:nth-child(2) {
+  background-image: url(img/libre5.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.box1 .imgBox .trailer ul li:nth-child(3) {
+  background-image: url(img/libre6.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.box1 .imgBox .trailer ul li:nth-child(4) {
+  background-image: url(img/libre7.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.box1 .imgBox .trailer ul li:nth-child(5) {
+  background-image: url(img/libre8.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.box1 .imgBox .trailer ul li:nth-child(6) {
+  background-image: url(img/libre9.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+.shop {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #000;
+  z-index: 50000;
+}
+
+.shop h2 {font-family: 'Jacques Francois', serif;
+  padding: 5px;
+        }
+
+
+.shop section { width: 60%;
+                  margin: 5% auto;
+                display: flex;
+               padding: 10px;
+                background-color: #fff;
+}
+
+.shop div {
+ 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.shop div img {width: 170px;
+            height: 100%;
+          }
+
+
+
+
+.shop section div { display: flex;
+  width: 100%;
+            align-items: center;
+            justify-content: space-between;
+                }
+
+
+.shop section div ul {width: 100%;
+  
+      }             
+.shop section div li {list-style: none;
+            display: flex;
+              align-items: center;
+              width: 100%;
+              justify-content: space-around;
+            border: 1px solid #999;
+            margin-bottom: 5px;}
+
+
+.shop section div p { cursor: pointer;
+  text-align: center;
+    
+              }  
+              
+              
+.shop .plus {
+            border: 1px solid #e6a019;
+              padding: 2px 5px 2px 5px;
+              line-height: 0.9;
+            }
+
+.shop .minus {
+  
+  border: 1px solid #e6a019;
+  padding: 2px 6px 2px 6px;
+              line-height: 1.0;
+}
+
+
+
+.shop .plus:hover { background-color: #e6a019;
+                          color: #fff;}
+
+.shop .minus:hover { background-color: #e6a019;
+                            color: #fff;}
+
+
+.shop .text {display: inline-block;}          
+
+.shop .btn {background-color: transparent;
+                  display: block;
+              text-align: center;
+              width: 70%;
+              margin: 0 auto;
+
+             }
+
+              .shop .btn button {cursor: pointer;
+                padding: 5px;
+                border-radius: 5px;}
+
+                .shop .btn button:hover { background-color: #e6a019;}
+
+
+
+
+
+
+
+/* 박스1 텍스트박스 */
+
+.box1 .txtBox {
+  width: 100%;
+  margin-left: 0%;
+  text-align: center;
+}
+
+.box1 .txtBox h2 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Koh Santepheap", serif;
+  padding-top: 50px;
+}
+
+
+.box1 .txtBox h2 br{
+  display: inline-block;
+  content: " ";
+  padding: 0 2px;
+}
+.box1 .txtBox p {
+  font-family: "Karma", serif;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.box1 .txtBox .numBox {
+  margin-top: 50px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  border: 2px solid #e6a019;
+  width: 20%;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.box1 .txtBox .numBox p {
+  
+  padding-bottom: 5px;
+}
+
+.box1 .txtBox .numBox p:nth-child(1) {
+  position: absolute;
+  background-color: #fff;
+  top: -100%;
+  width: 70px;
+}
+
+.box1 .txtBox .numBox p:nth-child(2) {
+  cursor: pointer;
+}
+.box1 .txtBox .numBox p:nth-child(3) {margin-left: 40px;
+  margin-right: 40px;
+}
+
+.box1 .txtBox .numBox p:nth-child(4) {
+  cursor: pointer;
+}
+
+.box1 .txtBox .btn1 {
+  position: fixed;
+  border: 2px solid #e6a019;
+  width: 30%;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 2.5%;
+  right: 5%;
+  background-color: #fff;
+  z-index: 1000;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
     }

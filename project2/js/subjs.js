@@ -147,7 +147,7 @@ $(window).scroll(function () {
       
       // 드래그한 거리를 해당 요소의 left 속성에 적용합니다.
       
-      $(this).css({'left' : 50});
+      $(this).css({'left' : 20});
       
     }
   });
