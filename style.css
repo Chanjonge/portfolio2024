@@ -577,7 +577,15 @@ header .pNav ul li {font-family: var(--font-family-pretendard-regular);
 #profile .name .em {
   font-family: var(--font-family-pretendard-light);
   font-size: 20px;
+  margin-bottom: 10px;
 }
+#profile .name .ins {
+  font-family: var(--font-family-pretendard-light);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
 
 /*
 Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.

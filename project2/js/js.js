@@ -25,6 +25,7 @@ $(document).ready(function(){
         $('.box1').height(600); // 예시 값, 필요에 따라 조정
        $('.box3').height(900);
        $('.box4').height(900);
+       $('.box56').height(1000);
     } 
 
     });
@@ -34,6 +35,7 @@ $(document).ready(function(){
         $('.box1').height(600); // 예시 값, 필요에 따라 조정
         $('.box3').height(900);
         $('.box4').height(900);
+        $('.box56').height(1000);
     } 
 
 
