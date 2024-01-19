@@ -1306,6 +1306,22 @@ overflow: hidden;
 
 
 
+/* 박스2 설정 */
+
+.box2 {
+  overflow: hidden;
+  height: 700px;
+  width: 90%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box2 video {
+  object-fit: fill;
+  object-position: center top;
+  height: 100%;
+  width: 100%;
+}
 
 
 
