@@ -157,8 +157,8 @@ $(window).scroll(function () {
       $(".trailer li").click(function () {
         var i = $(this).index();
         console.log(i);
-        $(".main>ul li").fadeOut();
-        $(".main>ul li").eq(i).fadeIn();
+        $(".main>ul li").css({"display":"none"});
+        $(".main>ul li").eq(i).css({"display":"block"});
 
         
       });
