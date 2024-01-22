@@ -118,7 +118,7 @@ $('.active1').click(function(){
   console.log(i)
 
 
-  $('html ,body').stop().animate({'scrollTop':0},1000 )
+  $('html ,body').stop().animate({'scrollTop':0},1000)
 
 
 });
@@ -130,7 +130,7 @@ $('.active2').click(function(){
   console.log(i)
 
 
-  $('html ,body').stop().animate({'scrollTop':1000}, 1000  )
+  $('html ,body').stop().animate({'scrollTop':1050}, 1000  )
   
 
 });
@@ -141,7 +141,7 @@ $('.active3').click(function(){
   console.log(i)
 
 
-  $('html ,body').stop().animate({'scrollTop':1980},1000, )
+  $('html ,body').stop().animate({'scrollTop':2180},1000, )
   
 
 });
@@ -154,7 +154,7 @@ $('header .pNav ul li').click(function(){
   console.log(p)
 
   
-   var scrollPositions = [2000, 3000, 4100];
+   var scrollPositions = [2180, 3250, 4520];
    if (p < scrollPositions.length) {
      $('html, body').animate({
        scrollTop: scrollPositions[p]
