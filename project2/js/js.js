@@ -200,16 +200,7 @@ $(document).ready(function(){
     })
 
 
-    // 슬라이드 박스 설정
-    var a = 0
-
-    $('.box3 .slideBox ul').click(function(){
-        if(a<5)a++; 
-        if(a==3)a=0
-        $(this).stop().animate({'left':-200*a},800)
-
-
-    })
+   
 
 
 
@@ -314,7 +305,14 @@ $('.box6 .img3').click(function(){
 })
     
 
+$('.box6 .detail').click(function(event){
+    event.preventDefault()
 
+
+
+
+
+})
 
 
 

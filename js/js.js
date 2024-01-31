@@ -33,6 +33,18 @@ $(document).ready(function(){
         }, 2900); // 3초 후에 투명도 변경
 
 
+       
+        var ht = $(window).height()
+        $('section').height(ht)
+        
+    
+        $(window).resize(function(){
+            var ht = $(window).height()
+         
+            $('section').height(ht)
+        
+
+        })
 
 
 
@@ -154,7 +166,7 @@ $('header .pNav ul li').click(function(){
   console.log(p)
 
   
-   var scrollPositions = [2180, 3250, 4520];
+   var scrollPositions = [2000, 3000, 4000];
    if (p < scrollPositions.length) {
      $('html, body').animate({
        scrollTop: scrollPositions[p]

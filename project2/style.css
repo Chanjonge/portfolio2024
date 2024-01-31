@@ -516,7 +516,7 @@ animation: ani1 20s linear infinite;}
   height: 400px;
   
     width: 90%;
-    margin: 150px auto;
+    margin: 100px auto;
     overflow: hidden;
     position: relative;
 }
@@ -525,24 +525,29 @@ animation: ani1 20s linear infinite;}
           justify-content: space-between;
         align-items: center;
       position: absolute;
-    left: 0;
+      width: 100%;
+    
   top: 0;}
 
 .box3 .slideBox ul li {text-align: center;
-  position: relative;}
+  position: relative;
+  width: 30%;
+  margin-right: 50px;}
 
 
 
 
-.box3 .slideBox .imgBox {}
-.box3 .slideBox .imgBox img {width: 350px;
-        height: 350px;}
+.box3 .slideBox ul li .imgBox {width: 80%;
+  margin: 0 auto;
+height: 250px;}
+.box3 .slideBox ul li .imgBox img {width: 100%;
+        height: 100%;}
 .box3 .slideBox .txtBox {font-family: 'Jacques Francois', serif;}
 
 
 .box3 .slideBox li span {position: absolute;
   top: 50%;
-  left: 35%;
+  left: 26%;
   border: none;
   
   background-color: #000;
@@ -829,7 +834,7 @@ border-bottom: 1px solid #000;}
 
 footer .top h2 {
   position: absolute;
-  left: 40%;
+  left: 42%;
   top: 30%;
       background-image: url(img/logo.jpg);
       background-size: contain;
@@ -855,16 +860,18 @@ footer .top .snsBox a {display: block;
                       color: #e6a019;}
 
 footer .bot {height: 100px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
 footer .bot p {padding-top: 20px;}
-
-
+footer .bot p:nth-child(1) { font-size: 15px;}
+footer .bot p:nth-child(2) { 
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 20px;}
 
 
 
@@ -1525,7 +1532,7 @@ bottom: 0;
            
 
 footer .bot {height: 100px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   display: block;
   
