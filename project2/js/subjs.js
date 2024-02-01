@@ -36,7 +36,7 @@ $(document).ready(function(){
 
       var ni = $('.box1 .txtBox .numBox .num').text()
       console.log(ni)
-      $('header .numb').text(ni)
+      // $('header .numb').text(ni)
       $('.shop').css({'display':'block'})
     })
 

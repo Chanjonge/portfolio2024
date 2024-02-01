@@ -229,11 +229,12 @@ header nav li:hover a {
 }
 .box1 .imgBox .trailer ul:nth-child(2) {
   left: 150%;
+  
 }
 
 .box1 .imgBox .trailer ul li {
-  width: 120px;
-  height: 250px;
+  width: 150px;
+  height: 90%;
   transition: all 0.5s;
   text-indent: -9999px;
   cursor: move;
@@ -262,38 +263,38 @@ header nav li:hover a {
 
 .box1 .imgBox .trailer ul li:nth-child(1) {
   background-image: url(img/libre4.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .box1 .imgBox .trailer ul li:nth-child(2) {
   background-image: url(img/libre5.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .box1 .imgBox .trailer ul li:nth-child(3) {
   background-image: url(img/libre6.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .box1 .imgBox .trailer ul li:nth-child(4) {
   background-image: url(img/libre7.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .box1 .imgBox .trailer ul li:nth-child(5) {
   background-image: url(img/libre8.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .box1 .imgBox .trailer ul li:nth-child(6) {
   background-image: url(img/libre9.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }

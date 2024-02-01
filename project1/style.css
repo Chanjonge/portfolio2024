@@ -267,12 +267,49 @@ body.fix {
   background: #fff;
 }
 
-.box4-1 .listBox ul:nth-child(2) {
+.box4-1 .listBox .guide {
   display: none;
 }
-.box4-1 .listBox ul:nth-child(3) {
+
+
+.box4-1 .listBox .guide li {display: flex;
+  width: 95%;
+margin: 0 auto;
+border-bottom: 1px solid #eee;}
+.box4-1 .listBox .guide li p {
+}
+
+.box4-1 .listBox .guide li p:nth-child(1) {text-align: left;
+  font-size: 25px;
+  font-weight: 600;
+width: 70%;}
+.box4-1 .listBox .guide li p:nth-child(2) {text-align: right;
+color: #aaa;
+font-size: 21px;
+font-weight: 600;
+width: 30%;}
+
+
+.box4-1 .listBox .news {
   display: none;
 }
+
+.box4-1 .listBox .news li {display: flex;
+  width: 95%;
+margin: 0 auto;
+border-bottom: 1px solid #eee;}
+.box4-1 .listBox .news li p {width: 50%;
+}
+
+.box4-1 .listBox .news li p:nth-child(1) {text-align: left;
+  font-size: 25px;
+  font-weight: 600;
+width: 70%;}
+.box4-1 .listBox .news li p:nth-child(2) {text-align: right;
+color: #aaa;
+font-size: 21px;
+font-weight: 600;
+width: 30%;}
 
 .box4-1 .listBox li {
   padding: 20px;
@@ -288,6 +325,12 @@ body.fix {
 .box4-1 .listBox p {
   font-size: 20px;
 }
+
+
+
+
+
+
 
 /* 박스5 설정 */
 
