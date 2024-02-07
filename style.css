@@ -625,16 +625,16 @@ http://scripts.sil.org/OFL
               height: auto;}
 
               
-#proJect1 .popUp01 span {width: 50px;
-  height: 50px;
+#proJect1 .popUp01 span {width: 70px;
+  height: 70px;
   position: fixed;
-  right: 21%;
-  top: 10%;
+  right: 10%;
+  top: 48%;
   display: block;
   cursor: pointer}
 
   #proJect1 .popUp01 span i {
-    font-size: 40px;
+    font-size: 70px;
     color: #fe7e03;
   }
 
@@ -952,16 +952,16 @@ http://scripts.sil.org/OFL
               height: auto;}
 
               
-#proJect2 .popUp02 span {width: 50px;
-  height: 50px;
+#proJect2 .popUp02 span {width: 70px;
+  height: 70px;
   position: fixed;
-  right: 21%;
-  top: 11%;
+  right: 10%;
+  top: 48%;
   display: block;
   cursor: pointer}
 
   #proJect2 .popUp02 span i {
-    font-size: 40px;
+    font-size: 70px;
     color: #d6a243;
   }
 
@@ -1140,6 +1140,7 @@ http://scripts.sil.org/OFL
   overflow-y: scroll;
   display: none;
   z-index: 100;
+  
  
 }
 
@@ -1147,20 +1148,20 @@ http://scripts.sil.org/OFL
               height: auto;}
 
               
-#proJect3 .popUp03 span {width: 50px;
-  height: 50px;
+#proJect3 .popUp03 span {width: 70px;
+  height: 70px;
   position: fixed;
-  right: 20%;
-  top: 13%;
+  right: 10%;
+  top: 48%;
   display: block;
   cursor: pointer}
 
   #proJect3 .popUp03 span i {
-    font-size: 40px;
-    color: #fff;
+    font-size: 70px;
+    color: #000;
   }
 
-  #proJect3 .popUp03 span:hover i {color: #000;}
+  #proJect3 .popUp03 span:hover i {color: #c38ea4;}
 
   
   #proJect3 .popUp03::-webkit-scrollbar {

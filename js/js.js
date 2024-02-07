@@ -42,6 +42,183 @@ $(document).ready(function(){
             var ht = $(window).height()
          
             $('section').height(ht)
+
+
+
+            $('header .pNav ul li').click(function(){
+
+              var p = $(this).index()
+              console.log(p)
+            
+              
+               var scrollPositions = [2000, 3000, 4000];
+               if (p < scrollPositions.length) {
+                 $('html, body').animate({
+                   scrollTop: scrollPositions[p]
+                 }, 1000); // 1초 동안 스크롤 이동
+               }
+            
+            
+            })
+
+
+            var sc = $(this).scrollTop();
+    $('.scroll').text(sc)
+
+
+
+
+
+
+    if (sc < 1600 ) {
+      // 클래스 추가
+      $('header .pNav').css({"display":'none'})
+    } else {
+      // 클래스 제거
+      $('header .pNav').css({"display":'block'})
+    }
+
+
+    if (sc >= 0 && sc < 1000 ) {
+        $('header .gnb ul li').eq(0).addClass('on');
+    } else {
+      $('header .gnb ul li').eq(0).removeClass('on');
+
+    }
+    if (sc >= 1000 && sc < 1980 ) {
+      $('header .gnb ul li').eq(1).addClass('on');
+  } else {
+    $('header .gnb ul li').eq(1).removeClass('on');
+
+  }
+
+  if (sc >= 1980  ) {
+    $('header .gnb ul li').eq(2).addClass('on');
+} else {
+  $('header .gnb ul li').eq(2).removeClass('on');
+
+}
+
+
+
+
+    if (sc >= 1800 && sc < 3000) {
+      // 클래스 추가
+      $('header .pNav ul li').eq(0).addClass('on');
+      $('header .pNav ul li').eq(1).removeClass('on');
+      $('header .pNav ul li').eq(2).removeClass('on');
+    } else {
+      // 클래스 제거
+      $('header .pNav ul li').eq(0).removeClass('on');
+    }
+  
+    // 두 번째 범위 (3000~4000)
+    if (sc >= 3000 && sc < 4000) {
+      $('header .pNav ul li').eq(1).addClass('on');
+      $('header .pNav ul li').eq(0).removeClass('on');
+      $('header .pNav ul li').eq(2).removeClass('on');
+    } else {
+      $('header .pNav ul li').eq(1).removeClass('on');
+    }
+  
+    // 세 번째 범위 (4000~5000)
+    if (sc >= 4000 && sc < 5100) {
+      $('header .pNav ul li').eq(2).addClass('on');
+      $('header .pNav ul li').eq(0).removeClass('on');
+      $('header .pNav ul li').eq(1).removeClass('on');
+    } else {
+      $('header .pNav ul li').eq(2).removeClass('on');
+    }
+
+
+
+
+    $(window).scroll(function() {
+      var sc = $(this).scrollTop();
+      var targetValue = 80; // 목표 value
+      var currentValue = $('.progress1').val(); // 현재 value
+      var increment = 1; // 한 번에 증가할 값
+      var speed = 30; // 각 증가 사이의 시간 간격(밀리초)
+    
+      if (sc >= 500) {
+        var interval = setInterval(function() {
+          if (currentValue < targetValue) {
+            currentValue += increment;
+            $('.progress1').val(currentValue);
+          } else {
+            clearInterval(interval); // 목표값에 도달하면 인터벌 중지
+          }
+        }, speed);
+      } else {
+        $('.progress1').val(0);
+      }
+    });
+    
+    $(window).scroll(function() {
+      var sc = $(this).scrollTop();
+      var targetValue = 90; // 목표 value
+      var currentValue = $('.progress2').val(); // 현재 value
+      var increment = 1; // 한 번에 증가할 값
+      var speed = 30; // 각 증가 사이의 시간 간격(밀리초)
+    
+      if (sc >= 510) {
+        var interval = setInterval(function() {
+          if (currentValue < targetValue) {
+            currentValue += increment;
+            $('.progress2').val(currentValue);
+          } else {
+            clearInterval(interval); // 목표값에 도달하면 인터벌 중지
+          }
+        }, speed);
+      } else {
+        $('.progress2').val(0);
+      }
+    });
+    
+    $(window).scroll(function() {
+      var sc = $(this).scrollTop();
+      var targetValue = 80; // 목표 value
+      var currentValue = $('.progress3').val(); // 현재 value
+      var increment = 1; // 한 번에 증가할 값
+      var speed = 30; // 각 증가 사이의 시간 간격(밀리초)
+    
+      if (sc >= 520) {
+        var interval = setInterval(function() {
+          if (currentValue < targetValue) {
+            currentValue += increment;
+            $('.progress3').val(currentValue);
+          } else {
+            clearInterval(interval); // 목표값에 도달하면 인터벌 중지
+          }
+        }, speed);
+      } else {
+        $('.progress3').val(0);
+      }
+    });
+    
+    $(window).scroll(function() {
+      var sc = $(this).scrollTop();
+      var targetValue = 60; // 목표 value
+      var currentValue = $('.progress4').val(); // 현재 value
+      var increment = 1; // 한 번에 증가할 값
+      var speed = 30; // 각 증가 사이의 시간 간격(밀리초)
+    
+      if (sc >= 530) {
+        var interval = setInterval(function() {
+          if (currentValue < targetValue) {
+            currentValue += increment;
+            $('.progress4').val(currentValue);
+          } else {
+            clearInterval(interval); 
+          }
+        }, speed);
+      } else {
+        $('.progress4').val(0);
+      }
+    });
+    
+
+
         
 
         })
