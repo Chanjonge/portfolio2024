@@ -28,6 +28,28 @@ img {
 .box5 , .box6 {height: 100vh;}
 /* font-family: 'Jacques Francois', serif; */
 
+
+
+/* 스크롤 설정 */
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #fff;
+  background-clip: padding-box;
+  border: 2px solid #d3b169;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+
+
+
+
+
 /* 헤더설정 */
 
 header {
@@ -540,14 +562,14 @@ animation: ani1 20s linear infinite;}
 .box3 .slideBox ul li .imgBox {width: 80%;
   margin: 0 auto;
 height: 250px;}
-.box3 .slideBox ul li .imgBox img {width: 100%;
+.box3 .slideBox ul li .imgBox img {width: 70%;
         height: 100%;}
 .box3 .slideBox .txtBox {font-family: 'Jacques Francois', serif;}
 
 
 .box3 .slideBox li span {position: absolute;
   top: 50%;
-  left: 26%;
+  left: 28%;
   border: none;
   
   background-color: #000;
