@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
   background: #fff;
   background-clip: padding-box;
   border: 2px solid #d3b169;
-  border-radius: 50px;
+  border-radius: 0px;
 }
 body::-webkit-scrollbar-track {
   background-color: transparent;
