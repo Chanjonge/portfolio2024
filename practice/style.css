@@ -1,0 +1,132 @@
+/* 언어설정 */
+
+@charset 'UTF-8';
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  vertical-align: bottom;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* 헤더 설정 */
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+}
+
+header .headerTop {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  width: 100%;
+  border-top: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+}
+
+/* 로고 설정 */
+header h1 {
+  color: #000;
+  text-indent: -9999px;
+  background-image: url(img/Group\ 97.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 15%;
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+/* 메뉴 설정 */
+header .gnb {
+  font-size: 20px;
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+  font-family: 'Jeju Gothic', sans-serif;
+}
+
+header .gnb li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+header .gnb li a {color: #fff;}
+
+.menu a {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Lato;
+    font-size: 17pt;
+    font-weight: 400;
+    padding: 15px 25px;
+    /**/
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+
+  .SMN_effect-21 a:before, .SMN_effect-21 a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #45A900;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .SMN_effect-21 a:after {
+    top: auto;
+    bottom: 0;
+  }
+  
+  .SMN_effect-21 a:hover:before, .SMN_effect-21 a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+
+
+
+/* 메인 비디오 설정 */
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  z-index: -1;
+  opacity: 1;
+  object-fit: cover;
+}
+
+video source {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
